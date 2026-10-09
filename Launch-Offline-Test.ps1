@@ -1,6 +1,8 @@
 param(
     [string]$GameDir = 'E:\SteamLibrary\steamapps\common\ACE COMBAT 8',
-    [switch]$ResourceProbe
+    [switch]$ResourceProbe,
+    [switch]$NativeTable,
+    [string]$PythonExe = 'C:\Users\reimu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
@@ -10,6 +12,8 @@ $proxy = Join-Path $gameBin 'dwmapi.dll'
 $runtime = Join-Path $gameBin 'ue4ss'
 $package = Join-Path $projectRoot 'tools\ue4ss-package'
 $marker = Join-Path $runtime 'AC8Chinese-project.txt'
+if ($ResourceProbe -and $NativeTable) { throw 'Choose one test mode' }
+if ($NativeTable -and (-not (Test-Path -LiteralPath $PythonExe))) { throw 'Native table mode requires PythonExe' }
 if (-not (Test-Path -LiteralPath $gameExe)) { throw 'Game executable not found' }
 if (Get-Process -Name AceCombat8 -ErrorAction SilentlyContinue) { throw 'Close the game first' }
 if (Get-Process | Where-Object { $_.ProcessName -match 'EasyAntiCheat|start_protected_game' }) { throw 'Close the protected launcher and anti-cheat game session first' }
@@ -45,7 +49,9 @@ Set-Content -LiteralPath (Join-Path $runtime 'UE4SS-settings.ini') -Value $setti
 $mods = Join-Path $runtime 'Mods'
 New-Item -ItemType Directory -Force -Path $mods | Out-Null
 Copy-Item -LiteralPath (Join-Path $projectRoot 'mod\AC8Chinese') -Destination $mods -Recurse -Force
-if ($ResourceProbe) {
+if ($NativeTable) {
+    Set-Content -LiteralPath (Join-Path $mods 'mods.txt') -Value "AC8Chinese : 0`r`nAC8OverrideLoader : 0" -Encoding ascii
+} elseif ($ResourceProbe) {
     $dllDir = Join-Path $loaderDir 'dlls'
     $payloadDir = Join-Path $loaderDir 'payloads\0010_AC8ChineseMenuProbe'
     New-Item -ItemType Directory -Path $dllDir, $payloadDir -Force | Out-Null
@@ -71,12 +77,16 @@ if (Test-Path -LiteralPath $appIdFile) {
     $createdAppId = $true
 }
 try {
-    Copy-Item -LiteralPath (Join-Path $package 'dwmapi.dll') -Destination $proxy
+    if (-not $NativeTable) { Copy-Item -LiteralPath (Join-Path $package 'dwmapi.dll') -Destination $proxy }
     $env:SteamAppId = '2288340'
     $env:SteamGameId = '2288340'
     $env:EOS_USE_ANTICHEATCLIENTNULL = '1'
-    Write-Host "Offline Chinese prototype (ResourceProbe=$ResourceProbe). Keep this launcher open until the game exits."
+    Write-Host "Offline Chinese prototype (ResourceProbe=$ResourceProbe, NativeTable=$NativeTable). Keep this launcher open until the game exits."
     $gameProcess = Start-Process -FilePath $gameExe -ArgumentList '-SaveToUserDir' -WorkingDirectory $gameBin -WindowStyle Normal -PassThru
+    if ($NativeTable) {
+        & $PythonExe (Join-Path $projectRoot 'scripts\patch-loaded-text.py') $gameProcess.Id --wait 30 --apply
+        if ($LASTEXITCODE -ne 0) { Write-Warning 'Text table patch failed; consult work logs. The game remains unmodified for unmatched entries.' }
+    }
     $gameProcess.WaitForExit()
     Write-Host "Owned game process exited with code $($gameProcess.ExitCode)."
 } finally {

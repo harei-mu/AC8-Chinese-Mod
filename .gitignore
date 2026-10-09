@@ -2,3 +2,4 @@ work/
 tools/
 dist/
 *.log
+__pycache__/
