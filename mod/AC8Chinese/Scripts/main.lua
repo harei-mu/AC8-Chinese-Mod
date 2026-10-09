@@ -4,6 +4,7 @@ local replacements = require('translations')
 package.loaded['target-labels'] = nil
 local targetLabels = require('target-labels')
 local targetChanges = 0
+local enableExperimentalTargetPolling = false -- Native updates overwrite it; user observed flicker.
 local replacementCount = 0
 for _ in pairs(replacements) do replacementCount = replacementCount + 1 end
 print('[AC8Chinese] loaded translation keys=' .. replacementCount .. '\n')
@@ -37,7 +38,7 @@ LoopAsync(500, function()
                 if errors <= 3 then print('[AC8Chinese] widget error: ' .. tostring(err) .. '\n') end
             end
         end
-        for _, actor in ipairs(FindAllOf('LiveTargetContainerActor') or {}) do
+        for _, actor in ipairs(enableExperimentalTargetPolling and (FindAllOf('LiveTargetContainerActor') or {}) or {}) do
             local ok, err = pcall(function()
                 if not actor:IsValid() then return end
                 -- Excludes GamerTagText and callsigns: only generic unit/status labels.
