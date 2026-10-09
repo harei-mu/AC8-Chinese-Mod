@@ -11,20 +11,29 @@ Object.assign(glossary.menu, JSON.parse(fs.readFileSync(path.join(root, 'transla
 const table = keys(decode(path.join(input, 'CP_Cmn.dat')));
 const en = strings(decode(path.join(input, 'CP_B.dat'), 1));
 const original = strings(decode(path.join(input, 'CP_M.dat'), 12));
+const byKey = new Map(table.map(row => [row.key, row]));
 if (en.length !== original.length) throw new Error('Language count mismatch');
 const translated = [...original], decisions = [], modified = new Map();
 const tokens = s => (s.match(/\{[^}]*\}|<[^>]*>|%\d*\$?[sdif]|[\uE000-\uF8FF]/g) ?? []).sort().join('\0');
 for (const row of table) {
   let category;
   if (/^Option/i.test(row.key)) category = 'options';
-  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudIndicator_|HudMissioninfo_|MissionWeather_|MissionClouddata_)/.test(row.key) || row.key === 'DataviewerGallery_Select_Music') category = 'menu';
+  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudIndicator_|HudMissioninfo_|HudMissionprogress_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || row.key === 'DataviewerGallery_Select_Music') category = 'menu';
   else if (/^(ContainerAircraft_Name_|ContainerGround_Name_|ContainerEscortTargetName_|ContainerWaypoint_|ContainerUnknown_|HudContainerinfo_)/.test(row.key)) category = 'targets';
   else if (/^Container.*Callsign/.test(row.key)) category = 'callsigns';
   else continue;
   if (row.index >= original.length) throw new Error('Invalid string index');
   const source = original[row.index];
   const base = source.trim();
-  const replacement = glossary[category]?.[base];
+  let replacement = glossary[category]?.[base];
+  let officialSourceKey;
+  if (/^MissionLocation_Name_/.test(row.key)) officialSourceKey = row.key.replace('MissionLocation_', 'MissionLocationJP_');
+  if (/^Missiontitle_Name_/.test(row.key)) officialSourceKey = row.key.replace('Missiontitle_', 'MissiontitleJp_');
+  if (officialSourceKey) {
+    const paired = byKey.get(officialSourceKey);
+    if (paired && /\p{Script=Han}/u.test(original[paired.index])) replacement = original[paired.index];
+  }
+  if (/^MissionNo_Name_/.test(row.key) && /^MISSION \d+$/.test(base)) replacement = base.replace('MISSION ', '任务 ');
   let action = 'keep', reason = '保留型号、专名、呼号或非文字标识';
   let value = source;
   if (/\p{Script=Han}/u.test(source)) reason = '已有中文';
@@ -34,7 +43,7 @@ for (const row of table) {
     if (modified.has(row.index) && modified.get(row.index) !== value) throw new Error('Conflicting aliases');
     modified.set(row.index, value);
     translated[row.index] = value;
-    action = 'translate'; reason = '界面文字或通用目标名称';
+    action = 'translate'; reason = officialSourceKey ? `沿用游戏内中文：${officialSourceKey}` : '界面文字或通用目标名称';
   } else if (/^\d+ x \d+（\d+:\d+）$/.test(base)) {
     reason = '分辨率与宽高比';
   } else if (/[A-Za-z]/.test(source) && category === 'options' && source.length < 200 && !glossary.keepOptionValues.includes(base)) {

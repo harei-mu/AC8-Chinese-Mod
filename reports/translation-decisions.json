@@ -14625,6 +14625,51 @@
     "after": "时间："
   },
   {
+    "key": "HudMissionprogress_Name_Missionaccomplished",
+    "index": 42132,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION ACCOMPLISHED",
+    "after": "任务完成"
+  },
+  {
+    "key": "HudMissionprogress_Name_Missionfailed",
+    "index": 42133,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION FAILED",
+    "after": "任务失败"
+  },
+  {
+    "key": "HudMissionprogress_Name_Missionstart",
+    "index": 42129,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "START MISSION",
+    "after": "开始任务"
+  },
+  {
+    "key": "HudMissionprogress_Name_Missionupdate",
+    "index": 42130,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION UPDATED",
+    "after": "任务更新"
+  },
+  {
+    "key": "HudMissionprogress_Name_Waveupdate",
+    "index": 42131,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "WAVE UPDATED",
+    "after": "新一波敌军"
+  },
+  {
     "key": "MainmenuSystemGeneral_List_None",
     "index": 42689,
     "category": "menu",
@@ -15204,82 +15249,82 @@
     "key": "MissionClouddata_Name_Broken",
     "index": 45340,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Broken",
-    "after": "Broken"
+    "after": "多云"
   },
   {
     "key": "MissionClouddata_Name_CloudCover",
     "index": 45342,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CLOUD COVER:",
-    "after": "CLOUD COVER:"
+    "after": "云量："
   },
   {
     "key": "MissionClouddata_Name_CloudCoverBroken",
     "index": 45335,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CLOUD COVER: Broken",
-    "after": "CLOUD COVER: Broken"
+    "after": "云量：多云"
   },
   {
     "key": "MissionClouddata_Name_CloudCoverFewClouds",
     "index": 45333,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CLOUD COVER: Few",
-    "after": "CLOUD COVER: Few"
+    "after": "云量：少云"
   },
   {
     "key": "MissionClouddata_Name_CloudCoverOvercast",
     "index": 45336,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CLOUD COVER: Overcast",
-    "after": "CLOUD COVER: Overcast"
+    "after": "云量：阴天"
   },
   {
     "key": "MissionClouddata_Name_CloudCoverScattered",
     "index": 45334,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CLOUD COVER: Scattered",
-    "after": "CLOUD COVER: Scattered"
+    "after": "云量：疏云"
   },
   {
     "key": "MissionClouddata_Name_CloudCoverSkyClear",
     "index": 45332,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CLOUD COVER: Clear",
-    "after": "CLOUD COVER: Clear"
+    "after": "云量：晴空"
   },
   {
     "key": "MissionClouddata_Name_FewClouds",
     "index": 45338,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Few",
-    "after": "Few"
+    "after": "少云"
   },
   {
     "key": "MissionClouddata_Name_Overcast",
     "index": 45341,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Overcast",
-    "after": "Overcast"
+    "after": "阴天"
   },
   {
     "key": "MissionClouddata_Name_Scattered",
@@ -15294,46 +15339,604 @@
     "key": "MissionClouddata_Name_SkyClear",
     "index": 45337,
     "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "Clear",
+    "after": "晴空"
+  },
+  {
+    "key": "MissionLocation_Name_ms01",
+    "index": 45171,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms01",
+    "before": "Straits of Adea",
+    "after": "阿迪亚海峡"
+  },
+  {
+    "key": "MissionLocation_Name_ms02",
+    "index": 45172,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms02",
+    "before": "San Salvacion North Coast",
+    "after": "圣萨尔瓦北部近海"
+  },
+  {
+    "key": "MissionLocation_Name_ms03",
+    "index": 45173,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms03",
+    "before": "Deltheim Port",
+    "after": "德尔法姆港"
+  },
+  {
+    "key": "MissionLocation_Name_ms04",
+    "index": 45174,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms04",
+    "before": "White Valley Base",
+    "after": "白色峡谷基地"
+  },
+  {
+    "key": "MissionLocation_Name_ms05",
+    "index": 45175,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms05",
+    "before": "Newfield Island",
+    "after": "纽菲尔德岛"
+  },
+  {
+    "key": "MissionLocation_Name_ms06",
+    "index": 45176,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms06",
+    "before": "FCU Capital Theve",
+    "after": "FCU首都希孚"
+  },
+  {
+    "key": "MissionLocation_Name_ms07",
+    "index": 45177,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms07",
+    "before": "Rigley Mountains",
+    "after": "里格利山脉"
+  },
+  {
+    "key": "MissionLocation_Name_ms08",
+    "index": 45178,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms08",
+    "before": "Faith Park Ravine",
+    "after": "费斯帕克峡谷"
+  },
+  {
+    "key": "MissionLocation_Name_ms09",
+    "index": 45179,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms09",
+    "before": "FCU Capital Theve",
+    "after": "FCU首都希孚"
+  },
+  {
+    "key": "MissionLocation_Name_ms10",
+    "index": 45180,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms10",
+    "before": "FCU Capital Theve",
+    "after": "FCU首都希孚"
+  },
+  {
+    "key": "MissionLocation_Name_ms11",
+    "index": 45181,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms11",
+    "before": "Waters of Newfield Island",
+    "after": "纽菲尔德岛近海"
+  },
+  {
+    "key": "MissionLocation_Name_ms12",
+    "index": 45182,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms12",
+    "before": "Off Rocky Island",
+    "after": "洛基岛近海"
+  },
+  {
+    "key": "MissionLocation_Name_ms13",
+    "index": 45183,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms13",
+    "before": "Fort Grays Base",
+    "after": "福特格雷基地"
+  },
+  {
+    "key": "MissionLocation_Name_ms14",
+    "index": 45184,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms14",
+    "before": "Rio Bajo",
+    "after": "利欧巴荷"
+  },
+  {
+    "key": "MissionLocation_Name_ms15",
+    "index": 45185,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms15",
+    "before": "Rio Bajo",
+    "after": "利欧巴荷"
+  },
+  {
+    "key": "MissionLocation_Name_ms16",
+    "index": 45186,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms16",
+    "before": "Spring Sea",
+    "after": "史普林格海"
+  },
+  {
+    "key": "MissionLocation_Name_ms17",
+    "index": 45187,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms17",
+    "before": "Selatapura",
+    "after": "塞拉塔普拉"
+  },
+  {
+    "key": "MissionLocation_Name_ms18",
+    "index": 45188,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms18",
+    "before": "Waiapolo Mountains",
+    "after": "外亚波罗山脉"
+  },
+  {
+    "key": "MissionLocation_Name_ms19",
+    "index": 45189,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms19",
+    "before": "Comona Space Base",
+    "after": "柯摩那宇宙基地"
+  },
+  {
+    "key": "MissionLocation_Name_ms20",
+    "index": 45190,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms20",
+    "before": "Selatapura",
+    "after": "塞拉塔普拉"
+  },
+  {
+    "key": "MissionLocation_Name_ms21",
+    "index": 45191,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms21",
+    "before": "Spring Sea",
+    "after": "史普林格海"
+  },
+  {
+    "key": "MissionLocation_Name_ms22",
+    "index": 45192,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms22",
+    "before": "Comona Space Base",
+    "after": "柯摩那宇宙基地"
+  },
+  {
+    "key": "MissionLocation_Name_ms23",
+    "index": 45193,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms23",
+    "before": "Aurum Sea",
+    "after": "奥尔姆海"
+  },
+  {
+    "key": "MissionLocation_Name_ms24",
+    "index": 45194,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms24",
+    "before": "Expo City",
+    "after": "博览市"
+  },
+  {
+    "key": "MissionLocation_Name_ms25_Day1",
+    "index": 45195,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms25_Day1",
+    "before": "Northern Rocky Island",
+    "after": "洛基岛北部"
+  },
+  {
+    "key": "MissionLocation_Name_ms25_Day2",
+    "index": 45196,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms25_Day2",
+    "before": "Northern Rocky Island",
+    "after": "洛基岛北部"
+  },
+  {
+    "key": "MissionLocation_Name_ms26",
+    "index": 45197,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms26",
+    "before": "Cima Island",
+    "after": "西玛岛"
+  },
+  {
+    "key": "MissionLocation_Name_ms27",
+    "index": 45198,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms27",
+    "before": "Megafloat Fatsia",
+    "after": "巨型浮岛・法托西亚"
+  },
+  {
+    "key": "MissionLocation_Name_ms28",
+    "index": 45199,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms28",
+    "before": "Cima Island",
+    "after": "西玛岛"
+  },
+  {
+    "key": "MissionLocation_Name_ms29",
+    "index": 45200,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms29",
+    "before": "FCU Capital Theve",
+    "after": "FCU首都希孚"
+  },
+  {
+    "key": "MissionLocation_Name_ms30",
+    "index": 45201,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissionLocationJP_Name_ms30",
+    "before": "Newfield Island",
+    "after": "纽菲尔德岛"
+  },
+  {
+    "key": "MissionNo_Name_ms01",
+    "index": 44845,
+    "category": "menu",
     "action": "keep",
     "reason": "保留型号、专名、呼号或非文字标识",
-    "before": "Clear",
-    "after": "Clear"
+    "before": "PROLOGUE",
+    "after": "PROLOGUE"
+  },
+  {
+    "key": "MissionNo_Name_ms02",
+    "index": 44846,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 01",
+    "after": "任务 01"
+  },
+  {
+    "key": "MissionNo_Name_ms03",
+    "index": 44847,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 02",
+    "after": "任务 02"
+  },
+  {
+    "key": "MissionNo_Name_ms04",
+    "index": 44848,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 03",
+    "after": "任务 03"
+  },
+  {
+    "key": "MissionNo_Name_ms05",
+    "index": 44849,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 04",
+    "after": "任务 04"
+  },
+  {
+    "key": "MissionNo_Name_ms06",
+    "index": 44850,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 05",
+    "after": "任务 05"
+  },
+  {
+    "key": "MissionNo_Name_ms07",
+    "index": 44851,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 06",
+    "after": "任务 06"
+  },
+  {
+    "key": "MissionNo_Name_ms08",
+    "index": 44852,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 07",
+    "after": "任务 07"
+  },
+  {
+    "key": "MissionNo_Name_ms09",
+    "index": 44853,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 08",
+    "after": "任务 08"
+  },
+  {
+    "key": "MissionNo_Name_ms10",
+    "index": 44854,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 09",
+    "after": "任务 09"
+  },
+  {
+    "key": "MissionNo_Name_ms11",
+    "index": 44855,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 10",
+    "after": "任务 10"
+  },
+  {
+    "key": "MissionNo_Name_ms12",
+    "index": 44856,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 11",
+    "after": "任务 11"
+  },
+  {
+    "key": "MissionNo_Name_ms13",
+    "index": 44857,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 12",
+    "after": "任务 12"
+  },
+  {
+    "key": "MissionNo_Name_ms14",
+    "index": 44858,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 13",
+    "after": "任务 13"
+  },
+  {
+    "key": "MissionNo_Name_ms15",
+    "index": 44859,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 14",
+    "after": "任务 14"
+  },
+  {
+    "key": "MissionNo_Name_ms16",
+    "index": 44860,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 15",
+    "after": "任务 15"
+  },
+  {
+    "key": "MissionNo_Name_ms17",
+    "index": 44861,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 16",
+    "after": "任务 16"
+  },
+  {
+    "key": "MissionNo_Name_ms18",
+    "index": 44862,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 17",
+    "after": "任务 17"
+  },
+  {
+    "key": "MissionNo_Name_ms19",
+    "index": 44863,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 18",
+    "after": "任务 18"
+  },
+  {
+    "key": "MissionNo_Name_ms20",
+    "index": 44864,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 19",
+    "after": "任务 19"
+  },
+  {
+    "key": "MissionNo_Name_ms21",
+    "index": 44865,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 20",
+    "after": "任务 20"
+  },
+  {
+    "key": "MissionNo_Name_ms22",
+    "index": 44866,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 21",
+    "after": "任务 21"
+  },
+  {
+    "key": "MissionNo_Name_ms23",
+    "index": 44867,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 22",
+    "after": "任务 22"
+  },
+  {
+    "key": "MissionNo_Name_ms24",
+    "index": 44868,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 23",
+    "after": "任务 23"
+  },
+  {
+    "key": "MissionNo_Name_ms25_Day1",
+    "index": 44869,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 24",
+    "after": "任务 24"
+  },
+  {
+    "key": "MissionNo_Name_ms25_Day2",
+    "index": 44870,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 25",
+    "after": "任务 25"
+  },
+  {
+    "key": "MissionNo_Name_ms26",
+    "index": 44871,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 26",
+    "after": "任务 26"
+  },
+  {
+    "key": "MissionNo_Name_ms27",
+    "index": 44872,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 27",
+    "after": "任务 27"
+  },
+  {
+    "key": "MissionNo_Name_ms28",
+    "index": 44873,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 28",
+    "after": "任务 28"
+  },
+  {
+    "key": "MissionNo_Name_ms29",
+    "index": 44874,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 29",
+    "after": "任务 29"
+  },
+  {
+    "key": "MissionNo_Name_ms30",
+    "index": 44875,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION 30",
+    "after": "任务 30"
   },
   {
     "key": "MissionWeather_Name_Cloudy",
     "index": 45266,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Cloudy",
-    "after": "Cloudy"
+    "after": "多云"
   },
   {
     "key": "MissionWeather_Name_Foggy",
     "index": 45269,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Foggy",
-    "after": "Foggy"
+    "after": "有雾"
   },
   {
     "key": "MissionWeather_Name_Rainy",
     "index": 45265,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Rainy",
-    "after": "Rainy"
+    "after": "有雨"
   },
   {
     "key": "MissionWeather_Name_Snowy",
     "index": 45268,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Snowy",
-    "after": "Snowy"
+    "after": "有雪"
   },
   {
     "key": "MissionWeather_Name_Sunny",
@@ -15348,10 +15951,334 @@
     "key": "MissionWeather_Name_Windy",
     "index": 45267,
     "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "Windy",
+    "after": "大风"
+  },
+  {
+    "key": "Missiontitle_Name_ms01",
+    "index": 10758,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms01",
+    "before": "Wings of Theve",
+    "after": "希孚之翼"
+  },
+  {
+    "key": "Missiontitle_Name_ms01_2",
+    "index": 10759,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms01_2",
+    "before": "Legendary Destroyer",
+    "after": "传说的击坠王"
+  },
+  {
+    "key": "Missiontitle_Name_ms02",
+    "index": 10760,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms02",
+    "before": "Jokers Wild",
+    "after": "4张鬼牌"
+  },
+  {
+    "key": "Missiontitle_Name_ms03",
+    "index": 10761,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms03",
+    "before": "Nomad",
+    "after": "流浪"
+  },
+  {
+    "key": "Missiontitle_Name_ms04",
+    "index": 10762,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms04",
+    "before": "Purple Magic Takes Flight",
+    "after": "Purple Magic、起飞"
+  },
+  {
+    "key": "Missiontitle_Name_ms05",
+    "index": 10763,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms05",
+    "before": "The Fall of the Numbered Fleets",
+    "after": "舰队击灭战"
+  },
+  {
+    "key": "Missiontitle_Name_ms06",
+    "index": 10764,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms06",
+    "before": "Retaking of Theve",
+    "after": "首都希孚夺回作战"
+  },
+  {
+    "key": "Missiontitle_Name_ms07",
+    "index": 10765,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms07",
+    "before": "Attack on the Drinwich Airfield",
+    "after": "德林威奇强夺作战"
+  },
+  {
+    "key": "Missiontitle_Name_ms08",
+    "index": 10766,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms08",
+    "before": "A Lifeline in the Desert",
+    "after": "沙漠的生命线"
+  },
+  {
+    "key": "Missiontitle_Name_ms09",
+    "index": 10767,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms09",
+    "before": "Retaking of Theve II",
+    "after": "首都希孚夺回作战II"
+  },
+  {
+    "key": "Missiontitle_Name_ms10",
+    "index": 10768,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms10",
+    "before": "The Land Battleship Blockade",
+    "after": "陆上战舰绝对阻止线"
+  },
+  {
+    "key": "Missiontitle_Name_ms11",
+    "index": 10769,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms11",
+    "before": "Over the Rainband",
+    "after": "突破雨带"
+  },
+  {
+    "key": "Missiontitle_Name_ms11_2",
+    "index": 10770,
+    "category": "menu",
     "action": "keep",
     "reason": "保留型号、专名、呼号或非文字标识",
-    "before": "Windy",
-    "after": "Windy"
+    "before": "Spears of Tonitrus",
+    "after": "Spears of Tonitrus"
+  },
+  {
+    "key": "Missiontitle_Name_ms12",
+    "index": 10771,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms12",
+    "before": "Maximum Payload",
+    "after": "极限酬载"
+  },
+  {
+    "key": "Missiontitle_Name_ms13",
+    "index": 10772,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms13",
+    "before": "An Island in Darkness",
+    "after": "黑暗孤岛"
+  },
+  {
+    "key": "Missiontitle_Name_ms14",
+    "index": 10773,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms14",
+    "before": "The People of the Lost Country",
+    "after": "亡国居民"
+  },
+  {
+    "key": "Missiontitle_Name_ms15",
+    "index": 10774,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms15",
+    "before": "Two on the Run",
+    "after": "2人大逃亡"
+  },
+  {
+    "key": "Missiontitle_Name_ms16",
+    "index": 10775,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms16",
+    "before": "Wings of Wax",
+    "after": "蜡之翼"
+  },
+  {
+    "key": "Missiontitle_Name_ms17",
+    "index": 10776,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms17",
+    "before": "Singer",
+    "after": "歌手"
+  },
+  {
+    "key": "Missiontitle_Name_ms18",
+    "index": 10777,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms18",
+    "before": "Land Battleship No. 3",
+    "after": "陆上战舰3号舰"
+  },
+  {
+    "key": "Missiontitle_Name_ms19",
+    "index": 10778,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms19",
+    "before": "Moonlight and Shadows",
+    "after": "月和影"
+  },
+  {
+    "key": "Missiontitle_Name_ms20",
+    "index": 10779,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms20",
+    "before": "Clearing the Lighthouse",
+    "after": "进犯灯塔"
+  },
+  {
+    "key": "Missiontitle_Name_ms20_2",
+    "index": 10780,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "Clearing the Lighthouse",
+    "after": "Clearing the Lighthouse"
+  },
+  {
+    "key": "Missiontitle_Name_ms21",
+    "index": 10781,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms21",
+    "before": "Escort Orbiter",
+    "after": "引导轨道飞船"
+  },
+  {
+    "key": "Missiontitle_Name_ms22",
+    "index": 10782,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms22",
+    "before": "The Star-Bound Bird",
+    "after": "鸟儿飞上宇宙"
+  },
+  {
+    "key": "Missiontitle_Name_ms22_2",
+    "index": 10783,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "Five Wings",
+    "after": "Five Wings"
+  },
+  {
+    "key": "Missiontitle_Name_ms23",
+    "index": 10784,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms23",
+    "before": "Pursuing the HSCA",
+    "after": "追击重战略预警机"
+  },
+  {
+    "key": "Missiontitle_Name_ms24",
+    "index": 10785,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms24",
+    "before": "The Destruction of Expo City",
+    "after": "博览市崩坏"
+  },
+  {
+    "key": "Missiontitle_Name_ms25_Day1",
+    "index": 10786,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms25_Day1",
+    "before": "The Battle of Rocky Island, Day 1",
+    "after": "洛基岛攻略战DAY1"
+  },
+  {
+    "key": "Missiontitle_Name_ms25_Day2",
+    "index": 10787,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms25_Day2",
+    "before": "The Battle of Rocky Island, Day 2",
+    "after": "洛基岛攻略战DAY2"
+  },
+  {
+    "key": "Missiontitle_Name_ms26",
+    "index": 10788,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms26",
+    "before": "Crossing Fleets",
+    "after": "舰队交错"
+  },
+  {
+    "key": "Missiontitle_Name_ms26_2",
+    "index": 10789,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "Wings Never to Return",
+    "after": "Wings Never to Return"
+  },
+  {
+    "key": "Missiontitle_Name_ms27",
+    "index": 10790,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms27",
+    "before": "Fatsia, The Ocean Fortress",
+    "after": "海上要塞法托西亚"
+  },
+  {
+    "key": "Missiontitle_Name_ms28",
+    "index": 10791,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms28",
+    "before": "A Thousand Points of Light",
+    "after": "千颗亮点"
+  },
+  {
+    "key": "Missiontitle_Name_ms29",
+    "index": 10792,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms29",
+    "before": "Selene",
+    "after": "月之女神"
+  },
+  {
+    "key": "Missiontitle_Name_ms30",
+    "index": 10793,
+    "category": "menu",
+    "action": "translate",
+    "reason": "沿用游戏内中文：MissiontitleJp_Name_ms30",
+    "before": "Song of Wings",
+    "after": "翼之歌"
   },
   {
     "key": "OptionAccessibilityTitle_Name_Accessibility",
