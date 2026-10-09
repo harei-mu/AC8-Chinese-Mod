@@ -67,9 +67,9 @@ LoopAsync(10000, function()
     diagnosticPass = diagnosticPass + 1
     ExecuteInGameThread(function()
         if diagnosticPass == 1 then
-            for _, name in ipairs({'LiveSystemObject', 'LiveTargetContainerAsyncUpdateParam', 'Font'}) do
+            for _, name in ipairs({'LiveGameObject', 'LiveSetGameObjectDisplayName', 'TargetContainerParams'}) do
                 pcall(function()
-                    local path = name == 'Font' and '/Script/Engine.Font' or '/Script/Live.' .. name
+                    local path = '/Script/Live.' .. name
                     local class = StaticFindObject(path)
                     if class and class:IsValid() then
                         class:ForEachProperty(function(p)
@@ -86,6 +86,10 @@ LoopAsync(10000, function()
                         local component = actor[field]
                         if component and component:IsValid() then
                             print('[AC8Chinese] target component ' .. field .. ' ' .. component:GetFullName() .. '\n')
+                            local font = component.Font
+                            if font and font:IsValid() then
+                                print('[AC8Chinese] font cache=' .. tostring(font.FontCacheType) .. ' glyphs=' .. tostring(font.NumCharacters) .. '\n')
+                            end
                             component:GetClass():ForEachProperty(function(p)
                                 print('[AC8Chinese] target property ' .. p:GetFullName() .. '\n')
                             end)
