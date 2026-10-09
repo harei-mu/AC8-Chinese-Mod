@@ -1,4 +1,7 @@
-param([string]$GameDir = 'E:\SteamLibrary\steamapps\common\ACE COMBAT 8')
+param(
+    [string]$GameDir = 'E:\SteamLibrary\steamapps\common\ACE COMBAT 8',
+    [switch]$ResourceProbe
+)
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $gameBin = Join-Path $GameDir 'Game\Binaries\Win64'
@@ -15,6 +18,22 @@ if ((Test-Path -LiteralPath $runtime) -and (-not (Test-Path -LiteralPath $marker
 if ((Test-Path -LiteralPath $marker) -and ((Get-Content -LiteralPath $marker -Raw).Trim() -ne $projectRoot)) { throw 'Runtime belongs to a different project' }
 if (Test-Path -LiteralPath (Join-Path $gameBin 'override.txt')) { throw 'Existing override.txt detected; inspect the loader configuration first' }
 if (-not (Test-Path -LiteralPath (Join-Path $package 'ue4ss\UE4SS.dll'))) { throw 'Prepare the official UE4SS package in tools first' }
+$resourceLoader = Join-Path $projectRoot 'tools\ac8-override-loader\main.dll'
+$resourcePayload = Join-Path $projectRoot 'dist\resource-probe'
+$loaderDir = Join-Path $runtime 'Mods\AC8OverrideLoader'
+$loaderMarker = Join-Path $loaderDir 'AC8Chinese-project.txt'
+if ((Test-Path -LiteralPath $loaderDir) -and ((-not (Test-Path -LiteralPath $loaderMarker)) -or ((Get-Content -LiteralPath $loaderMarker -Raw).Trim() -ne $projectRoot))) {
+    throw 'Existing resource loader belongs to another installation; refusing to overwrite'
+}
+if ($ResourceProbe) {
+    if (-not (Test-Path -LiteralPath $resourceLoader)) { throw 'Prepare the fixed AC8OverrideLoader version first' }
+    if ((Get-FileHash -LiteralPath $resourceLoader).Hash -ne '225C8D6C3FBF5E8882CB8E334DBD3426CB24A1415B3585073CC4264AE834F851') { throw 'Resource loader hash mismatch' }
+    $manifest = Get-Content -LiteralPath (Join-Path $projectRoot 'reports\resource-probe.json') -Raw | ConvertFrom-Json
+    foreach ($extension in @('utoc', 'ucas', 'pak')) {
+        $payloadFile = Join-Path $resourcePayload ('AC8ChineseMenuProbe_P.' + $extension)
+        if ((Get-FileHash -LiteralPath $payloadFile).Hash -ne $manifest.files.$extension.sha256) { throw "Resource probe $extension hash mismatch" }
+    }
+}
 New-Item -ItemType Directory -Force -Path $runtime | Out-Null
 Set-Content -LiteralPath $marker -Value $projectRoot -Encoding utf8
 Copy-Item -LiteralPath (Join-Path $package 'ue4ss\UE4SS.dll') -Destination (Join-Path $runtime 'UE4SS.dll')
@@ -26,7 +45,19 @@ Set-Content -LiteralPath (Join-Path $runtime 'UE4SS-settings.ini') -Value $setti
 $mods = Join-Path $runtime 'Mods'
 New-Item -ItemType Directory -Force -Path $mods | Out-Null
 Copy-Item -LiteralPath (Join-Path $projectRoot 'mod\AC8Chinese') -Destination $mods -Recurse -Force
-Set-Content -LiteralPath (Join-Path $mods 'mods.txt') -Value 'AC8Chinese : 1' -Encoding ascii
+if ($ResourceProbe) {
+    $dllDir = Join-Path $loaderDir 'dlls'
+    $payloadDir = Join-Path $loaderDir 'payloads\0010_AC8ChineseMenuProbe'
+    New-Item -ItemType Directory -Path $dllDir, $payloadDir -Force | Out-Null
+    Set-Content -LiteralPath $loaderMarker -Value $projectRoot -Encoding utf8
+    Copy-Item -LiteralPath $resourceLoader -Destination (Join-Path $dllDir 'main.dll') -Force
+    foreach ($extension in @('utoc', 'ucas', 'pak')) {
+        Copy-Item -LiteralPath (Join-Path $resourcePayload ('AC8ChineseMenuProbe_P.' + $extension)) -Destination $payloadDir -Force
+    }
+    Set-Content -LiteralPath (Join-Path $mods 'mods.txt') -Value "AC8Chinese : 0`r`nAC8OverrideLoader : 1" -Encoding ascii
+} else {
+    Set-Content -LiteralPath (Join-Path $mods 'mods.txt') -Value "AC8Chinese : 1`r`nAC8OverrideLoader : 0" -Encoding ascii
+}
 $proxyHash = (Get-FileHash -LiteralPath (Join-Path $package 'dwmapi.dll')).Hash
 $priorApp = $env:SteamAppId
 $priorGame = $env:SteamGameId
@@ -44,7 +75,7 @@ try {
     $env:SteamAppId = '2288340'
     $env:SteamGameId = '2288340'
     $env:EOS_USE_ANTICHEATCLIENTNULL = '1'
-    Write-Host 'Offline Chinese prototype. Keep this launcher open until the game exits.'
+    Write-Host "Offline Chinese prototype (ResourceProbe=$ResourceProbe). Keep this launcher open until the game exits."
     $gameProcess = Start-Process -FilePath $gameExe -ArgumentList '-SaveToUserDir' -WorkingDirectory $gameBin -WindowStyle Normal -PassThru
     $gameProcess.WaitForExit()
     Write-Host "Owned game process exited with code $($gameProcess.ExitCode)."
@@ -62,5 +93,9 @@ try {
     if (Test-Path -LiteralPath $log) {
         New-Item -ItemType Directory -Force -Path (Join-Path $projectRoot 'work') | Out-Null
         Copy-Item -LiteralPath $log -Destination (Join-Path $projectRoot 'work\UE4SS-test.log') -Force
+    }
+    $resourceLog = Join-Path $loaderDir 'AC8OverrideLoader.log'
+    if ($ResourceProbe -and (Test-Path -LiteralPath $resourceLog)) {
+        Copy-Item -LiteralPath $resourceLog -Destination (Join-Path $projectRoot 'work\resource-probe-loader.log') -Force
     }
 }

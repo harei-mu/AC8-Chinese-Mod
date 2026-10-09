@@ -1,0 +1,11 @@
+{
+  "name": "AC8OverrideLoader",
+  "version": "0.2.0",
+  "source": "https://github.com/JustMonika24769/AC8OverrideLoader",
+  "revision": "71d4f28d2ec232c85da6fb523bbc68ec8020135f",
+  "sha256": "225c8d6c3fbf5e8882cb8e334dbd3426cb24a1415b3585073cc4264ae834f851",
+  "targetGame": "1.1.2.0 / UE5.4",
+  "scope": "offline single-player resource probe only",
+  "inspection": "Repository provides binary and documentation; source audit unavailable. PE dependency and embedded log strings inspected, not proof of safety or compatibility.",
+  "validation": "not yet run; README companion PAK support does not prove CP_M.dat is mounted"
+}

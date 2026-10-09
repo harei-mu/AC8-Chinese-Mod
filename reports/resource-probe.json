@@ -1,0 +1,21 @@
+{
+  "gameBuild": "25201480",
+  "status": "EXPERIMENTAL: container integrity verified; DAT companion mounting and in-game lookup unverified",
+  "changedStrings": 464,
+  "combatLabelsExcluded": true,
+  "runtimeSubstitutionDisabledDuringProbe": true,
+  "files": {
+    "utoc": {
+      "bytes": 211,
+      "sha256": "fcc8a8feedb8e8904462d8ee8202f5ae03ab942aad83b1e705f2a86d759eb278"
+    },
+    "ucas": {
+      "bytes": 48,
+      "sha256": "b1e046d998e1b13dfc06c9d013ee161d3c3b9a655220d23c283931dfc51ed0e1"
+    },
+    "pak": {
+      "bytes": 489246,
+      "sha256": "8b52025234d6803c563baf5dc7501356bda608c8cb5b444eb4ba5f74e6bd2bff"
+    }
+  }
+}
