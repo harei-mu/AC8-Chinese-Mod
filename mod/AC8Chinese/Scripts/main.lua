@@ -1,6 +1,8 @@
 -- UE4SS hot reload may reuse Lua's module cache.
 package.loaded['translations'] = nil
 local replacements = require('translations')
+package.loaded['source-text'] = nil
+local sourceText = require('source-text')
 package.loaded['target-labels'] = nil
 local targetLabels = require('target-labels')
 local restoreTargetLabels = {}
@@ -29,7 +31,9 @@ LoopAsync(500, function()
                 local key = str(widget.TextID)
                 local value = replacements[key]
                 if not value or widget.bIsSubtitleTextBlock then return end
-                if widget:GetText():ToString() ~= value then
+                local current = widget:GetText():ToString()
+                local sources = sourceText[key]
+                if current ~= value and sources and (current == sources[1] or current == sources[2]) then
                     widget:SetText(FText(value))
                     changes = changes + 1
                     if changes <= 20 or changes % 100 == 0 then
