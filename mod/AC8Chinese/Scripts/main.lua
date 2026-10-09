@@ -67,6 +67,17 @@ LoopAsync(10000, function()
     diagnosticPass = diagnosticPass + 1
     ExecuteInGameThread(function()
         if diagnosticPass == 1 then
+            for _, name in ipairs({'LiveSystemObject', 'LiveTargetContainerAsyncUpdateParam', 'Font'}) do
+                pcall(function()
+                    local path = name == 'Font' and '/Script/Engine.Font' or '/Script/Live.' .. name
+                    local class = StaticFindObject(path)
+                    if class and class:IsValid() then
+                        class:ForEachProperty(function(p)
+                            print('[AC8Chinese] source schema ' .. p:GetFullName() .. '\n')
+                        end)
+                    end
+                end)
+            end
             local actors = FindAllOf('LiveTargetContainerActor') or {}
             for i, actor in ipairs(actors) do
                 if i > 3 then break end
