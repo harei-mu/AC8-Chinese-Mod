@@ -1,5 +1,311 @@
 [
   {
+    "key": "CampaignDifficulty_Description_Ace",
+    "index": 42897,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "此难度推荐给想成为真正的王牌飞行员的玩家，为最高难度。",
+    "after": "此难度推荐给想成为真正的王牌飞行员的玩家，为最高难度。"
+  },
+  {
+    "key": "CampaignDifficulty_Description_Difficulty",
+    "index": 42892,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "请选择游戏难度。",
+    "after": "请选择游戏难度。"
+  },
+  {
+    "key": "CampaignDifficulty_Description_Easy",
+    "index": 42894,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "此难度推荐给首次或许久未游玩ACE COMBAT系列的玩家。",
+    "after": "此难度推荐给首次或许久未游玩ACE COMBAT系列的玩家。"
+  },
+  {
+    "key": "CampaignDifficulty_Description_Freeflight",
+    "index": 42898,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "可在已通关的任务地图自由飞行。\n敌人不会出现，也没有通关条件。\n※能够播放MUSIC PLAYER的乐曲。",
+    "after": "可在已通关的任务地图自由飞行。\n敌人不会出现，也没有通关条件。\n※能够播放MUSIC PLAYER的乐曲。"
+  },
+  {
+    "key": "CampaignDifficulty_Description_Hard",
+    "index": 42896,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "此难度推荐给追求比VETERAN更多挑战性的玩家。",
+    "after": "此难度推荐给追求比VETERAN更多挑战性的玩家。"
+  },
+  {
+    "key": "CampaignDifficulty_Description_Normal",
+    "index": 42895,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "此难度推荐给拥有丰富ACE COMBAT系列游玩经验的资深玩家。",
+    "after": "此难度推荐给拥有丰富ACE COMBAT系列游玩经验的资深玩家。"
+  },
+  {
+    "key": "CampaignDifficulty_Description_VeryEasy",
+    "index": 42893,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "此难度推荐给想轻松享受故事的玩家。",
+    "after": "此难度推荐给想轻松享受故事的玩家。"
+  },
+  {
+    "key": "CampaignDifficulty_Dialogue_Assist",
+    "index": 42899,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "减轻特定条件下的地形接触损伤。\n此设置可随时于SYSTEM变更。",
+    "after": "减轻特定条件下的地形接触损伤。\n此设置可随时于SYSTEM变更。"
+  },
+  {
+    "key": "CampaignDifficulty_Dialogue_Assistoff",
+    "index": 42900,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "接触地形时将产生损伤。\n此设置可随时于SYSTEM变更。",
+    "after": "接触地形时将产生损伤。\n此设置可随时于SYSTEM变更。"
+  },
+  {
+    "key": "CampaignDifficulty_Select_Ace",
+    "index": 42890,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ACE",
+    "after": "王牌"
+  },
+  {
+    "key": "CampaignDifficulty_Select_Easy",
+    "index": 42887,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PILOT",
+    "after": "飞行员"
+  },
+  {
+    "key": "CampaignDifficulty_Select_Freeflight",
+    "index": 42891,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "FREE FLIGHT",
+    "after": "自由飞行"
+  },
+  {
+    "key": "CampaignDifficulty_Select_Hard",
+    "index": 42889,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ELITE",
+    "after": "精英"
+  },
+  {
+    "key": "CampaignDifficulty_Select_Normal",
+    "index": 42888,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "VETERAN",
+    "after": "老兵"
+  },
+  {
+    "key": "CampaignDifficulty_Select_VeryEasy",
+    "index": 42886,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ROOKIE（STORY）",
+    "after": "新手（剧情）"
+  },
+  {
+    "key": "CampaignMenu_Description_Continue",
+    "index": 42860,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "继续游玩战役。\n[{0}]",
+    "after": "继续游玩战役。\n[{0}]"
+  },
+  {
+    "key": "CampaignMenu_Description_ContinuousMissionFront",
+    "index": 42868,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "从连续任务的开头开始游玩。\n※获得徽章所需的实绩将重置。",
+    "after": "从连续任务的开头开始游玩。\n※获得徽章所需的实绩将重置。"
+  },
+  {
+    "key": "CampaignMenu_Description_ContinuousMissionRear",
+    "index": 42869,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "继续游玩接续的战役任务。",
+    "after": "继续游玩接续的战役任务。"
+  },
+  {
+    "key": "CampaignMenu_Description_Extramission",
+    "index": 42865,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "游玩下载内容的任务。",
+    "after": "游玩下载内容的任务。"
+  },
+  {
+    "key": "CampaignMenu_Description_Extramission_PS5",
+    "index": 42866,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "游玩追加内容的任务。",
+    "after": "游玩追加内容的任务。"
+  },
+  {
+    "key": "CampaignMenu_Description_Extramission_Xbox",
+    "index": 42867,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "游玩可下载内容的任务。",
+    "after": "游玩可下载内容的任务。"
+  },
+  {
+    "key": "CampaignMenu_Description_Freemission",
+    "index": 42861,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "从已通关的战役任务中\n选择任务游玩。",
+    "after": "从已通关的战役任务中\n选择任务游玩。"
+  },
+  {
+    "key": "CampaignMenu_Description_Newgame",
+    "index": 42858,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "从头开始游玩战役。",
+    "after": "从头开始游玩战役。"
+  },
+  {
+    "key": "CampaignMenu_Description_Resetstart",
+    "index": 42862,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "重置战役的数据\n从头开始游玩战役。",
+    "after": "重置战役的数据\n从头开始游玩战役。"
+  },
+  {
+    "key": "CampaignMenu_Description_Specialnewgame",
+    "index": 42859,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "继承包含获得道具的数据\n从头开始游玩战役。",
+    "after": "继承包含获得道具的数据\n从头开始游玩战役。"
+  },
+  {
+    "key": "CampaignMenu_Dialogue_Datareset",
+    "index": 42863,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "要重置战役的故事进度，开始游戏吗？\n获得的道具与记录的数据将不会重置。",
+    "after": "要重置战役的故事进度，开始游戏吗？\n获得的道具与记录的数据将不会重置。"
+  },
+  {
+    "key": "CampaignMenu_Select_Campaigndata",
+    "index": 42856,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CAMPAIGN DATA",
+    "after": "战役资料"
+  },
+  {
+    "key": "CampaignMenu_Select_Continue",
+    "index": 42854,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CONTINUE",
+    "after": "继续"
+  },
+  {
+    "key": "CampaignMenu_Select_Extramission",
+    "index": 42864,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SP MISSION",
+    "after": "特别任务"
+  },
+  {
+    "key": "CampaignMenu_Select_Freemission",
+    "index": 42855,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "FREE MISSION",
+    "after": "自由任务"
+  },
+  {
+    "key": "CampaignMenu_Select_Newgame",
+    "index": 42852,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "NEW GAME",
+    "after": "新游戏"
+  },
+  {
+    "key": "CampaignMenu_Select_Resetstart",
+    "index": 42857,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RESTART STORY",
+    "after": "重新开始剧情"
+  },
+  {
+    "key": "CampaignMenu_Select_Specialnewgame",
+    "index": 42853,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RESTART STORY",
+    "after": "重新开始剧情"
+  },
+  {
+    "key": "CampaignMenu_Title_SelectMission",
+    "index": 42870,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SELECT MISSION",
+    "after": "选择任务"
+  },
+  {
     "key": "ContainerAircraft_Name_FrontJoint",
     "index": 9610,
     "category": "targets",

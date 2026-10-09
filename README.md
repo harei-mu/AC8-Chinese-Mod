@@ -2,7 +2,19 @@
 
 目标：游戏选项、小地图标注、飞机上方显示名称。独立项目，不将游戏安装目录作为 Git 仓库。
 
-当前状态：资源勘察中，尚无可安装补丁。
+当前状态：单机运行时原型。主菜单已由运行日志、用户反馈及截图确认中文显示正常；选项页用户反馈正常，完整选项与战斗 HUD 尚未逐项验证。战役子菜单遗漏正在补齐。不能将已有译文条数等同于游戏内覆盖率。
+
+## 运行原型
+
+在游戏关闭时，用 PowerShell 运行 `./Launch-Offline-Test.ps1`。本地 `tools/ue4ss-package` 需要已准备的官方 UE4SS v3.0.1-1164-g5e627997。保持启动脚本运行，正常退出游戏后脚本会移除本次添加的加载代理与临时 Steam appid 文件，并保存日志。仅用于单机测试。
+
+译文源文件是 `translations/glossary.json`；执行 `node scripts/build-mod.mjs` 生成按资源键匹配的 Lua 译文表，并验证数据往返、占位符和非目标词条保持不变。需先有本地提取的 CP_Cmn、CP_B、CP_M 数据。原始资源、工具及构建产物不进 Git。
+
+实际生效方式是 UE4SS 修改 `LiveLocalizeTextBlock.TextID` 对应控件的显示文本。轮询间隔 500 毫秒，页面刚出现时可能短暂显示英文。实验性 DAT/PAK 构建产物没有通过游戏加载验证，不作为安装包使用。
+
+停用：正常关闭测试游戏，等待启动脚本完成清理，再使用通常的启动方式。残留的 `ue4ss` 文件夹不会在代理已移除后自动加载；不要手动删除其他 MOD 所属文件。
+
+目标版本：Steam build 25201480，UE 5.4。测试进展记录见 `reports/runtime-validation.json`。
 
 游戏路径：`E:\SteamLibrary\steamapps\common\ACE COMBAT 8`
 

@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-09",
+  "gameBuild": "25201480",
+  "mainMenu": "verified: seven exact TextID hits, user confirmation and Chinese screenshot; no visible missing glyphs or clipping",
+  "options": "user reports Chinese displays normally; all pages not independently checked",
+  "campaignSubmenu": "English omissions confirmed by screenshot; additional translations built, pending visual recheck",
+  "minimapAndOverheadTargets": "not verified; user reports remaining English, supplied screenshot is campaign submenu rather than combat HUD",
+  "resourcePak": "experimental only; loading not verified"
+}

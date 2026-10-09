@@ -326,6 +326,19 @@
     "NOT OWNED": "未拥有",
     "OWNED": "已拥有",
     "Yes": "是",
-    "Military Result Points": "战果点数"
+    "Military Result Points": "战果点数",
+    "RESTART STORY": "重新开始剧情",
+    "CONTINUE": "继续",
+    "FREE MISSION": "自由任务",
+    "FREE FLIGHT": "自由飞行",
+    "CAMPAIGN DATA": "战役资料",
+    "SP MISSION": "特别任务",
+    "NEW GAME": "新游戏",
+    "SELECT MISSION": "选择任务",
+    "ACE": "王牌",
+    "PILOT": "飞行员",
+    "ELITE": "精英",
+    "VETERAN": "老兵",
+    "ROOKIE（STORY）": "新手（剧情）"
   }
 }
