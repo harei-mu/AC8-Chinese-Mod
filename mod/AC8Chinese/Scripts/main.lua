@@ -1,4 +1,9 @@
+-- UE4SS hot reload may reuse Lua's module cache.
+package.loaded['translations'] = nil
 local replacements = require('translations')
+local replacementCount = 0
+for _ in pairs(replacements) do replacementCount = replacementCount + 1 end
+print('[AC8Chinese] loaded translation keys=' .. replacementCount .. '\n')
 local changes = 0
 local errors = 0
 local diagnosticPass = 0
