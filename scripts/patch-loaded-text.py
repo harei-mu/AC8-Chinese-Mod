@@ -19,6 +19,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('pid', type=int)
 parser.add_argument('--apply', action='store_true')
 parser.add_argument('--wait', type=float, default=0)
+parser.add_argument('--hud', action='store_true', help='Include target and HUD table entries; requires the verified font container when applying')
 args = parser.parse_args()
 
 class ProcessEntry(ctypes.Structure):
@@ -129,12 +130,27 @@ def cp_arrays():
     return list(dict.fromkeys(result))
 
 decisions = json.loads((root / 'reports/translation-decisions.json').read_text(encoding='utf-8'))
-selected = {d['index']: d for d in decisions if d['action'] == 'translate' and d['category'] in ('options', 'menu') and not d['key'].startswith('Hud')}
+selected = {d['index']: d for d in decisions if d['action'] == 'translate' and
+            ((d['category'] in ('options', 'menu') and not d['key'].startswith('Hud')) or
+             (args.hud and (d['category'] == 'targets' or d['key'].startswith('Hud'))))}
+if args.hud and args.apply:
+    font_report = json.loads((root / 'reports/hud-font.json').read_text(encoding='utf-8'))
+    if not font_report.get('containerVerified') or not font_report.get('requiredTranslationCharactersCovered'):
+        raise RuntimeError('HUD font container is not verified')
+    for extension, info in font_report['files'].items():
+        payload = root / f'dist/hud-font/AC8ChineseHudFont_P.{extension}'
+        if hashlib.file_digest(payload.open('rb'), 'sha256').hexdigest() != info['sha256']:
+            raise RuntimeError('HUD font container hash mismatch')
+        installed = game_path.parent / f'ue4ss/Mods/AC8OverrideLoader/payloads/0020_AC8ChineseHudFont/AC8ChineseHudFont_P.{extension}'
+        if not installed.is_file() or hashlib.file_digest(installed.open('rb'), 'sha256').hexdigest() != info['sha256']:
+            raise RuntimeError('HUD font is not installed by the offline test launcher')
+    if not (game_path.parent / 'dwmapi.dll').is_file():
+        raise RuntimeError('HUD font loader is not enabled')
 audit = json.loads((root / 'reports/simplified-audit.json').read_text(encoding='utf-8'))
 if audit['unresolvedCount']:
     raise RuntimeError('Simplified Chinese audit has unresolved candidates')
 report = {'pid': args.pid, 'mode': 'apply' if args.apply else 'read-only', 'exeSha256': expected_hash,
-          'modified': [], 'alreadyTranslated': 0, 'skipped': [], 'tableCount': 0}
+          'hudIncluded': args.hud, 'modified': [], 'alreadyTranslated': 0, 'skipped': [], 'tableCount': 0}
 try:
     deadline = time.monotonic() + min(max(args.wait, 0), 30)
     while True:

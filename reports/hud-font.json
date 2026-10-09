@@ -1,0 +1,32 @@
+{
+  "status": "BUILT: glyph/atlas checks passed; runtime rendering pending",
+  "gameBuild": "25201480",
+  "package": "/Game/UI/Font/AcesSleipnir-Regular_HUD_OFFLINE",
+  "originalCharacters": 351,
+  "addedCharacters": 607,
+  "totalCharacters": 958,
+  "atlasSize": [
+    1024,
+    1024
+  ],
+  "originalBlocksPreserved": true,
+  "requiredTranslationCharactersCovered": true,
+  "sourceFontSha256": "d8d36500e4663ebbf25294dc122e0ace856cfbb7564b59d2d826833f7097403c",
+  "files": {
+    "utoc": {
+      "bytes": 669,
+      "sha256": "08628a5aced8777e1b05ed9cc82752bfac51d80ef0130b4aaf94d519cb981dc8"
+    },
+    "ucas": {
+      "bytes": 1073421,
+      "sha256": "63c3e28fcc0e513fc62a99066657d4179a2a0dd2f52028d32815ee95c73c4676"
+    },
+    "pak": {
+      "bytes": 347,
+      "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd"
+    }
+  },
+  "containerVerified": true,
+  "exportPayloadRoundtripExact": true,
+  "addedCodepoints": "、。・一上下不与专两中主义之乐买云井亚亡交亮人从仓他令件任伞传伤位低体余作供侦便信停储僚儿允光克全关兵其军冲决冷准出击分列利别制前剧剩力加务动助北区千升半协单博卡卫却厂压原友反发取变口可史右号司名后否启呐员命和商器四回囱围固国图圣地坏坐坚坠坦垂型垫城域基堆堡塔塞填增士声处备外多大天太失头夺奇奥女姆始威子字存孚孤宇完宙定室家察对导射少尔尘就尺尾居屋屏履山岛峡崩巡左巨已巴市希帐帕带常幕干平序库应店度座廓建开式引张弹强当形彩影役得御德徽心忍性总息悍情意戏成战截户房所手托扬扰投抗护报抵拉拥拦择挂指按挥损据排探接控推掩提携摇摩播操擎支收攻放政敌散数斗料斯新施旋无日时明映是显普晴暂暗更月有望期木未机杀权杆材板极林果柄查柯柱标栏树栖核格桥桨梁械检榴次欧歌止正步武殊残母民气水污沙油法波注洋洛洲流测浪浮海涂消渍港游漠潜激火灭灯炮炸点炼烟热然照燃爆爬版牌物牵特犯率王玛理瓦生用由甲电界略疏登白的皇盘目直盾看瞭石破础确碉碍磁磨示神禁福离私称程稳空突站章筑筒策简管箭箱篷类精系级纽线练绑给绝统继绪续编罐罗罩置群翼老耳联聚能脉自航舰舱船艇色节英范药荷菜菲营萨落藏蜡螺行衡补表装褪西要视览言警计认训议记许设评试语诱说请谷败货质购费资起超距路踪身车轨转轮轻载辅辆辑输辨达运近进远连迪追退送逃选逐途通速道那部都配酬里重量钩锁错键锯镜门闭间闸队防阳阴阵阶阻阿际陆降限隐障难集雨雪零雷雾需面音项顺预颗风飞饵首马驱骸高鬼鸟黑默鼠齿！（）＋／："
+}

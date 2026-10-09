@@ -2,17 +2,21 @@
 
 目标：游戏选项、小地图标注、飞机上方显示名称。独立项目，不将游戏安装目录作为 Git 仓库。
 
-当前状态：单机运行时原型。主菜单已由运行日志、用户反馈及截图确认中文显示正常；选项页用户反馈正常，完整选项与战斗 HUD 尚未逐项验证。战役子菜单遗漏正在补齐。不能将已有译文条数等同于游戏内覆盖率。
+当前状态：单机测试版。原生文字表模式已由用户确认菜单直接显示中文、没有闪退；当前范围为 464 条菜单/选项文字。完整选项尚未逐页检查，战斗 HUD 仍待验证。新增 HUD 字体包已通过结构与回读校验，不能将构建条数等同于游戏内覆盖率。
 
 ## 运行原型
 
-在游戏关闭时，用 PowerShell 运行 `./Launch-Offline-Test.ps1`。本地 `tools/ue4ss-package` 需要已准备的官方 UE4SS v3.0.1-1164-g5e627997。保持启动脚本运行，正常退出游戏后脚本会移除本次添加的加载代理与临时 Steam appid 文件，并保存日志。仅用于单机测试。
+在游戏关闭时，用 PowerShell 运行 `./Launch-Offline-Test.ps1 -NativeTable`。本地 Python 路径默认使用当前环境的运行时，可以用 `-PythonExe` 指定。启动时校验游戏文件哈希、离线进程和文字表结构，再修改现有文字缓冲区；不注入诊断库、不改游戏可执行文件或原始资源。保持启动脚本运行，正常退出游戏后脚本会清理本次临时 Steam appid 文件。仅用于单机测试。
+
+字体测试命令为 `./Launch-Offline-Test.ps1 -NativeTable -HudFont`。它需要本地准备的 UE4SS v3.0.1-1164-g5e627997、固定版本 AC8OverrideLoader 0.2.0，以及 `dist/hud-font/AC8ChineseHudFont_P.utoc/.ucas/.pak` 三文件。该模式启用资源加载器、关闭 Lua 文本替换，并在原生文字表中增加 232 条目标/HUD 译文。字体的游戏内效果尚未验证。加载器仓库没有提供源码，当前仅完成固定哈希与功能测试，不能视为源码审计。
 
 译文源文件是 `translations/glossary.json`；执行 `node scripts/build-mod.mjs` 生成按资源键匹配的 Lua 译文表，并验证数据往返、占位符和非目标词条保持不变。需先有本地提取的 CP_Cmn、CP_B、CP_M 数据。原始资源、工具及构建产物不进 Git。
 
-实际生效方式是 UE4SS 修改 `LiveLocalizeTextBlock.TextID` 对应控件的显示文本。轮询间隔 500 毫秒，页面刚出现时可能短暂显示英文。实验性 DAT/PAK 构建产物没有通过游戏加载验证，不作为安装包使用。
+原生文字表模式针对 Steam build 25201480 / 游戏 1.1.2.0。旧的 Lua 轮询原型会造成英文先显示、目标文字闪烁或缺字，已停用于新测试；Frida 诊断也已停用。实验性 DAT/PAK 菜单包没有通过加载验证，不作为安装包使用。
 
-停用：正常关闭测试游戏，等待启动脚本完成清理，再使用通常的启动方式。残留的 `ue4ss` 文件夹不会在代理已移除后自动加载；不要手动删除其他 MOD 所属文件。
+HUD 字体构建流程：`scripts/extract-asset-api.py` 准备固定工具的资源解析库；`scripts/asset-json.ps1` 导出本地原始字体元数据；`scripts/build-hud-font.py` 补字；再用 `asset-json.ps1 import/export` 写回和回读，最后运行 `node scripts/package-hud-font.mjs` 校验容器及逐字节导出回读。原始字体、解析库、图集和容器均不进 Git。
+
+停用：正常关闭测试游戏，等待启动脚本完成清理，再使用通常的启动方式。字体模式添加的加载代理也会按本项目哈希清理。残留的 `ue4ss` 文件夹不会在代理已移除后自动加载；不要手动删除其他 MOD 所属文件。
 
 目标版本：Steam build 25201480，UE 5.4。测试进展记录见 `reports/runtime-validation.json`。
 

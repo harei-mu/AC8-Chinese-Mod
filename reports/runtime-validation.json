@@ -6,8 +6,10 @@
   "campaignSubmenu": "Chinese preparation, briefing and pause labels confirmed in screenshots; remaining omissions and subsequent additions require recheck",
   "hangarParts": "user confirmed equipped Su-57 colored part icons display normally; screenshot corroborates. Empty outlined slots are not evidence of missing Chinese glyphs",
   "minimapAndOverheadTargets": "FAILED: combat screenshots show missing Chinese glyphs in native target labels; user reports English or flicker. Experimental target polling disabled and reverse restoration added; complete fix not verified",
-  "firstFrame": "UNRESOLVED: periodic UMG substitution can display English before Chinese. Reflected assignment hooks register but have no observed hits; do not claim fixed",
+  "firstFrame": "USER VERIFIED in native table mode: directly Chinese in tested main menu/system/training/configuration; no crash reported. 464 menu strings patched in both CP_ tables before UI generation. Combat HUD first frame remains pending",
   "simplifiedChinese": "authored values and scoped build output audited with Windows NLS plus contextual exceptions; font rendering remains a separate validation requirement",
   "resourcePak": "FAILED menu probe: IoStore custom mount code=0, but user screenshot still English while Lua disabled; companion DAT not demonstrably loaded",
-  "nativeDiagnostics": "First bounded trace logged readiness and no calls. Owned process later returned 0xc0000005, user reports no observed crash. Cause unconfirmed; protected replacement process was not instrumented"
+  "nativeDiagnostics": "Frida attach followed by repeated abnormal exits and explicit user crash report; discontinued. Current table patch uses Windows memory APIs without injected tracing libraries",
+  "hudFont": "BUILT: original 351 glyphs and BC3 blocks preserved, 607 Simplified Chinese/punctuation glyphs added. IoStore integrity and export payload roundtrip passed. Runtime glyph rendering not yet verified",
+  "nativeTable": "Menu mode user reports directly Chinese and no crash. Read-only recheck in battle found all 928 table entries still translated. Target/HUD dry run found 464 eligible writes across two tables, with zero capacity/source skips"
 }
