@@ -1,7 +1,8 @@
 {
   "method": "Windows LCMapStringEx LCMAP_SIMPLIFIED_CHINESE; candidates require context review",
   "checkedEntries": 2698,
-  "candidateCount": 4,
+  "candidateCount": 5,
+  "checkedAuthoredValues": 510,
   "unresolvedCount": 0,
   "candidates": [
     {
@@ -31,6 +32,13 @@
       "before": "本製品には第三者から許諾を受けて使用している以下のソフトウェアが含まれています。ライセンス条件等は以下を参照して下さい。 \nThis product uses the following third party software with approval. Please see below for licensing",
       "candidate": "本制品には第三者から许诺を受けて使用している以下のソフトウェアが含まれています。ライセンス条件等は以下を参照して下さい。 \nThis product uses the following third party software with approval. Please see below for licensing",
       "verdict": "preserve original third-party license notices; not a Chinese UI translation"
+    },
+    {
+      "key": "glossary.json/targets/WATCHTOWER",
+      "action": "authored",
+      "before": "瞭望塔",
+      "candidate": "了望塔",
+      "verdict": "reviewed: standard Simplified Chinese word; NLS conversion is a false positive"
     }
   ]
 }

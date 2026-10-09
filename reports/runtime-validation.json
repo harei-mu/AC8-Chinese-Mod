@@ -3,7 +3,10 @@
   "gameBuild": "25201480",
   "mainMenu": "verified: seven exact TextID hits, user confirmation and Chinese screenshot; no visible missing glyphs or clipping",
   "options": "user reports Chinese displays normally; all pages not independently checked",
-  "campaignSubmenu": "English omissions confirmed by screenshot; additional translations built, pending visual recheck",
-  "minimapAndOverheadTargets": "not verified; user reports remaining English, supplied screenshot is campaign submenu rather than combat HUD",
+  "campaignSubmenu": "Chinese preparation, briefing and pause labels confirmed in screenshots; remaining omissions and subsequent additions require recheck",
+  "hangarParts": "user confirmed equipped Su-57 colored part icons display normally; screenshot corroborates. Empty outlined slots are not evidence of missing Chinese glyphs",
+  "minimapAndOverheadTargets": "FAILED: combat screenshots show missing Chinese glyphs in native target labels; user reports English or flicker. Experimental target polling disabled and reverse restoration added; complete fix not verified",
+  "firstFrame": "UNRESOLVED: periodic UMG substitution can display English before Chinese. Reflected assignment hooks register but have no observed hits; do not claim fixed",
+  "simplifiedChinese": "authored values and scoped build output audited with Windows NLS plus contextual exceptions; font rendering remains a separate validation requirement",
   "resourcePak": "experimental only; loading not verified"
 }
