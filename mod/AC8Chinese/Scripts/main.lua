@@ -21,6 +21,32 @@ local function str(value)
     if type(value) == 'string' then return value end
     return value:ToString()
 end
+local eventHits = 0
+local eventGuard = false
+local textBlockClass = StaticFindObject('/Script/Live.LiveLocalizeTextBlock')
+local function translateAtAssignment(context)
+    if eventGuard then return end
+    local ok, err = pcall(function()
+        local widget = context:get()
+        if not widget:IsValid() or not widget:IsA(textBlockClass) or widget.bIsSubtitleTextBlock then return end
+        local key = str(widget.TextID)
+        local value, sources = replacements[key], sourceText[key]
+        if not value or not sources then return end
+        local current = widget:GetText():ToString()
+        if current ~= sources[1] and current ~= sources[2] then return end
+        eventGuard = true
+        widget:SetText(FText(value))
+        eventGuard = false
+        eventHits = eventHits + 1
+        if eventHits <= 12 then print('[AC8Chinese] assignment hit=' .. eventHits .. ' key=' .. key .. '\n') end
+    end)
+    eventGuard = false
+    if not ok and errors < 3 then errors = errors + 1; print('[AC8Chinese] assignment error: ' .. tostring(err) .. '\n') end
+end
+for _, path in ipairs({'/Script/Live.LiveLocalizeTextBlock:SetLocalizeText', '/Script/UMG.TextBlock:SetText'}) do
+    local ok, err = pcall(function() RegisterHook(path, function() end, translateAtAssignment) end)
+    if not ok then print('[AC8Chinese] assignment hook unavailable: ' .. tostring(err) .. '\n') end
+end
 -- Native UI calls bypass reflected wrappers. TextID was verified at runtime.
 LoopAsync(500, function()
     ExecuteInGameThread(function()
