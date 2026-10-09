@@ -6273,6 +6273,582 @@
     "after": "目标"
   },
   {
+    "key": "MainmenuSystemGeneral_List_None",
+    "index": 42689,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "NONE",
+    "after": "无"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_---",
+    "index": 42679,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "--",
+    "after": "--"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Cautioncaption",
+    "index": 42702,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CAUTION!",
+    "after": "注意！"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Default",
+    "index": 42709,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DEFAULT",
+    "after": "默认"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Disable",
+    "index": 42693,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DISABLE",
+    "after": "禁用"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Enable",
+    "index": 42692,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ENABLE",
+    "after": "启用"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Fullmrp",
+    "index": 42690,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "Military Result Points",
+    "after": "战果点数"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Impossible",
+    "index": 42697,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "IMPOSSIBLE",
+    "after": "不可用"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Limited",
+    "index": 42699,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "LIMITED",
+    "after": "有限"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Mission",
+    "index": 42673,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION",
+    "after": "任务"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_MissionColon",
+    "index": 42674,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "MISSION:",
+    "after": "MISSION:"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Number",
+    "index": 42676,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "NO.",
+    "after": "编号"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Permitted",
+    "index": 42694,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PERMITTED",
+    "after": "允许"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Possible",
+    "index": 42696,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "POSSIBLE",
+    "after": "可用"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Quit",
+    "index": 42678,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "QUIT",
+    "after": "退出"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Rank",
+    "index": 42677,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RANK",
+    "after": "评级"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Score",
+    "index": 42671,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SCORE",
+    "after": "得分"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_ScoreColon",
+    "index": 42672,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "SCORE:",
+    "after": "SCORE:"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Shortmrp",
+    "index": 42691,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "MRP",
+    "after": "MRP"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Test",
+    "index": 10694,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TEST",
+    "after": "测试"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Time",
+    "index": 42675,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TIME",
+    "after": "时间"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_TypeA",
+    "index": 42707,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TYPE A",
+    "after": "类型 A"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_TypeB",
+    "index": 42708,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TYPE B",
+    "after": "类型 B"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unknown1",
+    "index": 42704,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "-",
+    "after": "-"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unknown2",
+    "index": 42705,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "--",
+    "after": "--"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unknown3",
+    "index": 42706,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "---",
+    "after": "---"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unknown4",
+    "index": 10692,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "----",
+    "after": "----"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unknown5",
+    "index": 10693,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "-----",
+    "after": "-----"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unlimited",
+    "index": 42698,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "UNLIMITED",
+    "after": "无限"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Unpermitted",
+    "index": 42695,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PROHIBITED",
+    "after": "禁止"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_Warningcaption",
+    "index": 42703,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "警告",
+    "after": "警告"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_displayed",
+    "index": 42700,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "显示",
+    "after": "显示"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Name_undisplayed",
+    "index": 42701,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "不显示",
+    "after": "不显示"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_Cancel",
+    "index": 42666,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CANCEL",
+    "after": "取消"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_No",
+    "index": 42664,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "NO",
+    "after": "否"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_Off",
+    "index": 42668,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "OFF",
+    "after": "关闭"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_Off2",
+    "index": 42670,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "OFF",
+    "after": "关闭"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_Ok",
+    "index": 42665,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "OK",
+    "after": "确定"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_On",
+    "index": 42667,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ON",
+    "after": "开启"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_On2",
+    "index": 42669,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ON",
+    "after": "开启"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Select_Yes",
+    "index": 42663,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "YES",
+    "after": "是"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_All",
+    "index": 42680,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ALL",
+    "after": "全部"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_Alphabetical",
+    "index": 42685,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SORT BY ALPHABET",
+    "after": "按字母排序"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_Equiped",
+    "index": 42688,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "EQUIPPED",
+    "after": "已装备"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_Favorite",
+    "index": 42681,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "FAVORITES",
+    "after": "收藏"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_MissionOrder",
+    "index": 42682,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSION ORDER",
+    "after": "任务顺序"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_No",
+    "index": 42684,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "No",
+    "after": "否"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_Notowned",
+    "index": 42687,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "NOT OWNED",
+    "after": "未拥有"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_Owned",
+    "index": 42686,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "OWNED",
+    "after": "已拥有"
+  },
+  {
+    "key": "MainmenuSystemGeneral_Tab_Yes",
+    "index": 42683,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "Yes",
+    "after": "是"
+  },
+  {
+    "key": "MainmenuSystemTitle_Name_System",
+    "index": 42746,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SYSTEM",
+    "after": "系统"
+  },
+  {
+    "key": "MainmenuTopTitle_Name_Mainmenu",
+    "index": 42728,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MAIN MENU",
+    "after": "主菜单"
+  },
+  {
+    "key": "MainmenuTop_Select_Campaign",
+    "index": 42729,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CAMPAIGN",
+    "after": "战役"
+  },
+  {
+    "key": "MainmenuTop_Select_CampaignTraining",
+    "index": 42741,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CAMPAIGN TRAINING",
+    "after": "战役训练"
+  },
+  {
+    "key": "MainmenuTop_Select_Control",
+    "index": 42738,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CONTROLS",
+    "after": "操作设置"
+  },
+  {
+    "key": "MainmenuTop_Select_Copyright",
+    "index": 42737,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "COPYRIGHT",
+    "after": "版权信息"
+  },
+  {
+    "key": "MainmenuTop_Select_Dataviewer",
+    "index": 42730,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DATA VIEWER",
+    "after": "资料查看"
+  },
+  {
+    "key": "MainmenuTop_Select_OnlineStore",
+    "index": 42754,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "STORE",
+    "after": "商店"
+  },
+  {
+    "key": "MainmenuTop_Select_Onlinemode",
+    "index": 42740,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ACE COMBAT ONLINE",
+    "after": "皇牌空战联机"
+  },
+  {
+    "key": "MainmenuTop_Select_Quit",
+    "index": 42736,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "QUIT GAME",
+    "after": "退出游戏"
+  },
+  {
+    "key": "MainmenuTop_Select_Store",
+    "index": 42733,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "PlayStation™Store",
+    "after": "PlayStation™Store"
+  },
+  {
+    "key": "MainmenuTop_Select_StoreCommon",
+    "index": 42731,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ACE COMBAT STORE",
+    "after": "皇牌空战商店"
+  },
+  {
+    "key": "MainmenuTop_Select_StoreSteam",
+    "index": 42732,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "STEAM STORE",
+    "after": "Steam 商店"
+  },
+  {
+    "key": "MainmenuTop_Select_StoreXbox",
+    "index": 42734,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "Microsoft Store",
+    "after": "Microsoft Store"
+  },
+  {
     "key": "OptionAccessibilityTitle_Name_Accessibility",
     "index": 44186,
     "category": "options",

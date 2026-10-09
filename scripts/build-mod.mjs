@@ -16,6 +16,7 @@ const tokens = s => (s.match(/\{[^}]*\}|<[^>]*>|%\d*\$?[sdif]|[\uE000-\uF8FF]/g)
 for (const row of table) {
   let category;
   if (/^Option/i.test(row.key)) category = 'options';
+  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_)/.test(row.key)) category = 'menu';
   else if (/^(ContainerAircraft_Name_|ContainerGround_Name_|ContainerEscortTargetName_|ContainerWaypoint_|ContainerUnknown_|HudContainerinfo_)/.test(row.key)) category = 'targets';
   else if (/^Container.*Callsign/.test(row.key)) category = 'callsigns';
   else continue;
@@ -50,7 +51,7 @@ if (JSON.stringify(actual) !== JSON.stringify(translated)) throw new Error('Buil
 for (let i = 0; i < original.length; i++) {
   if (!modified.has(i) && actual[i] !== original[i]) throw new Error('Unexpected change outside allowlist');
 }
-const groups = Object.fromEntries(['options', 'targets', 'callsigns'].map(c => [c, Object.fromEntries(['translate', 'keep', 'review'].map(a => [a, decisions.filter(d => d.category === c && d.action === a).length]))]));
+const groups = Object.fromEntries(['options', 'menu', 'targets', 'callsigns'].map(c => [c, Object.fromEntries(['translate', 'keep', 'review'].map(a => [a, decisions.filter(d => d.category === c && d.action === a).length]))]));
 const report = { build: '25201480', status: 'text built; game loading and font rendering NOT verified', changedStrings: modified.size, groups, outputSha256: crypto.createHash('sha256').update(fs.readFileSync(output)).digest('hex'), validation: ['UTF-8 and full table decode', 'string count preserved', 'placeholders preserved', 'all modified entries roundtrip', 'all unrelated entries unchanged'] };
 fs.writeFileSync(path.join(root, 'reports/build.json'), JSON.stringify(report, null, 2) + '\n');
 fs.writeFileSync(path.join(root, 'reports/translation-decisions.json'), JSON.stringify(decisions, null, 2) + '\n');
