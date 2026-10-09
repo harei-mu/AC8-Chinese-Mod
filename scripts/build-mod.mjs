@@ -18,7 +18,7 @@ const tokens = s => (s.match(/\{[^}]*\}|<[^>]*>|%\d*\$?[sdif]|[\uE000-\uF8FF]/g)
 for (const row of table) {
   let category;
   if (/^Option/i.test(row.key)) category = 'options';
-  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudIndicator_|HudMissioninfo_|HudMissionprogress_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || row.key === 'DataviewerGallery_Select_Music') category = 'menu';
+  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty|CampaignFailed_Select_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudIndicator_|HudMissioninfo_|HudMissionprogress_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || ['DataviewerGallery_Select_Music', 'Missionname_Name_ms30'].includes(row.key)) category = 'menu';
   else if (/^(ContainerAircraft_Name_|ContainerGround_Name_|ContainerEscortTargetName_|ContainerWaypoint_|ContainerUnknown_|HudContainerinfo_)/.test(row.key)) category = 'targets';
   else if (/^Container.*Callsign/.test(row.key)) category = 'callsigns';
   else continue;

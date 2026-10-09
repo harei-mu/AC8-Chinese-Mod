@@ -12,10 +12,10 @@
     "key": "CampaignBriefingCaption_Name_AllTgt",
     "index": 42913,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "ALL TGTS",
-    "after": "ALL TGTS"
+    "after": "全部任务目标"
   },
   {
     "key": "CampaignBriefingCaption_Name_Area",
@@ -48,10 +48,10 @@
     "key": "CampaignBriefingCaption_Name_Datanumber",
     "index": 42902,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "DATA No.",
-    "after": "DATA No."
+    "after": "资料编号"
   },
   {
     "key": "CampaignBriefingCaption_Name_Date",
@@ -66,19 +66,19 @@
     "key": "CampaignBriefingCaption_Name_Enemy",
     "index": 42911,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "ENEMY",
-    "after": "ENEMY"
+    "after": "敌军"
   },
   {
     "key": "CampaignBriefingCaption_Name_Location",
     "index": 42908,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "LOCATION",
-    "after": "LOCATION"
+    "after": "位置"
   },
   {
     "key": "CampaignBriefingCaption_Name_Missionname",
@@ -111,10 +111,10 @@
     "key": "CampaignBriefingCaption_Name_Tgt",
     "index": 42914,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "TGT",
-    "after": "TGT"
+    "after": "任务目标"
   },
   {
     "key": "CampaignBriefingCaption_Name_Time",
@@ -138,10 +138,10 @@
     "key": "CampaignBriefingEnemynumber_Name_Air2",
     "index": 42920,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "AERIAL（TGT）：",
-    "after": "AERIAL（TGT）："
+    "after": "空中目标（任务目标）："
   },
   {
     "key": "CampaignBriefingEnemynumber_Name_Ground",
@@ -156,10 +156,10 @@
     "key": "CampaignBriefingEnemynumber_Name_Ground2",
     "index": 42921,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "GROUND（TGT）：",
-    "after": "GROUND（TGT）："
+    "after": "地面目标（任务目标）："
   },
   {
     "key": "CampaignBriefingEnemynumber_Name_Naval",
@@ -174,19 +174,19 @@
     "key": "CampaignBriefingEnemynumber_Name_Naval2",
     "index": 42922,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "NAVAL（TGT）: ",
-    "after": "NAVAL（TGT）: "
+    "after": "海上目标（任务目标）： "
   },
   {
     "key": "CampaignBriefingEnemynumber_Name_Targets",
     "index": 42918,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "TARGETS:",
-    "after": "TARGETS:"
+    "after": "任务目标："
   },
   {
     "key": "CampaignBriefingEnemynumber_Name_Total",
@@ -486,6 +486,15 @@
     "after": "学习教习内容"
   },
   {
+    "key": "CampaignDifficultyTitle_Name_Difficulty",
+    "index": 42885,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SELECT DIFFICULTY",
+    "after": "选择难度"
+  },
+  {
     "key": "CampaignDifficulty_Description_Ace",
     "index": 42897,
     "category": "menu",
@@ -619,6 +628,33 @@
     "reason": "界面文字或通用目标名称",
     "before": "ROOKIE（STORY）",
     "after": "新手（剧情）"
+  },
+  {
+    "key": "CampaignFailed_Select_Lastpoint",
+    "index": 43069,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "RETRY FROM CHECKPOINT",
+    "after": "RETRY FROM CHECKPOINT"
+  },
+  {
+    "key": "CampaignFailed_Select_Quit",
+    "index": 43072,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "QUIT MISSION",
+    "after": "退出任务"
+  },
+  {
+    "key": "CampaignFailed_Select_Retry",
+    "index": 43071,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "RETRY MISSION",
+    "after": "RETRY MISSION"
   },
   {
     "key": "CampaignMenu_Description_Continue",
@@ -8862,7 +8898,7 @@
     "action": "translate",
     "reason": "界面文字或通用目标名称",
     "before": "AIRCRAFT SPECIFICATIONS",
-    "after": "机体性能"
+    "after": "战机性能"
   },
   {
     "key": "HangarAircraftParameter_Name_Airdamage",
@@ -8988,7 +9024,7 @@
     "action": "translate",
     "reason": "界面文字或通用目标名称",
     "before": "ADD SLOT",
-    "after": "添加配置栏"
+    "after": "新增配置"
   },
   {
     "key": "HangarAircraftSetSlot_Name_Skin",
@@ -11802,10 +11838,10 @@
     "key": "HudMissioninfo_Name_Checkpoint",
     "index": 42196,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT",
-    "after": "CHECKPOINT"
+    "after": "检查点"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_1",
@@ -14610,10 +14646,10 @@
     "key": "HudMissioninfo_Name_Quota",
     "index": 42507,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "QUOTA",
-    "after": "QUOTA"
+    "after": "所需分数"
   },
   {
     "key": "HudMissioninfo_Name_Remainingtime",
@@ -14667,7 +14703,7 @@
     "action": "translate",
     "reason": "界面文字或通用目标名称",
     "before": "WAVE UPDATED",
-    "after": "新一波敌军"
+    "after": "波次更新"
   },
   {
     "key": "MainmenuSystemGeneral_List_None",
@@ -14763,10 +14799,10 @@
     "key": "MainmenuSystemGeneral_Name_MissionColon",
     "index": 42674,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "MISSION:",
-    "after": "MISSION:"
+    "after": "任务："
   },
   {
     "key": "MainmenuSystemGeneral_Name_Number",
@@ -14826,10 +14862,10 @@
     "key": "MainmenuSystemGeneral_Name_ScoreColon",
     "index": 42672,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "SCORE:",
-    "after": "SCORE:"
+    "after": "得分："
   },
   {
     "key": "MainmenuSystemGeneral_Name_Shortmrp",
@@ -15627,10 +15663,10 @@
     "key": "MissionNo_Name_ms01",
     "index": 44845,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "PROLOGUE",
-    "after": "PROLOGUE"
+    "after": "序章"
   },
   {
     "key": "MissionNo_Name_ms02",
@@ -15955,6 +15991,15 @@
     "reason": "界面文字或通用目标名称",
     "before": "Windy",
     "after": "大风"
+  },
+  {
+    "key": "Missionname_Name_ms30",
+    "index": 45012,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "Operation Showdown",
+    "after": "决战行动"
   },
   {
     "key": "Missiontitle_Name_ms01",
