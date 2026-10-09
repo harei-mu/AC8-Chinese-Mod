@@ -8,6 +8,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const input = path.join(root, 'work/extracted/Live/Content/Localization/GameData');
 const glossary = JSON.parse(fs.readFileSync(path.join(root, 'translations/glossary.json'), 'utf8'));
 Object.assign(glossary.menu, JSON.parse(fs.readFileSync(path.join(root, 'translations/interface-extra.json'), 'utf8')));
+const recordGlossary = JSON.parse(fs.readFileSync(path.join(root, 'translations/records-results.json'), 'utf8'));
+const singlePlayerGlossary = JSON.parse(fs.readFileSync(path.join(root, 'translations/singleplayer-extra.json'), 'utf8'));
+const equipmentGlossary = JSON.parse(fs.readFileSync(path.join(root, 'translations/equipment-medals.json'), 'utf8'));
+const extraUi = /^(CampaignReplay|CampaignReturn|CampaignFailedTitle|CampaignLoadingTips_Name_|MainmenuFirst|MainmenuReplayCapacityfailure|MainmenuRights_Name_Press|KeyGenral|MusicPlayer_(?:Name|Select|Title)_|PartsShort_Name_)/;
 const overrides = JSON.parse(fs.readFileSync(path.join(root, 'translations/overrides.json'), 'utf8'));
 const table = keys(decode(path.join(input, 'CP_Cmn.dat')));
 const en = strings(decode(path.join(input, 'CP_B.dat'), 1));
@@ -19,14 +23,33 @@ const tokens = s => (s.match(/\{[^}]*\}|<[^>]*>|%\d*\$?[sdif]|[\uE000-\uF8FF]/g)
 for (const row of table) {
   let category;
   if (/^Option/i.test(row.key)) category = 'options';
-  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty|CampaignFailed_Select_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudAttack_Name_|HudIndicator_|HudMissioninfo_|HudMissionprogress_|HudMinigames_Name_|HudOther_Name_|HudPlayerinfo_Name_|HudWarning_Name_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || ['DataviewerGallery_Select_Music', 'Missionname_Name_ms30', 'WeaponShort_Name_flr', 'WeaponShort_Name_mg', 'WeaponShort_Name_msl'].includes(row.key)) category = 'menu';
+  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty|CampaignFailed_Select_|CampaignPreparation_|CampaignPause|CampaignBriefing|CampaignDebriefing|CampaignProgression|CampaignUnlock|CampaignFreemissionMenu|Dataviewe|Training_Name_|Hangar|HudAttack_Name_|HudIndicator_|HudMissioninfo_|HudMissionprogress_|HudMinigames_Name_|HudOther_Name_|HudPlayerinfo_Name_|HudWarning_Name_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || ['Missionname_Name_ms30', 'WeaponShort_Name_flr', 'WeaponShort_Name_mg', 'WeaponShort_Name_mg', 'WeaponShort_Name_msl'].includes(row.key)) category = 'menu';
   else if (/^(ContainerAircraft_Name_|ContainerGround_Name_|ContainerEscortTargetName_|ContainerWaypoint_|ContainerUnknown_|HudContainerinfo_)/.test(row.key)) category = 'targets';
   else if (/^Container.*Callsign/.test(row.key)) category = 'callsigns';
+  else if (extraUi.test(row.key) || /^(AircraftNick_|Aircraft_Name_|AircraftShort_Name_|Aircraft_GetAircraft_ShortName_|Weapon_Name_|Medal_|MedalHint_)/.test(row.key) || (row.key.startsWith('Aircraft_Description_') && overrides[row.key])) category = 'menu';
+  else if (/^ContainerBossPartsName_|^ContainerBriefing_Name_Ally$/.test(row.key)) category = 'targets';
   else continue;
   if (row.index >= original.length) throw new Error('Invalid string index');
   const source = original[row.index];
   const base = source.trim();
   let replacement = glossary[category]?.[base];
+  if (/^AircraftNick_/.test(row.key)) replacement = equipmentGlossary.nick[base];
+  if (/^(Aircraft_Name_|AircraftShort_Name_|Aircraft_GetAircraft_ShortName_)/.test(row.key)) {
+    const established = {'Typhoon':'台风', 'Rafale M':'阵风 M', 'Mirage 2000-5':'幻影 2000-5', 'Gripen E':'鹰狮 E'};
+    replacement = established[base];
+    if (row.key.startsWith('Aircraft_Name_') && !replacement) {
+      const nickname = Object.keys(equipmentGlossary.nick).sort((a,b)=>b.length-a.length).find(n=>base.endsWith(' '+n));
+      if (nickname) replacement = equipmentGlossary.bilingualTitles?.[base] ?? (base.slice(0,-nickname.length) + equipmentGlossary.nick[nickname]);
+    }
+  }
+  if (/^Weapon_Name_/.test(row.key)) replacement = equipmentGlossary.weapon[base];
+  if (/^Medal_Name_/.test(row.key)) replacement = equipmentGlossary.medal[base];
+  if (extraUi.test(row.key)) replacement = (row.key.startsWith('PartsShort_') ? singlePlayerGlossary.parts[base] : singlePlayerGlossary.interface[base]) ?? replacement;
+  if (/^CampaignUnlockCaption_/.test(row.key)) replacement = singlePlayerGlossary.interface[base] ?? replacement;
+  if (/^ContainerBossPartsName_|^ContainerBriefing_Name_Ally$/.test(row.key)) replacement = singlePlayerGlossary.targets[base];
+  if (row.key === 'DataviewerPilotdataType_Tab_Ally') replacement = '友军';
+  if (/^(Dataviewe|CampaignDebriefing|CampaignProgression|CampaignUnlock|CampaignFreemissionMenu)/.test(row.key)) replacement = recordGlossary[base] ?? replacement;
+  if (/^DataviewerPilotdataCaption_Name_Officerank$/.test(row.key)) replacement = '军衔';
   let officialSourceKey;
   if (/^MissionLocation_Name_/.test(row.key)) officialSourceKey = row.key.replace('MissionLocation_', 'MissionLocationJP_');
   if (/^Missiontitle_Name_/.test(row.key)) officialSourceKey = row.key.replace('Missiontitle_', 'MissiontitleJp_');
@@ -45,6 +68,10 @@ for (const row of table) {
   else if (replacement) {
     value = source.replace(base, replacement);
     if (value.includes('\0') || tokens(value) !== tokens(source)) throw new Error(`Invalid translation: ${row.key}`);
+    if (/^Aircraft(?:Short)?_Name_/.test(row.key)) {
+      const model = base.match(/^[A-Za-z]+(?:\/[A-Za-z]+)?-\d+[A-Za-z0-9-]*/)?.[0];
+      if (model && !value.includes(model)) throw new Error(`Aircraft model removed: ${row.key}`);
+    }
     if (modified.has(row.index) && modified.get(row.index) !== value) throw new Error('Conflicting aliases');
     modified.set(row.index, value);
     translated[row.index] = value;

@@ -20,6 +20,7 @@ parser.add_argument('pid', type=int)
 parser.add_argument('--apply', action='store_true')
 parser.add_argument('--wait', type=float, default=0)
 parser.add_argument('--hud', action='store_true', help='Include target and HUD table entries; requires the verified font container when applying')
+parser.add_argument('--capacities', action='store_true', help='Read-only report for translated aircraft names and their existing allocations')
 args = parser.parse_args()
 
 class ProcessEntry(ctypes.Structure):
@@ -171,6 +172,16 @@ try:
                 raise
             time.sleep(0.1)
     report['tableCount'] = len(arrays)
+    if args.capacities:
+        if args.apply:
+            raise RuntimeError('Capacity inspection must be read-only')
+        capacities = []
+        for row in decisions:
+            if row['action'] == 'translate' and row['key'].startswith(('Aircraft_Name_', 'AircraftNick_')):
+                current, data, count, capacity = fstring(arrays[0] + row['index'] * 16)
+                capacities.append({'key': row['key'], 'index': row['index'], 'before': row['before'], 'after': row['after'], 'current': current, 'capacity': capacity})
+        (root / 'work/aircraft-capacities.json').write_text(json.dumps(capacities, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps(capacities, ensure_ascii=False), flush=True)
     pending = []
     for table_index, array in enumerate(arrays):
         for index, row in selected.items():

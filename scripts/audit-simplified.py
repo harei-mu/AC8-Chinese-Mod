@@ -23,7 +23,7 @@ def simplified(text):
 rows = json.loads((root / 'reports/translation-decisions.json').read_text(encoding='utf-8'))
 # Check authored values too, including translations not reached by the current build.
 source_rows = []
-for filename in ('glossary.json', 'interface-extra.json', 'overrides.json'):
+for filename in ('glossary.json', 'interface-extra.json', 'overrides.json', 'records-results.json', 'singleplayer-extra.json', 'equipment-medals.json'):
     document = json.loads((root / 'translations' / filename).read_text(encoding='utf-8'))
     def collect(value, key):
         if isinstance(value, dict):
