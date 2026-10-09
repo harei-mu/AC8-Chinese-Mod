@@ -633,10 +633,10 @@
     "key": "CampaignFailed_Select_Lastpoint",
     "index": 43069,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "RETRY FROM CHECKPOINT",
-    "after": "RETRY FROM CHECKPOINT"
+    "after": "从检查点重试"
   },
   {
     "key": "CampaignFailed_Select_Quit",
@@ -651,10 +651,10 @@
     "key": "CampaignFailed_Select_Retry",
     "index": 43071,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "RETRY MISSION",
-    "after": "RETRY MISSION"
+    "after": "重试任务"
   },
   {
     "key": "CampaignMenu_Description_Continue",
@@ -4476,10 +4476,10 @@
     "key": "ContainerAllyCallsign_Name_Endurance",
     "index": 9913,
     "category": "callsigns",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "ENDURANCE",
-    "after": "ENDURANCE"
+    "after": "坚忍号"
   },
   {
     "key": "ContainerAllyCallsign_Name_Endymion",
@@ -11709,6 +11709,114 @@
     "after": "机体磨损设置"
   },
   {
+    "key": "HudAttack_Name_Assist",
+    "index": 42168,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ASSIST BONUS",
+    "after": "协助加分"
+  },
+  {
+    "key": "HudAttack_Name_Destroyed",
+    "index": 42162,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DESTROYED",
+    "after": "已摧毁"
+  },
+  {
+    "key": "HudAttack_Name_Disabled",
+    "index": 42169,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DISABLED",
+    "after": "已瘫痪"
+  },
+  {
+    "key": "HudAttack_Name_Empty",
+    "index": 42164,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "EMPTY",
+    "after": "弹药耗尽"
+  },
+  {
+    "key": "HudAttack_Name_Hit",
+    "index": 42160,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "HIT",
+    "after": "命中"
+  },
+  {
+    "key": "HudAttack_Name_Incapacitated",
+    "index": 42171,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "INACTIVE",
+    "after": "已失效"
+  },
+  {
+    "key": "HudAttack_Name_Kill",
+    "index": 42170,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DESTROYED",
+    "after": "已摧毁"
+  },
+  {
+    "key": "HudAttack_Name_Locked",
+    "index": 42167,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "LOCKED",
+    "after": "已锁定"
+  },
+  {
+    "key": "HudAttack_Name_Miss",
+    "index": 42161,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSED",
+    "after": "未命中"
+  },
+  {
+    "key": "HudAttack_Name_Reloading",
+    "index": 42165,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RELOADING",
+    "after": "装填中"
+  },
+  {
+    "key": "HudAttack_Name_Shoot",
+    "index": 42166,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SHOOT",
+    "after": "开火"
+  },
+  {
+    "key": "HudAttack_Name_Wpn",
+    "index": 42163,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "WEAPON",
+    "after": "武器"
+  },
+  {
     "key": "HudContainerinfo_Name_Ally",
     "index": 42514,
     "category": "targets",
@@ -11835,6 +11943,87 @@
     "after": "W"
   },
   {
+    "key": "HudMinigames_Name_Airialrefueling",
+    "index": 42139,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "AERIAL REFUELING",
+    "after": "空中加油"
+  },
+  {
+    "key": "HudMinigames_Name_Airialrefuelingcompleted",
+    "index": 42140,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "AERIAL REFUELING COMPLETED",
+    "after": "空中加油完成"
+  },
+  {
+    "key": "HudMinigames_Name_Airialrefuelingfailed",
+    "index": 42141,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "AERIAL REFUELING FAILED",
+    "after": "空中加油失败"
+  },
+  {
+    "key": "HudMinigames_Name_Landingfailed",
+    "index": 42138,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "LANDING FAILED",
+    "after": "着陆失败"
+  },
+  {
+    "key": "HudMinigames_Name_Landingrequest",
+    "index": 42136,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CLEARED TO LAND",
+    "after": "允许着陆"
+  },
+  {
+    "key": "HudMinigames_Name_Landingsuccessful",
+    "index": 42137,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "LANDING SUCCESSFUL",
+    "after": "着陆成功"
+  },
+  {
+    "key": "HudMinigames_Name_Takeoffclear",
+    "index": 42134,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CLEARED FOR TAKEOFF",
+    "after": "允许起飞"
+  },
+  {
+    "key": "HudMinigames_Name_Takeofffailed",
+    "index": 42135,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TAKEOFF FAILED",
+    "after": "起飞失败"
+  },
+  {
+    "key": "HudMinigames_Name_Timeover",
+    "index": 42142,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TIME'S UP",
+    "after": "时间到"
+  },
+  {
     "key": "HudMissioninfo_Name_Checkpoint",
     "index": 42196,
     "category": "menu",
@@ -11847,2791 +12036,2791 @@
     "key": "HudMissioninfo_Name_Checkpoint_01_1",
     "index": 42197,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 1",
-    "after": "CHECKPOINT PROL. 1"
+    "after": "检查点 序章 1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_10",
     "index": 42206,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 10",
-    "after": "CHECKPOINT PROL. 10"
+    "after": "检查点 序章 10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_2",
     "index": 42198,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 2",
-    "after": "CHECKPOINT PROL. 2"
+    "after": "检查点 序章 2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_3",
     "index": 42199,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 3",
-    "after": "CHECKPOINT PROL. 3"
+    "after": "检查点 序章 3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_4",
     "index": 42200,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 4",
-    "after": "CHECKPOINT PROL. 4"
+    "after": "检查点 序章 4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_5",
     "index": 42201,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 5",
-    "after": "CHECKPOINT PROL. 5"
+    "after": "检查点 序章 5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_6",
     "index": 42202,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 6",
-    "after": "CHECKPOINT PROL. 6"
+    "after": "检查点 序章 6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_7",
     "index": 42203,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 7",
-    "after": "CHECKPOINT PROL. 7"
+    "after": "检查点 序章 7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_8",
     "index": 42204,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 8",
-    "after": "CHECKPOINT PROL. 8"
+    "after": "检查点 序章 8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_01_9",
     "index": 42205,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT PROL. 9",
-    "after": "CHECKPOINT PROL. 9"
+    "after": "检查点 序章 9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_1",
     "index": 42207,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-1",
-    "after": "CHECKPOINT 01-1"
+    "after": "检查点 01-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_10",
     "index": 42216,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-10",
-    "after": "CHECKPOINT 01-10"
+    "after": "检查点 01-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_2",
     "index": 42208,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-2",
-    "after": "CHECKPOINT 01-2"
+    "after": "检查点 01-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_3",
     "index": 42209,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-3",
-    "after": "CHECKPOINT 01-3"
+    "after": "检查点 01-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_4",
     "index": 42210,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-4",
-    "after": "CHECKPOINT 01-4"
+    "after": "检查点 01-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_5",
     "index": 42211,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-5",
-    "after": "CHECKPOINT 01-5"
+    "after": "检查点 01-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_6",
     "index": 42212,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-6",
-    "after": "CHECKPOINT 01-6"
+    "after": "检查点 01-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_7",
     "index": 42213,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-7",
-    "after": "CHECKPOINT 01-7"
+    "after": "检查点 01-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_8",
     "index": 42214,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-8",
-    "after": "CHECKPOINT 01-8"
+    "after": "检查点 01-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_02_9",
     "index": 42215,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 01-9",
-    "after": "CHECKPOINT 01-9"
+    "after": "检查点 01-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_1",
     "index": 42217,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-1",
-    "after": "CHECKPOINT 02-1"
+    "after": "检查点 02-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_10",
     "index": 42226,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-10",
-    "after": "CHECKPOINT 02-10"
+    "after": "检查点 02-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_2",
     "index": 42218,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-2",
-    "after": "CHECKPOINT 02-2"
+    "after": "检查点 02-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_3",
     "index": 42219,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-3",
-    "after": "CHECKPOINT 02-3"
+    "after": "检查点 02-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_4",
     "index": 42220,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-4",
-    "after": "CHECKPOINT 02-4"
+    "after": "检查点 02-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_5",
     "index": 42221,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-5",
-    "after": "CHECKPOINT 02-5"
+    "after": "检查点 02-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_6",
     "index": 42222,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-6",
-    "after": "CHECKPOINT 02-6"
+    "after": "检查点 02-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_7",
     "index": 42223,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-7",
-    "after": "CHECKPOINT 02-7"
+    "after": "检查点 02-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_8",
     "index": 42224,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-8",
-    "after": "CHECKPOINT 02-8"
+    "after": "检查点 02-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_03_9",
     "index": 42225,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 02-9",
-    "after": "CHECKPOINT 02-9"
+    "after": "检查点 02-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_1",
     "index": 42227,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-1",
-    "after": "CHECKPOINT 03-1"
+    "after": "检查点 03-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_10",
     "index": 42236,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-10",
-    "after": "CHECKPOINT 03-10"
+    "after": "检查点 03-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_2",
     "index": 42228,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-2",
-    "after": "CHECKPOINT 03-2"
+    "after": "检查点 03-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_3",
     "index": 42229,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-3",
-    "after": "CHECKPOINT 03-3"
+    "after": "检查点 03-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_4",
     "index": 42230,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-4",
-    "after": "CHECKPOINT 03-4"
+    "after": "检查点 03-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_5",
     "index": 42231,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-5",
-    "after": "CHECKPOINT 03-5"
+    "after": "检查点 03-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_6",
     "index": 42232,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-6",
-    "after": "CHECKPOINT 03-6"
+    "after": "检查点 03-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_7",
     "index": 42233,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-7",
-    "after": "CHECKPOINT 03-7"
+    "after": "检查点 03-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_8",
     "index": 42234,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-8",
-    "after": "CHECKPOINT 03-8"
+    "after": "检查点 03-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_04_9",
     "index": 42235,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 03-9",
-    "after": "CHECKPOINT 03-9"
+    "after": "检查点 03-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_1",
     "index": 42237,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-1",
-    "after": "CHECKPOINT 04-1"
+    "after": "检查点 04-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_10",
     "index": 42246,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-10",
-    "after": "CHECKPOINT 04-10"
+    "after": "检查点 04-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_2",
     "index": 42238,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-2",
-    "after": "CHECKPOINT 04-2"
+    "after": "检查点 04-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_3",
     "index": 42239,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-3",
-    "after": "CHECKPOINT 04-3"
+    "after": "检查点 04-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_4",
     "index": 42240,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-4",
-    "after": "CHECKPOINT 04-4"
+    "after": "检查点 04-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_5",
     "index": 42241,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-5",
-    "after": "CHECKPOINT 04-5"
+    "after": "检查点 04-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_6",
     "index": 42242,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-6",
-    "after": "CHECKPOINT 04-6"
+    "after": "检查点 04-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_7",
     "index": 42243,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-7",
-    "after": "CHECKPOINT 04-7"
+    "after": "检查点 04-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_8",
     "index": 42244,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-8",
-    "after": "CHECKPOINT 04-8"
+    "after": "检查点 04-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_05_9",
     "index": 42245,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 04-9",
-    "after": "CHECKPOINT 04-9"
+    "after": "检查点 04-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_1",
     "index": 42247,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-1",
-    "after": "CHECKPOINT 05-1"
+    "after": "检查点 05-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_10",
     "index": 42256,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-10",
-    "after": "CHECKPOINT 05-10"
+    "after": "检查点 05-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_2",
     "index": 42248,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-2",
-    "after": "CHECKPOINT 05-2"
+    "after": "检查点 05-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_3",
     "index": 42249,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-3",
-    "after": "CHECKPOINT 05-3"
+    "after": "检查点 05-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_4",
     "index": 42250,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-4",
-    "after": "CHECKPOINT 05-4"
+    "after": "检查点 05-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_5",
     "index": 42251,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-5",
-    "after": "CHECKPOINT 05-5"
+    "after": "检查点 05-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_6",
     "index": 42252,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-6",
-    "after": "CHECKPOINT 05-6"
+    "after": "检查点 05-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_7",
     "index": 42253,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-7",
-    "after": "CHECKPOINT 05-7"
+    "after": "检查点 05-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_8",
     "index": 42254,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-8",
-    "after": "CHECKPOINT 05-8"
+    "after": "检查点 05-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_06_9",
     "index": 42255,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 05-9",
-    "after": "CHECKPOINT 05-9"
+    "after": "检查点 05-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_1",
     "index": 42257,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-1",
-    "after": "CHECKPOINT 06-1"
+    "after": "检查点 06-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_10",
     "index": 42266,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-10",
-    "after": "CHECKPOINT 06-10"
+    "after": "检查点 06-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_2",
     "index": 42258,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-2",
-    "after": "CHECKPOINT 06-2"
+    "after": "检查点 06-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_3",
     "index": 42259,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-3",
-    "after": "CHECKPOINT 06-3"
+    "after": "检查点 06-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_4",
     "index": 42260,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-4",
-    "after": "CHECKPOINT 06-4"
+    "after": "检查点 06-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_5",
     "index": 42261,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-5",
-    "after": "CHECKPOINT 06-5"
+    "after": "检查点 06-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_6",
     "index": 42262,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-6",
-    "after": "CHECKPOINT 06-6"
+    "after": "检查点 06-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_7",
     "index": 42263,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-7",
-    "after": "CHECKPOINT 06-7"
+    "after": "检查点 06-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_8",
     "index": 42264,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-8",
-    "after": "CHECKPOINT 06-8"
+    "after": "检查点 06-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_07_9",
     "index": 42265,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 06-9",
-    "after": "CHECKPOINT 06-9"
+    "after": "检查点 06-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_1",
     "index": 42267,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-1",
-    "after": "CHECKPOINT 07-1"
+    "after": "检查点 07-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_10",
     "index": 42276,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-10",
-    "after": "CHECKPOINT 07-10"
+    "after": "检查点 07-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_2",
     "index": 42268,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-2",
-    "after": "CHECKPOINT 07-2"
+    "after": "检查点 07-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_3",
     "index": 42269,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-3",
-    "after": "CHECKPOINT 07-3"
+    "after": "检查点 07-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_4",
     "index": 42270,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-4",
-    "after": "CHECKPOINT 07-4"
+    "after": "检查点 07-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_5",
     "index": 42271,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-5",
-    "after": "CHECKPOINT 07-5"
+    "after": "检查点 07-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_6",
     "index": 42272,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-6",
-    "after": "CHECKPOINT 07-6"
+    "after": "检查点 07-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_7",
     "index": 42273,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-7",
-    "after": "CHECKPOINT 07-7"
+    "after": "检查点 07-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_8",
     "index": 42274,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-8",
-    "after": "CHECKPOINT 07-8"
+    "after": "检查点 07-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_08_9",
     "index": 42275,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 07-9",
-    "after": "CHECKPOINT 07-9"
+    "after": "检查点 07-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_1",
     "index": 42277,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-1",
-    "after": "CHECKPOINT 08-1"
+    "after": "检查点 08-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_10",
     "index": 42286,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-10",
-    "after": "CHECKPOINT 08-10"
+    "after": "检查点 08-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_2",
     "index": 42278,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-2",
-    "after": "CHECKPOINT 08-2"
+    "after": "检查点 08-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_3",
     "index": 42279,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-3",
-    "after": "CHECKPOINT 08-3"
+    "after": "检查点 08-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_4",
     "index": 42280,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-4",
-    "after": "CHECKPOINT 08-4"
+    "after": "检查点 08-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_5",
     "index": 42281,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-5",
-    "after": "CHECKPOINT 08-5"
+    "after": "检查点 08-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_6",
     "index": 42282,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-6",
-    "after": "CHECKPOINT 08-6"
+    "after": "检查点 08-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_7",
     "index": 42283,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-7",
-    "after": "CHECKPOINT 08-7"
+    "after": "检查点 08-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_8",
     "index": 42284,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-8",
-    "after": "CHECKPOINT 08-8"
+    "after": "检查点 08-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_09_9",
     "index": 42285,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 08-9",
-    "after": "CHECKPOINT 08-9"
+    "after": "检查点 08-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_1",
     "index": 42287,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-1",
-    "after": "CHECKPOINT 09-1"
+    "after": "检查点 09-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_10",
     "index": 42296,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-10",
-    "after": "CHECKPOINT 09-10"
+    "after": "检查点 09-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_2",
     "index": 42288,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-2",
-    "after": "CHECKPOINT 09-2"
+    "after": "检查点 09-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_3",
     "index": 42289,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-3",
-    "after": "CHECKPOINT 09-3"
+    "after": "检查点 09-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_4",
     "index": 42290,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-4",
-    "after": "CHECKPOINT 09-4"
+    "after": "检查点 09-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_5",
     "index": 42291,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-5",
-    "after": "CHECKPOINT 09-5"
+    "after": "检查点 09-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_6",
     "index": 42292,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-6",
-    "after": "CHECKPOINT 09-6"
+    "after": "检查点 09-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_7",
     "index": 42293,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-7",
-    "after": "CHECKPOINT 09-7"
+    "after": "检查点 09-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_8",
     "index": 42294,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-8",
-    "after": "CHECKPOINT 09-8"
+    "after": "检查点 09-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_10_9",
     "index": 42295,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 09-9",
-    "after": "CHECKPOINT 09-9"
+    "after": "检查点 09-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_1",
     "index": 42297,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-1",
-    "after": "CHECKPOINT 10-1"
+    "after": "检查点 10-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_10",
     "index": 42306,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-10",
-    "after": "CHECKPOINT 10-10"
+    "after": "检查点 10-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_2",
     "index": 42298,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-2",
-    "after": "CHECKPOINT 10-2"
+    "after": "检查点 10-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_3",
     "index": 42299,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-3",
-    "after": "CHECKPOINT 10-3"
+    "after": "检查点 10-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_4",
     "index": 42300,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-4",
-    "after": "CHECKPOINT 10-4"
+    "after": "检查点 10-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_5",
     "index": 42301,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-5",
-    "after": "CHECKPOINT 10-5"
+    "after": "检查点 10-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_6",
     "index": 42302,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-6",
-    "after": "CHECKPOINT 10-6"
+    "after": "检查点 10-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_7",
     "index": 42303,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-7",
-    "after": "CHECKPOINT 10-7"
+    "after": "检查点 10-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_8",
     "index": 42304,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-8",
-    "after": "CHECKPOINT 10-8"
+    "after": "检查点 10-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_11_9",
     "index": 42305,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 10-9",
-    "after": "CHECKPOINT 10-9"
+    "after": "检查点 10-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_1",
     "index": 42307,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-1",
-    "after": "CHECKPOINT 11-1"
+    "after": "检查点 11-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_10",
     "index": 42316,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-10",
-    "after": "CHECKPOINT 11-10"
+    "after": "检查点 11-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_2",
     "index": 42308,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-2",
-    "after": "CHECKPOINT 11-2"
+    "after": "检查点 11-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_3",
     "index": 42309,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-3",
-    "after": "CHECKPOINT 11-3"
+    "after": "检查点 11-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_4",
     "index": 42310,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-4",
-    "after": "CHECKPOINT 11-4"
+    "after": "检查点 11-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_5",
     "index": 42311,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-5",
-    "after": "CHECKPOINT 11-5"
+    "after": "检查点 11-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_6",
     "index": 42312,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-6",
-    "after": "CHECKPOINT 11-6"
+    "after": "检查点 11-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_7",
     "index": 42313,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-7",
-    "after": "CHECKPOINT 11-7"
+    "after": "检查点 11-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_8",
     "index": 42314,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-8",
-    "after": "CHECKPOINT 11-8"
+    "after": "检查点 11-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_12_9",
     "index": 42315,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 11-9",
-    "after": "CHECKPOINT 11-9"
+    "after": "检查点 11-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_1",
     "index": 42317,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-1",
-    "after": "CHECKPOINT 12-1"
+    "after": "检查点 12-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_10",
     "index": 42326,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-10",
-    "after": "CHECKPOINT 12-10"
+    "after": "检查点 12-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_2",
     "index": 42318,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-2",
-    "after": "CHECKPOINT 12-2"
+    "after": "检查点 12-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_3",
     "index": 42319,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-3",
-    "after": "CHECKPOINT 12-3"
+    "after": "检查点 12-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_4",
     "index": 42320,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-4",
-    "after": "CHECKPOINT 12-4"
+    "after": "检查点 12-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_5",
     "index": 42321,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-5",
-    "after": "CHECKPOINT 12-5"
+    "after": "检查点 12-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_6",
     "index": 42322,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-6",
-    "after": "CHECKPOINT 12-6"
+    "after": "检查点 12-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_7",
     "index": 42323,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-7",
-    "after": "CHECKPOINT 12-7"
+    "after": "检查点 12-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_8",
     "index": 42324,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-8",
-    "after": "CHECKPOINT 12-8"
+    "after": "检查点 12-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_13_9",
     "index": 42325,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 12-9",
-    "after": "CHECKPOINT 12-9"
+    "after": "检查点 12-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_1",
     "index": 42327,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-1",
-    "after": "CHECKPOINT 13-1"
+    "after": "检查点 13-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_10",
     "index": 42336,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-10",
-    "after": "CHECKPOINT 13-10"
+    "after": "检查点 13-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_2",
     "index": 42328,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-2",
-    "after": "CHECKPOINT 13-2"
+    "after": "检查点 13-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_3",
     "index": 42329,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-3",
-    "after": "CHECKPOINT 13-3"
+    "after": "检查点 13-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_4",
     "index": 42330,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-4",
-    "after": "CHECKPOINT 13-4"
+    "after": "检查点 13-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_5",
     "index": 42331,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-5",
-    "after": "CHECKPOINT 13-5"
+    "after": "检查点 13-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_6",
     "index": 42332,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-6",
-    "after": "CHECKPOINT 13-6"
+    "after": "检查点 13-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_7",
     "index": 42333,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-7",
-    "after": "CHECKPOINT 13-7"
+    "after": "检查点 13-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_8",
     "index": 42334,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-8",
-    "after": "CHECKPOINT 13-8"
+    "after": "检查点 13-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_14_9",
     "index": 42335,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 13-9",
-    "after": "CHECKPOINT 13-9"
+    "after": "检查点 13-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_1",
     "index": 42337,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-1",
-    "after": "CHECKPOINT 14-1"
+    "after": "检查点 14-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_10",
     "index": 42346,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-10",
-    "after": "CHECKPOINT 14-10"
+    "after": "检查点 14-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_2",
     "index": 42338,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-2",
-    "after": "CHECKPOINT 14-2"
+    "after": "检查点 14-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_3",
     "index": 42339,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-3",
-    "after": "CHECKPOINT 14-3"
+    "after": "检查点 14-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_4",
     "index": 42340,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-4",
-    "after": "CHECKPOINT 14-4"
+    "after": "检查点 14-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_5",
     "index": 42341,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-5",
-    "after": "CHECKPOINT 14-5"
+    "after": "检查点 14-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_6",
     "index": 42342,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-6",
-    "after": "CHECKPOINT 14-6"
+    "after": "检查点 14-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_7",
     "index": 42343,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-7",
-    "after": "CHECKPOINT 14-7"
+    "after": "检查点 14-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_8",
     "index": 42344,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-8",
-    "after": "CHECKPOINT 14-8"
+    "after": "检查点 14-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_15_9",
     "index": 42345,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 14-9",
-    "after": "CHECKPOINT 14-9"
+    "after": "检查点 14-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_1",
     "index": 42347,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-1",
-    "after": "CHECKPOINT 15-1"
+    "after": "检查点 15-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_10",
     "index": 42356,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-10",
-    "after": "CHECKPOINT 15-10"
+    "after": "检查点 15-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_2",
     "index": 42348,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-2",
-    "after": "CHECKPOINT 15-2"
+    "after": "检查点 15-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_3",
     "index": 42349,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-3",
-    "after": "CHECKPOINT 15-3"
+    "after": "检查点 15-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_4",
     "index": 42350,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-4",
-    "after": "CHECKPOINT 15-4"
+    "after": "检查点 15-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_5",
     "index": 42351,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-5",
-    "after": "CHECKPOINT 15-5"
+    "after": "检查点 15-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_6",
     "index": 42352,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-6",
-    "after": "CHECKPOINT 15-6"
+    "after": "检查点 15-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_7",
     "index": 42353,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-7",
-    "after": "CHECKPOINT 15-7"
+    "after": "检查点 15-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_8",
     "index": 42354,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-8",
-    "after": "CHECKPOINT 15-8"
+    "after": "检查点 15-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_16_9",
     "index": 42355,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 15-9",
-    "after": "CHECKPOINT 15-9"
+    "after": "检查点 15-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_1",
     "index": 42357,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-1",
-    "after": "CHECKPOINT 16-1"
+    "after": "检查点 16-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_10",
     "index": 42366,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-10",
-    "after": "CHECKPOINT 16-10"
+    "after": "检查点 16-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_2",
     "index": 42358,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-2",
-    "after": "CHECKPOINT 16-2"
+    "after": "检查点 16-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_3",
     "index": 42359,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-3",
-    "after": "CHECKPOINT 16-3"
+    "after": "检查点 16-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_4",
     "index": 42360,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-4",
-    "after": "CHECKPOINT 16-4"
+    "after": "检查点 16-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_5",
     "index": 42361,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-5",
-    "after": "CHECKPOINT 16-5"
+    "after": "检查点 16-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_6",
     "index": 42362,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-6",
-    "after": "CHECKPOINT 16-6"
+    "after": "检查点 16-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_7",
     "index": 42363,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-7",
-    "after": "CHECKPOINT 16-7"
+    "after": "检查点 16-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_8",
     "index": 42364,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-8",
-    "after": "CHECKPOINT 16-8"
+    "after": "检查点 16-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_17_9",
     "index": 42365,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 16-9",
-    "after": "CHECKPOINT 16-9"
+    "after": "检查点 16-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_1",
     "index": 42367,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-1",
-    "after": "CHECKPOINT 17-1"
+    "after": "检查点 17-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_10",
     "index": 42376,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-10",
-    "after": "CHECKPOINT 17-10"
+    "after": "检查点 17-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_2",
     "index": 42368,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-2",
-    "after": "CHECKPOINT 17-2"
+    "after": "检查点 17-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_3",
     "index": 42369,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-3",
-    "after": "CHECKPOINT 17-3"
+    "after": "检查点 17-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_4",
     "index": 42370,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-4",
-    "after": "CHECKPOINT 17-4"
+    "after": "检查点 17-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_5",
     "index": 42371,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-5",
-    "after": "CHECKPOINT 17-5"
+    "after": "检查点 17-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_6",
     "index": 42372,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-6",
-    "after": "CHECKPOINT 17-6"
+    "after": "检查点 17-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_7",
     "index": 42373,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-7",
-    "after": "CHECKPOINT 17-7"
+    "after": "检查点 17-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_8",
     "index": 42374,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-8",
-    "after": "CHECKPOINT 17-8"
+    "after": "检查点 17-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_18_9",
     "index": 42375,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 17-9",
-    "after": "CHECKPOINT 17-9"
+    "after": "检查点 17-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_1",
     "index": 42377,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-1",
-    "after": "CHECKPOINT 18-1"
+    "after": "检查点 18-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_10",
     "index": 42386,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-10",
-    "after": "CHECKPOINT 18-10"
+    "after": "检查点 18-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_2",
     "index": 42378,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-2",
-    "after": "CHECKPOINT 18-2"
+    "after": "检查点 18-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_3",
     "index": 42379,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-3",
-    "after": "CHECKPOINT 18-3"
+    "after": "检查点 18-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_4",
     "index": 42380,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-4",
-    "after": "CHECKPOINT 18-4"
+    "after": "检查点 18-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_5",
     "index": 42381,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-5",
-    "after": "CHECKPOINT 18-5"
+    "after": "检查点 18-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_6",
     "index": 42382,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-6",
-    "after": "CHECKPOINT 18-6"
+    "after": "检查点 18-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_7",
     "index": 42383,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-7",
-    "after": "CHECKPOINT 18-7"
+    "after": "检查点 18-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_8",
     "index": 42384,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-8",
-    "after": "CHECKPOINT 18-8"
+    "after": "检查点 18-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_19_9",
     "index": 42385,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 18-9",
-    "after": "CHECKPOINT 18-9"
+    "after": "检查点 18-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_1",
     "index": 42387,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-1",
-    "after": "CHECKPOINT 19-1"
+    "after": "检查点 19-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_10",
     "index": 42396,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-10",
-    "after": "CHECKPOINT 19-10"
+    "after": "检查点 19-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_2",
     "index": 42388,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-2",
-    "after": "CHECKPOINT 19-2"
+    "after": "检查点 19-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_3",
     "index": 42389,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-3",
-    "after": "CHECKPOINT 19-3"
+    "after": "检查点 19-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_4",
     "index": 42390,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-4",
-    "after": "CHECKPOINT 19-4"
+    "after": "检查点 19-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_5",
     "index": 42391,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-5",
-    "after": "CHECKPOINT 19-5"
+    "after": "检查点 19-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_6",
     "index": 42392,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-6",
-    "after": "CHECKPOINT 19-6"
+    "after": "检查点 19-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_7",
     "index": 42393,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-7",
-    "after": "CHECKPOINT 19-7"
+    "after": "检查点 19-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_8",
     "index": 42394,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-8",
-    "after": "CHECKPOINT 19-8"
+    "after": "检查点 19-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_20_9",
     "index": 42395,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 19-9",
-    "after": "CHECKPOINT 19-9"
+    "after": "检查点 19-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_1",
     "index": 42397,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-1",
-    "after": "CHECKPOINT 20-1"
+    "after": "检查点 20-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_10",
     "index": 42406,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-10",
-    "after": "CHECKPOINT 20-10"
+    "after": "检查点 20-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_2",
     "index": 42398,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-2",
-    "after": "CHECKPOINT 20-2"
+    "after": "检查点 20-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_3",
     "index": 42399,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-3",
-    "after": "CHECKPOINT 20-3"
+    "after": "检查点 20-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_4",
     "index": 42400,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-4",
-    "after": "CHECKPOINT 20-4"
+    "after": "检查点 20-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_5",
     "index": 42401,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-5",
-    "after": "CHECKPOINT 20-5"
+    "after": "检查点 20-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_6",
     "index": 42402,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-6",
-    "after": "CHECKPOINT 20-6"
+    "after": "检查点 20-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_7",
     "index": 42403,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-7",
-    "after": "CHECKPOINT 20-7"
+    "after": "检查点 20-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_8",
     "index": 42404,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-8",
-    "after": "CHECKPOINT 20-8"
+    "after": "检查点 20-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_21_9",
     "index": 42405,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 20-9",
-    "after": "CHECKPOINT 20-9"
+    "after": "检查点 20-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_1",
     "index": 42407,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-1",
-    "after": "CHECKPOINT 21-1"
+    "after": "检查点 21-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_10",
     "index": 42416,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-10",
-    "after": "CHECKPOINT 21-10"
+    "after": "检查点 21-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_2",
     "index": 42408,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-2",
-    "after": "CHECKPOINT 21-2"
+    "after": "检查点 21-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_3",
     "index": 42409,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-3",
-    "after": "CHECKPOINT 21-3"
+    "after": "检查点 21-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_4",
     "index": 42410,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-4",
-    "after": "CHECKPOINT 21-4"
+    "after": "检查点 21-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_5",
     "index": 42411,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-5",
-    "after": "CHECKPOINT 21-5"
+    "after": "检查点 21-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_6",
     "index": 42412,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-6",
-    "after": "CHECKPOINT 21-6"
+    "after": "检查点 21-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_7",
     "index": 42413,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-7",
-    "after": "CHECKPOINT 21-7"
+    "after": "检查点 21-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_8",
     "index": 42414,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-8",
-    "after": "CHECKPOINT 21-8"
+    "after": "检查点 21-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_22_9",
     "index": 42415,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 21-9",
-    "after": "CHECKPOINT 21-9"
+    "after": "检查点 21-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_1",
     "index": 42417,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-1",
-    "after": "CHECKPOINT 22-1"
+    "after": "检查点 22-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_10",
     "index": 42426,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-10",
-    "after": "CHECKPOINT 22-10"
+    "after": "检查点 22-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_2",
     "index": 42418,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-2",
-    "after": "CHECKPOINT 22-2"
+    "after": "检查点 22-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_3",
     "index": 42419,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-3",
-    "after": "CHECKPOINT 22-3"
+    "after": "检查点 22-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_4",
     "index": 42420,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-4",
-    "after": "CHECKPOINT 22-4"
+    "after": "检查点 22-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_5",
     "index": 42421,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-5",
-    "after": "CHECKPOINT 22-5"
+    "after": "检查点 22-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_6",
     "index": 42422,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-6",
-    "after": "CHECKPOINT 22-6"
+    "after": "检查点 22-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_7",
     "index": 42423,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-7",
-    "after": "CHECKPOINT 22-7"
+    "after": "检查点 22-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_8",
     "index": 42424,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-8",
-    "after": "CHECKPOINT 22-8"
+    "after": "检查点 22-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_23_9",
     "index": 42425,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 22-9",
-    "after": "CHECKPOINT 22-9"
+    "after": "检查点 22-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_1",
     "index": 42427,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-1",
-    "after": "CHECKPOINT 23-1"
+    "after": "检查点 23-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_10",
     "index": 42436,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-10",
-    "after": "CHECKPOINT 23-10"
+    "after": "检查点 23-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_2",
     "index": 42428,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-2",
-    "after": "CHECKPOINT 23-2"
+    "after": "检查点 23-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_3",
     "index": 42429,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-3",
-    "after": "CHECKPOINT 23-3"
+    "after": "检查点 23-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_4",
     "index": 42430,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-4",
-    "after": "CHECKPOINT 23-4"
+    "after": "检查点 23-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_5",
     "index": 42431,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-5",
-    "after": "CHECKPOINT 23-5"
+    "after": "检查点 23-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_6",
     "index": 42432,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-6",
-    "after": "CHECKPOINT 23-6"
+    "after": "检查点 23-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_7",
     "index": 42433,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-7",
-    "after": "CHECKPOINT 23-7"
+    "after": "检查点 23-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_8",
     "index": 42434,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-8",
-    "after": "CHECKPOINT 23-8"
+    "after": "检查点 23-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_24_9",
     "index": 42435,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 23-9",
-    "after": "CHECKPOINT 23-9"
+    "after": "检查点 23-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_1",
     "index": 42437,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-1",
-    "after": "CHECKPOINT 24-1"
+    "after": "检查点 24-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_10",
     "index": 42446,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-10",
-    "after": "CHECKPOINT 24-10"
+    "after": "检查点 24-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_2",
     "index": 42438,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-2",
-    "after": "CHECKPOINT 24-2"
+    "after": "检查点 24-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_3",
     "index": 42439,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-3",
-    "after": "CHECKPOINT 24-3"
+    "after": "检查点 24-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_4",
     "index": 42440,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-4",
-    "after": "CHECKPOINT 24-4"
+    "after": "检查点 24-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_5",
     "index": 42441,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-5",
-    "after": "CHECKPOINT 24-5"
+    "after": "检查点 24-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_6",
     "index": 42442,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-6",
-    "after": "CHECKPOINT 24-6"
+    "after": "检查点 24-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_7",
     "index": 42443,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-7",
-    "after": "CHECKPOINT 24-7"
+    "after": "检查点 24-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_8",
     "index": 42444,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-8",
-    "after": "CHECKPOINT 24-8"
+    "after": "检查点 24-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_1_9",
     "index": 42445,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 24-9",
-    "after": "CHECKPOINT 24-9"
+    "after": "检查点 24-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_1",
     "index": 42447,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-1",
-    "after": "CHECKPOINT 25-1"
+    "after": "检查点 25-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_10",
     "index": 42456,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-10",
-    "after": "CHECKPOINT 25-10"
+    "after": "检查点 25-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_2",
     "index": 42448,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-2",
-    "after": "CHECKPOINT 25-2"
+    "after": "检查点 25-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_3",
     "index": 42449,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-3",
-    "after": "CHECKPOINT 25-3"
+    "after": "检查点 25-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_4",
     "index": 42450,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-4",
-    "after": "CHECKPOINT 25-4"
+    "after": "检查点 25-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_5",
     "index": 42451,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-5",
-    "after": "CHECKPOINT 25-5"
+    "after": "检查点 25-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_6",
     "index": 42452,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-6",
-    "after": "CHECKPOINT 25-6"
+    "after": "检查点 25-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_7",
     "index": 42453,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-7",
-    "after": "CHECKPOINT 25-7"
+    "after": "检查点 25-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_8",
     "index": 42454,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-8",
-    "after": "CHECKPOINT 25-8"
+    "after": "检查点 25-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_25_2_9",
     "index": 42455,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 25-9",
-    "after": "CHECKPOINT 25-9"
+    "after": "检查点 25-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_1",
     "index": 42457,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-1",
-    "after": "CHECKPOINT 26-1"
+    "after": "检查点 26-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_10",
     "index": 42466,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-10",
-    "after": "CHECKPOINT 26-10"
+    "after": "检查点 26-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_2",
     "index": 42458,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-2",
-    "after": "CHECKPOINT 26-2"
+    "after": "检查点 26-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_3",
     "index": 42459,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-3",
-    "after": "CHECKPOINT 26-3"
+    "after": "检查点 26-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_4",
     "index": 42460,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-4",
-    "after": "CHECKPOINT 26-4"
+    "after": "检查点 26-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_5",
     "index": 42461,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-5",
-    "after": "CHECKPOINT 26-5"
+    "after": "检查点 26-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_6",
     "index": 42462,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-6",
-    "after": "CHECKPOINT 26-6"
+    "after": "检查点 26-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_7",
     "index": 42463,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-7",
-    "after": "CHECKPOINT 26-7"
+    "after": "检查点 26-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_8",
     "index": 42464,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-8",
-    "after": "CHECKPOINT 26-8"
+    "after": "检查点 26-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_26_9",
     "index": 42465,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 26-9",
-    "after": "CHECKPOINT 26-9"
+    "after": "检查点 26-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_1",
     "index": 42467,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-1",
-    "after": "CHECKPOINT 27-1"
+    "after": "检查点 27-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_10",
     "index": 42476,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-10",
-    "after": "CHECKPOINT 27-10"
+    "after": "检查点 27-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_2",
     "index": 42468,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-2",
-    "after": "CHECKPOINT 27-2"
+    "after": "检查点 27-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_3",
     "index": 42469,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-3",
-    "after": "CHECKPOINT 27-3"
+    "after": "检查点 27-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_4",
     "index": 42470,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-4",
-    "after": "CHECKPOINT 27-4"
+    "after": "检查点 27-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_5",
     "index": 42471,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-5",
-    "after": "CHECKPOINT 27-5"
+    "after": "检查点 27-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_6",
     "index": 42472,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-6",
-    "after": "CHECKPOINT 27-6"
+    "after": "检查点 27-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_7",
     "index": 42473,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-7",
-    "after": "CHECKPOINT 27-7"
+    "after": "检查点 27-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_8",
     "index": 42474,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-8",
-    "after": "CHECKPOINT 27-8"
+    "after": "检查点 27-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_27_9",
     "index": 42475,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 27-9",
-    "after": "CHECKPOINT 27-9"
+    "after": "检查点 27-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_1",
     "index": 42477,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-1",
-    "after": "CHECKPOINT 28-1"
+    "after": "检查点 28-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_10",
     "index": 42486,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-10",
-    "after": "CHECKPOINT 28-10"
+    "after": "检查点 28-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_2",
     "index": 42478,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-2",
-    "after": "CHECKPOINT 28-2"
+    "after": "检查点 28-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_3",
     "index": 42479,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-3",
-    "after": "CHECKPOINT 28-3"
+    "after": "检查点 28-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_4",
     "index": 42480,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-4",
-    "after": "CHECKPOINT 28-4"
+    "after": "检查点 28-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_5",
     "index": 42481,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-5",
-    "after": "CHECKPOINT 28-5"
+    "after": "检查点 28-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_6",
     "index": 42482,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-6",
-    "after": "CHECKPOINT 28-6"
+    "after": "检查点 28-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_7",
     "index": 42483,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-7",
-    "after": "CHECKPOINT 28-7"
+    "after": "检查点 28-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_8",
     "index": 42484,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-8",
-    "after": "CHECKPOINT 28-8"
+    "after": "检查点 28-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_28_9",
     "index": 42485,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 28-9",
-    "after": "CHECKPOINT 28-9"
+    "after": "检查点 28-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_1",
     "index": 42487,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-1",
-    "after": "CHECKPOINT 29-1"
+    "after": "检查点 29-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_10",
     "index": 42496,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-10",
-    "after": "CHECKPOINT 29-10"
+    "after": "检查点 29-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_2",
     "index": 42488,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-2",
-    "after": "CHECKPOINT 29-2"
+    "after": "检查点 29-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_3",
     "index": 42489,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-3",
-    "after": "CHECKPOINT 29-3"
+    "after": "检查点 29-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_4",
     "index": 42490,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-4",
-    "after": "CHECKPOINT 29-4"
+    "after": "检查点 29-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_5",
     "index": 42491,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-5",
-    "after": "CHECKPOINT 29-5"
+    "after": "检查点 29-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_6",
     "index": 42492,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-6",
-    "after": "CHECKPOINT 29-6"
+    "after": "检查点 29-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_7",
     "index": 42493,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-7",
-    "after": "CHECKPOINT 29-7"
+    "after": "检查点 29-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_8",
     "index": 42494,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-8",
-    "after": "CHECKPOINT 29-8"
+    "after": "检查点 29-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_29_9",
     "index": 42495,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 29-9",
-    "after": "CHECKPOINT 29-9"
+    "after": "检查点 29-9"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_1",
     "index": 42497,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-1",
-    "after": "CHECKPOINT 30-1"
+    "after": "检查点 30-1"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_10",
     "index": 42506,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-10",
-    "after": "CHECKPOINT 30-10"
+    "after": "检查点 30-10"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_2",
     "index": 42498,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-2",
-    "after": "CHECKPOINT 30-2"
+    "after": "检查点 30-2"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_3",
     "index": 42499,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-3",
-    "after": "CHECKPOINT 30-3"
+    "after": "检查点 30-3"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_4",
     "index": 42500,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-4",
-    "after": "CHECKPOINT 30-4"
+    "after": "检查点 30-4"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_5",
     "index": 42501,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-5",
-    "after": "CHECKPOINT 30-5"
+    "after": "检查点 30-5"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_6",
     "index": 42502,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-6",
-    "after": "CHECKPOINT 30-6"
+    "after": "检查点 30-6"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_7",
     "index": 42503,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-7",
-    "after": "CHECKPOINT 30-7"
+    "after": "检查点 30-7"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_8",
     "index": 42504,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-8",
-    "after": "CHECKPOINT 30-8"
+    "after": "检查点 30-8"
   },
   {
     "key": "HudMissioninfo_Name_Checkpoint_30_9",
     "index": 42505,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CHECKPOINT 30-9",
-    "after": "CHECKPOINT 30-9"
+    "after": "检查点 30-9"
   },
   {
     "key": "HudMissioninfo_Name_Currentscore",
@@ -14704,6 +14893,555 @@
     "reason": "界面文字或通用目标名称",
     "before": "WAVE UPDATED",
     "after": "波次更新"
+  },
+  {
+    "key": "HudOther_Name_Attention",
+    "index": 42657,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ATTENTION",
+    "after": "注意"
+  },
+  {
+    "key": "HudOther_Name_Attentionjp",
+    "index": 42658,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "注意",
+    "after": "注意"
+  },
+  {
+    "key": "HudOther_Name_Autopilot",
+    "index": 42175,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "AUTO PILOT",
+    "after": "自动驾驶"
+  },
+  {
+    "key": "HudOther_Name_Ecmoff",
+    "index": 42642,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ECM: OFF",
+    "after": "电子干扰：关闭"
+  },
+  {
+    "key": "HudOther_Name_Ecmon",
+    "index": 42641,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ECM: ON",
+    "after": "电子干扰：开启"
+  },
+  {
+    "key": "HudOther_Name_GearDown",
+    "index": 42661,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "GEAR DOWN",
+    "after": "起落架已放下"
+  },
+  {
+    "key": "HudOther_Name_Holdposition",
+    "index": 42174,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "HOLD POSITION",
+    "after": "保持位置"
+  },
+  {
+    "key": "HudOther_Name_Nojp",
+    "index": 42660,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "否",
+    "after": "否"
+  },
+  {
+    "key": "HudOther_Name_Pause",
+    "index": 42176,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PAUSE",
+    "after": "暂停"
+  },
+  {
+    "key": "HudOther_Name_Press",
+    "index": 42181,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PRESS",
+    "after": "按下"
+  },
+  {
+    "key": "HudOther_Name_Pressstarttoskip",
+    "index": 42177,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "PRESS  TO SKIP",
+    "after": "按跳过"
+  },
+  {
+    "key": "HudOther_Name_RemainingDistance",
+    "index": 42638,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "REMAINING DISTANCE",
+    "after": "剩余距离"
+  },
+  {
+    "key": "HudOther_Name_Remainingtime",
+    "index": 42179,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "REMAINING TIME",
+    "after": "剩余时间"
+  },
+  {
+    "key": "HudOther_Name_Returnbase",
+    "index": 42172,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RETURN TO BASE",
+    "after": "返回基地"
+  },
+  {
+    "key": "HudOther_Name_Returncarrier",
+    "index": 42173,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RETURN TO CARRIER",
+    "after": "返回航母"
+  },
+  {
+    "key": "HudOther_Name_SPWeaponEmpty",
+    "index": 42662,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SP WEAPON EMPTY",
+    "after": "特殊武器耗尽"
+  },
+  {
+    "key": "HudOther_Name_Systemmessage",
+    "index": 42178,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "",
+    "after": ""
+  },
+  {
+    "key": "HudOther_Name_Toskip",
+    "index": 42182,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TO SKIP",
+    "after": "跳过"
+  },
+  {
+    "key": "HudOther_Name_Wingmanattack1",
+    "index": 42643,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "前方攻击",
+    "after": "前方攻击"
+  },
+  {
+    "key": "HudOther_Name_Wingmanattack2",
+    "index": 42644,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "集中攻击",
+    "after": "集中攻击"
+  },
+  {
+    "key": "HudOther_Name_Wingmanattackmini",
+    "index": 42650,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ATTACK",
+    "after": "攻击"
+  },
+  {
+    "key": "HudOther_Name_Wingmancover",
+    "index": 42646,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "掩护",
+    "after": "掩护"
+  },
+  {
+    "key": "HudOther_Name_Wingmancovermini",
+    "index": 42652,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "COVER",
+    "after": "掩护"
+  },
+  {
+    "key": "HudOther_Name_Wingmandisperse",
+    "index": 42645,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "分散攻击",
+    "after": "分散攻击"
+  },
+  {
+    "key": "HudOther_Name_Wingmandispersemini",
+    "index": 42651,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DISPERSE",
+    "after": "分散攻击"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweapon1",
+    "index": 42647,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "许可特殊武器",
+    "after": "许可特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweapon2",
+    "index": 42648,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "禁止特殊武器",
+    "after": "禁止特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweapon3",
+    "index": 42649,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "特殊武器",
+    "after": "特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweaponmini1",
+    "index": 42653,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SP.WPN",
+    "after": "特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweaponmini2",
+    "index": 42654,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SP WPN",
+    "after": "特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweaponmini3",
+    "index": 42655,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SP WEAPON",
+    "after": "特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Wingmanspecialweaponmini4",
+    "index": 42656,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "SP. WEAPON",
+    "after": "特殊武器"
+  },
+  {
+    "key": "HudOther_Name_Yesjp",
+    "index": 42659,
+    "category": "menu",
+    "action": "keep",
+    "reason": "已有中文",
+    "before": "是",
+    "after": "是"
+  },
+  {
+    "key": "HudOther_Name_ecmactive",
+    "index": 42634,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ECM ACTIVE",
+    "after": "电子干扰已启动"
+  },
+  {
+    "key": "HudOther_Name_esmactive",
+    "index": 42633,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ESM ACTIVE",
+    "after": "电子支援已启动"
+  },
+  {
+    "key": "HudOther_Name_esmdetected",
+    "index": 42636,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ESM DETECTED",
+    "after": "发现电子支援信号"
+  },
+  {
+    "key": "HudOther_Name_iwesactive",
+    "index": 42635,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "IEWS ACTIVE",
+    "after": "综合电子战已启动"
+  },
+  {
+    "key": "HudOther_Name_iwesdetected",
+    "index": 42637,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "IEWS DETECTED",
+    "after": "发现综合电子战信号"
+  },
+  {
+    "key": "HudPlayerinfo_Name_Ab",
+    "index": 42512,
+    "category": "menu",
+    "action": "keep",
+    "reason": "保留型号、专名、呼号或非文字标识",
+    "before": "A/B",
+    "after": "A/B"
+  },
+  {
+    "key": "HudPlayerinfo_Name_Currentenemystarget",
+    "index": 42511,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "TARGET:   +",
+    "after": "目标：  +"
+  },
+  {
+    "key": "HudPlayerinfo_Name_Currentplayerstarget",
+    "index": 42510,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "TARGET：",
+    "after": "目标："
+  },
+  {
+    "key": "HudPlayerinfo_Name_Dmgratio",
+    "index": 42508,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DMG",
+    "after": "损伤"
+  },
+  {
+    "key": "HudPlayerinfo_Name_Flrratio",
+    "index": 42509,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "FLR",
+    "after": "诱饵弹"
+  },
+  {
+    "key": "HudWarning_Name_Alert",
+    "index": 42156,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ALERT",
+    "after": "警报"
+  },
+  {
+    "key": "HudWarning_Name_AmmunitionZero",
+    "index": 42155,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "AMMUNITION IS ZERO",
+    "after": "弹药耗尽"
+  },
+  {
+    "key": "HudWarning_Name_Caution",
+    "index": 42145,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "CAUTION",
+    "after": "注意"
+  },
+  {
+    "key": "HudWarning_Name_Damage",
+    "index": 42146,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DAMAGED",
+    "after": "受到损伤"
+  },
+  {
+    "key": "HudWarning_Name_Descend",
+    "index": 42158,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "DESCEND",
+    "after": "降低高度"
+  },
+  {
+    "key": "HudWarning_Name_HighAltitude",
+    "index": 42154,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "HIGH ALTITUDE",
+    "after": "高度过高"
+  },
+  {
+    "key": "HudWarning_Name_Hold",
+    "index": 42183,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "HOLD",
+    "after": "保持"
+  },
+  {
+    "key": "HudWarning_Name_Holdfire",
+    "index": 42147,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "HOLD FIRE",
+    "after": "禁止开火"
+  },
+  {
+    "key": "HudWarning_Name_Icing",
+    "index": 42152,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "ICING UP",
+    "after": "正在结冰"
+  },
+  {
+    "key": "HudWarning_Name_Missilealert",
+    "index": 42143,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MISSILE ALERT",
+    "after": "导弹来袭"
+  },
+  {
+    "key": "HudWarning_Name_Offcourse",
+    "index": 42149,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "OFF COURSE",
+    "after": "偏离航线"
+  },
+  {
+    "key": "HudWarning_Name_Overspeed",
+    "index": 42159,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "OVERSPEED",
+    "after": "速度过高"
+  },
+  {
+    "key": "HudWarning_Name_Pulldown",
+    "index": 42151,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PULL DOWN",
+    "after": "压低机头"
+  },
+  {
+    "key": "HudWarning_Name_Pullup",
+    "index": 42150,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "PULL UP",
+    "after": "拉起机头"
+  },
+  {
+    "key": "HudWarning_Name_Railgunalert",
+    "index": 42153,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "RAILGUN WARNING",
+    "after": "电磁炮警报"
+  },
+  {
+    "key": "HudWarning_Name_Rockonwarning",
+    "index": 42144,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "WARNING",
+    "after": "警告"
+  },
+  {
+    "key": "HudWarning_Name_Stall",
+    "index": 42148,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "STALLING",
+    "after": "失速"
+  },
+  {
+    "key": "HudWarning_Name_Terrain",
+    "index": 42157,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "TERRAIN",
+    "after": "注意地形"
   },
   {
     "key": "MainmenuSystemGeneral_List_None",
@@ -24280,5 +25018,32 @@
     "reason": "界面文字或通用目标名称",
     "before": "FORWARD RESUPPLY",
     "after": "前线补给"
+  },
+  {
+    "key": "WeaponShort_Name_flr",
+    "index": 9413,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "FLR",
+    "after": "诱饵弹"
+  },
+  {
+    "key": "WeaponShort_Name_mg",
+    "index": 9411,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "GUN",
+    "after": "机炮"
+  },
+  {
+    "key": "WeaponShort_Name_msl",
+    "index": 9412,
+    "category": "menu",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
+    "before": "MSL",
+    "after": "导弹"
   }
 ]

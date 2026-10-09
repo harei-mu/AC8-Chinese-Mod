@@ -55,8 +55,10 @@ required = set(''.join(r['after'] for r in decisions if r['action'] == 'translat
 required |= set('友军航空母舰坚忍号潜射巡航导弹机炮导弹诱饵损伤目标时间得分高度速度')
 required.discard('\n')
 required.discard('\r')
+required = {c for c in required if not 0xe000 <= ord(c) <= 0xf8ff}
 extra_chars = sorted(required - {chr(k) for k, _ in remap}, key=ord)
-assert all(ord(c) <= 65535 and ord(c) in cmap for c in extra_chars), 'Font face lacks a required glyph'
+missing = [c for c in extra_chars if ord(c) > 65535 or ord(c) not in cmap]
+assert not missing, f'Font face lacks required glyphs: {missing}'
 
 old_extra = base64.b64decode(texture['Extras'])
 assert len(old_extra) == 262248 and old_extra[:12] == bytes.fromhex('050005000100000001000000')
@@ -71,8 +73,13 @@ assert asset['DataResources'][0]['SerialSize'] == 262144
 
 # Reserve the entire original 512-square page. Lay out new glyphs in fixed cells.
 size, cell = 1024, 34
-slots = [(x, y) for y in range(2, size - cell, cell) for x in range(2, size - cell, cell)
-         if x >= 514 or y >= 514]
+def atlas_slots(size):
+    return [(x, y) for y in range(2, size - cell, cell) for x in range(2, size - cell, cell)
+            if x >= 514 or y >= 514]
+slots = atlas_slots(size)
+if len(extra_chars) > len(slots):
+    size = 2048
+    slots = atlas_slots(size)
 if len(extra_chars) > len(slots):
     raise RuntimeError(f'Atlas cannot hold {len(extra_chars)} glyphs in {len(slots)} slots')
 alpha = Image.new('L', (size, size), 0)
@@ -106,7 +113,8 @@ for block_row in range(128):
     new_start = block_row * (size // 4) * 16
     blocks[new_start:new_start + 128 * 16] = original_blocks[old_start:old_start + 128 * 16]
 for block_row in range(128):
-    assert blocks[block_row * 4096:block_row * 4096 + 2048] == original_blocks[block_row * 2048:(block_row + 1) * 2048]
+    new_start = block_row * (size // 4) * 16
+    assert blocks[new_start:new_start + 2048] == original_blocks[block_row * 2048:(block_row + 1) * 2048]
 
 new_extra = bytearray(old_extra[:80])
 struct.pack_into('<Q', new_extra, 20, len(blocks) + 76)

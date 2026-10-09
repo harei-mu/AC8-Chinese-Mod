@@ -131,12 +131,21 @@ def cp_arrays():
 
 decisions = json.loads((root / 'reports/translation-decisions.json').read_text(encoding='utf-8'))
 selected = {d['index']: d for d in decisions if d['action'] == 'translate' and
-            ((d['category'] in ('options', 'menu') and not d['key'].startswith('Hud')) or
-             (args.hud and (d['category'] == 'targets' or d['key'].startswith('Hud'))))}
+            ((d['category'] in ('options', 'menu') and not d['key'].startswith(('Hud', 'WeaponShort_'))) or
+             (args.hud and (d['category'] == 'targets' or d['key'].startswith(('Hud', 'WeaponShort_')) or
+                           d['key'] == 'ContainerAllyCallsign_Name_Endurance')))}
 if args.hud and args.apply:
     font_report = json.loads((root / 'reports/hud-font.json').read_text(encoding='utf-8'))
     if not font_report.get('containerVerified') or not font_report.get('requiredTranslationCharactersCovered'):
         raise RuntimeError('HUD font container is not verified')
+    font_metadata = json.loads((root / 'work/offline-font-zh-readback.json').read_text(encoding='utf-8'))
+    remap = __import__('base64').b64decode(font_metadata['Exports'][0]['Extras'])
+    covered = {chr(code) for code, _ in struct.iter_unpack('<HH', remap[4:])}
+    required = set(''.join(row['after'] for row in selected.values())) - {'\n', '\r'}
+    # Private-use format tokens are resolved into icons/variable text by the game.
+    required = {char for char in required if not 0xe000 <= ord(char) <= 0xf8ff}
+    if not required <= covered:
+        raise RuntimeError('HUD font lacks a selected translation character')
     for extension, info in font_report['files'].items():
         payload = root / f'dist/hud-font/AC8ChineseHudFont_P.{extension}'
         if hashlib.file_digest(payload.open('rb'), 'sha256').hexdigest() != info['sha256']:

@@ -19,7 +19,7 @@ const tokens = s => (s.match(/\{[^}]*\}|<[^>]*>|%\d*\$?[sdif]|[\uE000-\uF8FF]/g)
 for (const row of table) {
   let category;
   if (/^Option/i.test(row.key)) category = 'options';
-  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty|CampaignFailed_Select_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudIndicator_|HudMissioninfo_|HudMissionprogress_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || ['DataviewerGallery_Select_Music', 'Missionname_Name_ms30'].includes(row.key)) category = 'menu';
+  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty|CampaignFailed_Select_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudAttack_Name_|HudIndicator_|HudMissioninfo_|HudMissionprogress_|HudMinigames_Name_|HudOther_Name_|HudPlayerinfo_Name_|HudWarning_Name_|MissionWeather_|MissionClouddata_|MissionLocation_Name_|Missiontitle_Name_|MissionNo_Name_)/.test(row.key) || ['DataviewerGallery_Select_Music', 'Missionname_Name_ms30', 'WeaponShort_Name_flr', 'WeaponShort_Name_mg', 'WeaponShort_Name_msl'].includes(row.key)) category = 'menu';
   else if (/^(ContainerAircraft_Name_|ContainerGround_Name_|ContainerEscortTargetName_|ContainerWaypoint_|ContainerUnknown_|HudContainerinfo_)/.test(row.key)) category = 'targets';
   else if (/^Container.*Callsign/.test(row.key)) category = 'callsigns';
   else continue;
@@ -35,6 +35,9 @@ for (const row of table) {
     if (paired && /\p{Script=Han}/u.test(original[paired.index])) replacement = original[paired.index];
   }
   if (/^MissionNo_Name_/.test(row.key) && /^MISSION \d+$/.test(base)) replacement = base.replace('MISSION ', '任务 ');
+  if (/^HudMissioninfo_Name_Checkpoint_/.test(row.key) && /^CHECKPOINT (?:PROL\. )?\d+(?:-\d+)?$/.test(base)) {
+    replacement = base.replace('CHECKPOINT PROL. ', '检查点 序章 ').replace('CHECKPOINT ', '检查点 ');
+  }
   if (overrides[row.key]) replacement = overrides[row.key];
   let action = 'keep', reason = '保留型号、专名、呼号或非文字标识';
   let value = source;

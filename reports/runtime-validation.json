@@ -10,6 +10,6 @@
   "simplifiedChinese": "authored values and scoped build output audited with Windows NLS plus contextual exceptions; font rendering remains a separate validation requirement",
   "resourcePak": "FAILED menu probe: IoStore custom mount code=0, but user screenshot still English while Lua disabled; companion DAT not demonstrably loaded",
   "nativeDiagnostics": "Frida attach followed by repeated abnormal exits and explicit user crash report; discontinued. Current table patch uses Windows memory APIs without injected tracing libraries",
-  "hudFont": "BUILT: original 351 glyphs and BC3 blocks preserved, 607 Simplified Chinese/punctuation glyphs added. IoStore integrity and export payload roundtrip passed. Runtime glyph rendering not yet verified",
-  "nativeTable": "Menu mode user reports directly Chinese and no crash. Read-only recheck in battle found all 928 table entries still translated. Target/HUD dry run found 464 eligible writes across two tables, with zero capacity/source skips"
+  "hudFont": "BUILT: original 351 glyphs and BC3 blocks preserved, 637 Simplified Chinese/punctuation glyphs added. IoStore integrity and export payload roundtrip passed. Runtime glyph rendering not yet verified",
+  "nativeTable": "Menu mode user reports directly Chinese and no crash. Read-only recheck in battle found all 928 table entries still translated. Initial target/HUD dry run found 464 eligible writes across two tables, with zero capacity/source skips. Expanded 616 combat entries pending next launch"
 }

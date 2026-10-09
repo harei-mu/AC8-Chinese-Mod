@@ -1,5 +1,9 @@
 {
   "OptionDisplay_Tab_Feet": "英尺／节",
   "OptionScreen_Tab_Feet": "英尺／节",
-  "HangarAircraftSet_Description_ExistingSlots": "请选择要编辑的机体配置。"
+  "HangarAircraftSet_Description_ExistingSlots": "请选择要编辑的机体配置。",
+  "ContainerAllyCallsign_Name_Endurance": "坚忍号",
+  "HudPlayerinfo_Name_Currentenemystarget": "目标：\uf201  +\uf202",
+  "HudPlayerinfo_Name_Currentplayerstarget": "目标：",
+  "HudOther_Name_Pressstarttoskip": "按\uf434跳过"
 }

@@ -1,7 +1,7 @@
 {
   "build": "25201480",
   "status": "text built; game loading and font rendering NOT verified",
-  "changedStrings": 696,
+  "changedStrings": 1082,
   "groups": {
     "options": {
       "translate": 102,
@@ -9,8 +9,8 @@
       "review": 0
     },
     "menu": {
-      "translate": 373,
-      "keep": 759,
+      "translate": 758,
+      "keep": 459,
       "review": 0
     },
     "targets": {
@@ -19,12 +19,12 @@
       "review": 0
     },
     "callsigns": {
-      "translate": 0,
-      "keep": 368,
+      "translate": 1,
+      "keep": 367,
       "review": 0
     }
   },
-  "outputSha256": "3270c051d9d20f13cdf16f276fdfa597471c7296ee73df7eacc38984abf54d2e",
+  "outputSha256": "1fee65f3a117bd2893656401241e9f70dd095789c479cfdcc045b608152659da",
   "validation": [
     "UTF-8 and full table decode",
     "string count preserved",
