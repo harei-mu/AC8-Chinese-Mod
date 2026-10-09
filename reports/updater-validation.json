@@ -21,7 +21,17 @@
     "symbolic-link ZIP entry rejected",
     ".NET SHA-256 works without Get-FileHash"
   ],
-  "liveGitHub": "pending release publication",
+  "liveGitHub": {
+    "olderVersionSelection": "PASS: 0.2.0 selects 0.3.0",
+    "release": "https://github.com/harei-mu/AC8-Chinese-Mod/releases/tag/v0.3.0",
+    "downloadAndPackageReadback": "PASS",
+    "downloadBytes": 9353049,
+    "installedCurrentVersionCheck": "PASS: no update for 0.3.0",
+    "checkedAt": "2026-10-10T02:32:47",
+    "version": "0.3.0",
+    "installationNotPerformed": true,
+    "sha256": "3E985DF3DBB7AC37F2B65B334704E3612E0E09A5A004271925F3B1DC4632FC4F"
+  },
   "date": "2026-10-10T02:20:39",
   "fixtureOnly": true
 }
