@@ -21,6 +21,7 @@ Copy-Item -LiteralPath (Join-Path $package 'ue4ss\UE4SS.dll') -Destination (Join
 $settings = Get-Content -LiteralPath (Join-Path $package 'ue4ss\UE4SS-settings.ini') -Raw
 $settings = $settings -replace '(?m)^MajorVersion =.*$', 'MajorVersion = 5'
 $settings = $settings -replace '(?m)^MinorVersion =.*$', 'MinorVersion = 4'
+$settings = $settings -replace '(?m)^EnableAutoReloadingLuaMods =.*$', 'EnableAutoReloadingLuaMods = 1'
 Set-Content -LiteralPath (Join-Path $runtime 'UE4SS-settings.ini') -Value $settings -Encoding utf8
 $mods = Join-Path $runtime 'Mods'
 New-Item -ItemType Directory -Force -Path $mods | Out-Null

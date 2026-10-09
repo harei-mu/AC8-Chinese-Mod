@@ -42,3 +42,28 @@ end
 install('LocalizeString', false)
 install('LocalizeText', true)
 print('[AC8Chinese] prototype ready; in-game coverage and font rendering require verification\n')
+
+-- Diagnostic metadata only; the game never calls the reflected wrappers in some menus.
+for _, class_name in ipairs({'LiveLocalizeTextBlock', 'LiveLocalizationManager', 'LiveMenuTextBase'}) do
+    local ok, err = pcall(function()
+        local class = StaticFindObject('/Script/Live.' .. class_name)
+        class:ForEachProperty(function(prop)
+            print('[AC8Chinese] field ' .. class_name .. ' ' .. prop:GetFullName() .. '\n')
+        end)
+    end)
+    if not ok then print('[AC8Chinese] metadata: ' .. tostring(err) .. '\n') end
+end
+local probe_count = 0
+LoopAsync(5000, function()
+    ExecuteInGameThread(function()
+        probe_count = probe_count + 1
+        if probe_count > 6 then return end
+        local widgets = FindAllOf('LiveLocalizeTextBlock') or {}
+        print('[AC8Chinese] text widgets=' .. tostring(#widgets) .. '\n')
+        for i, widget in ipairs(widgets) do
+            if i > 5 then break end
+            pcall(function() print('[AC8Chinese] widget ' .. widget:GetFullName() .. ' text=' .. widget:GetText():ToString() .. '\n') end)
+        end
+    end)
+    return probe_count > 6
+end)
