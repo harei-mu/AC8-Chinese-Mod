@@ -3,6 +3,10 @@ package.loaded['translations'] = nil
 local replacements = require('translations')
 package.loaded['target-labels'] = nil
 local targetLabels = require('target-labels')
+local restoreTargetLabels = {}
+for original, translated in pairs(targetLabels) do
+    if not restoreTargetLabels[translated] then restoreTargetLabels[translated] = original end
+end
 local targetChanges = 0
 local enableExperimentalTargetPolling = false -- Native updates overwrite it; user observed flicker.
 local replacementCount = 0
@@ -38,7 +42,7 @@ LoopAsync(500, function()
                 if errors <= 3 then print('[AC8Chinese] widget error: ' .. tostring(err) .. '\n') end
             end
         end
-        for _, actor in ipairs(enableExperimentalTargetPolling and (FindAllOf('LiveTargetContainerActor') or {}) or {}) do
+        for _, actor in ipairs(FindAllOf('LiveTargetContainerActor') or {}) do
             local ok, err = pcall(function()
                 if not actor:IsValid() then return end
                 -- Excludes GamerTagText and callsigns: only generic unit/status labels.
@@ -46,7 +50,7 @@ LoopAsync(500, function()
                     local component = actor[field]
                     if component and component:IsValid() then
                         local original = component.Text:ToString()
-                        local value = targetLabels[original]
+                        local value = enableExperimentalTargetPolling and targetLabels[original] or restoreTargetLabels[original]
                         if value then
                             component:K2_SetText(FText(value))
                             targetChanges = targetChanges + 1
