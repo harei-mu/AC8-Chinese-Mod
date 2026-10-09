@@ -1,6 +1,9 @@
 -- UE4SS hot reload may reuse Lua's module cache.
 package.loaded['translations'] = nil
 local replacements = require('translations')
+package.loaded['target-labels'] = nil
+local targetLabels = require('target-labels')
+local targetChanges = 0
 local replacementCount = 0
 for _ in pairs(replacements) do replacementCount = replacementCount + 1 end
 print('[AC8Chinese] loaded translation keys=' .. replacementCount .. '\n')
@@ -33,6 +36,27 @@ LoopAsync(500, function()
                 errors = errors + 1
                 if errors <= 3 then print('[AC8Chinese] widget error: ' .. tostring(err) .. '\n') end
             end
+        end
+        for _, actor in ipairs(FindAllOf('LiveTargetContainerActor') or {}) do
+            local ok, err = pcall(function()
+                if not actor:IsValid() then return end
+                -- Excludes GamerTagText and callsigns: only generic unit/status labels.
+                for _, field in ipairs({'AllianceText', 'ObjectTypeText', 'NextTargetText'}) do
+                    local component = actor[field]
+                    if component and component:IsValid() then
+                        local original = component.Text:ToString()
+                        local value = targetLabels[original]
+                        if value then
+                            component:K2_SetText(FText(value))
+                            targetChanges = targetChanges + 1
+                            if targetChanges <= 8 then
+                                print('[AC8Chinese] target changed ' .. original .. ' -> ' .. value .. ' font=' .. component.Font:GetFullName() .. '\n')
+                            end
+                        end
+                    end
+                end
+            end)
+            if not ok and errors < 3 then errors = errors + 1; print('[AC8Chinese] target error: ' .. tostring(err) .. '\n') end
         end
     end)
     return false
