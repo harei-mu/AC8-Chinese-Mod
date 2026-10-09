@@ -1,0 +1,10 @@
+{
+  "build": "25201480",
+  "scope": "offline single player",
+  "keys": 44736,
+  "languageStrings": 46584,
+  "englishTable": "CP_B.dat",
+  "simplifiedChineseTable": "CP_M.dat",
+  "identicalNonempty": 6869,
+  "roundtrip": "PASS: common, English and Simplified Chinese"
+}
