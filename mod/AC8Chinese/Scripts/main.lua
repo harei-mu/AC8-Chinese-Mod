@@ -41,6 +41,23 @@ end)
 LoopAsync(10000, function()
     diagnosticPass = diagnosticPass + 1
     ExecuteInGameThread(function()
+        if diagnosticPass == 1 then
+            local actors = FindAllOf('LiveTargetContainerActor') or {}
+            for i, actor in ipairs(actors) do
+                if i > 3 then break end
+                pcall(function()
+                    for _, field in ipairs({'AllianceText', 'ObjectTypeText', 'ObjectCallsignText', 'NextTargetText'}) do
+                        local component = actor[field]
+                        if component and component:IsValid() then
+                            print('[AC8Chinese] target component ' .. field .. ' ' .. component:GetFullName() .. '\n')
+                            component:GetClass():ForEachProperty(function(p)
+                                print('[AC8Chinese] target property ' .. p:GetFullName() .. '\n')
+                            end)
+                        end
+                    end
+                end)
+            end
+        end
         for _, name in ipairs({'LiveTargetContainerActor', 'LiveTargetContainerManager', 'LiveMiniMapWidget', 'LiveNUITextBlock'}) do
             local ok, err = pcall(function()
                 local class = StaticFindObject('/Script/Live.' .. name)
