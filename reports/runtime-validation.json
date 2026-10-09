@@ -8,5 +8,6 @@
   "minimapAndOverheadTargets": "FAILED: combat screenshots show missing Chinese glyphs in native target labels; user reports English or flicker. Experimental target polling disabled and reverse restoration added; complete fix not verified",
   "firstFrame": "UNRESOLVED: periodic UMG substitution can display English before Chinese. Reflected assignment hooks register but have no observed hits; do not claim fixed",
   "simplifiedChinese": "authored values and scoped build output audited with Windows NLS plus contextual exceptions; font rendering remains a separate validation requirement",
-  "resourcePak": "experimental only; loading not verified"
+  "resourcePak": "FAILED menu probe: IoStore custom mount code=0, but user screenshot still English while Lua disabled; companion DAT not demonstrably loaded",
+  "nativeDiagnostics": "First bounded trace logged readiness and no calls. Owned process later returned 0xc0000005, user reports no observed crash. Cause unconfirmed; protected replacement process was not instrumented"
 }

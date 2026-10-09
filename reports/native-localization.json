@@ -1,0 +1,73 @@
+{
+  "exeSha256": "51510e2a520565dbe81fb0d569e95cd4393077acaaa859371489b80b8128829f",
+  "imageBase": "0x140000000",
+  "registrations": [
+    {
+      "name": "LocalizeString",
+      "encoding": "ascii",
+      "wrapperRva": "0x6eafac0",
+      "registrationRva": "0xc7c0c50"
+    },
+    {
+      "name": "LocalizeString",
+      "encoding": "ascii",
+      "wrapperRva": "0x6eaff50",
+      "registrationRva": "0xc7c0d18"
+    },
+    {
+      "name": "LocalizeText",
+      "encoding": "ascii",
+      "wrapperRva": "0x6eb0240",
+      "registrationRva": "0xc7c0c70"
+    },
+    {
+      "name": "LocalizeText",
+      "encoding": "ascii",
+      "wrapperRva": "0x6eb06e0",
+      "registrationRva": "0xc7c0d38"
+    },
+    {
+      "name": "GetObjName",
+      "encoding": "ascii",
+      "wrapperRva": "0x7d18090",
+      "registrationRva": "0xcbfc430"
+    },
+    {
+      "name": "GetObjName",
+      "encoding": "ascii",
+      "wrapperRva": "0x7d180c0",
+      "registrationRva": "0xcbfc6a8"
+    },
+    {
+      "name": "GetObjNameID",
+      "encoding": "ascii",
+      "wrapperRva": "0x7d180f0",
+      "registrationRva": "0xcbfc440"
+    },
+    {
+      "name": "GetObjNameID",
+      "encoding": "ascii",
+      "wrapperRva": "0x7d18120",
+      "registrationRva": "0xcbfc6b8"
+    },
+    {
+      "name": "SetLocalizeText",
+      "encoding": "ascii",
+      "wrapperRva": "0x6eb0d80",
+      "registrationRva": "0xc7c14d8"
+    },
+    {
+      "name": "K2_SetText",
+      "encoding": "ascii",
+      "wrapperRva": "0x3f9dd60",
+      "registrationRva": "0xbbd6830"
+    },
+    {
+      "name": "K2_SetText",
+      "encoding": "ascii",
+      "wrapperRva": "0x3f9de70",
+      "registrationRva": "0xbbd6958"
+    }
+  ],
+  "status": "static inspection only; native ABI and runtime calls unverified"
+}
