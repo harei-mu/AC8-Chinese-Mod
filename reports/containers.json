@@ -1,0 +1,181 @@
+{
+  "containers": [
+    {
+      "name": "global.ucas",
+      "size": 3871648
+    },
+    {
+      "name": "global.utoc",
+      "size": 3151,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 1,
+      "directoryIndexSize": 0,
+      "flags": 4,
+      "encrypted": false,
+      "signed": true
+    },
+    {
+      "name": "pakchunk0-Windows.pak",
+      "size": 10116323841,
+      "version": 11,
+      "encryptedIndex": true,
+      "indexOffset": 10111551476,
+      "indexSize": 1926608
+    },
+    {
+      "name": "pakchunk0-Windows.sig",
+      "size": 617980
+    },
+    {
+      "name": "pakchunk0-Windows.ucas",
+      "size": 48591327712
+    },
+    {
+      "name": "pakchunk0-Windows.utoc",
+      "size": 64972298,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 112294,
+      "directoryIndexSize": 2309088,
+      "flags": 15,
+      "encrypted": true,
+      "signed": true
+    },
+    {
+      "name": "pakchunk0optional-Windows.pak",
+      "size": 365,
+      "version": 11,
+      "encryptedIndex": true,
+      "indexOffset": 0,
+      "indexSize": 112
+    },
+    {
+      "name": "pakchunk0optional-Windows.sig",
+      "size": 532
+    },
+    {
+      "name": "pakchunk0optional-Windows.ucas",
+      "size": 100648896
+    },
+    {
+      "name": "pakchunk0optional-Windows.utoc",
+      "size": 923210,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 31,
+      "directoryIndexSize": 2701,
+      "flags": 13,
+      "encrypted": false,
+      "signed": true
+    },
+    {
+      "name": "pakchunk10-Windows.pak",
+      "size": 11213790507,
+      "version": 11,
+      "encryptedIndex": true,
+      "indexOffset": 11213058638,
+      "indexSize": 702816
+    },
+    {
+      "name": "pakchunk10-Windows.sig",
+      "size": 684964
+    },
+    {
+      "name": "pakchunk10-Windows.ucas",
+      "size": 42581541984
+    },
+    {
+      "name": "pakchunk10-Windows.utoc",
+      "size": 77422543,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 43153,
+      "directoryIndexSize": 2209808,
+      "flags": 15,
+      "encrypted": true,
+      "signed": true
+    },
+    {
+      "name": "pakchunk10optional-Windows.pak",
+      "size": 365,
+      "version": 11,
+      "encryptedIndex": true,
+      "indexOffset": 0,
+      "indexSize": 112
+    },
+    {
+      "name": "pakchunk10optional-Windows.sig",
+      "size": 532
+    },
+    {
+      "name": "pakchunk10optional-Windows.ucas",
+      "size": 274686576
+    },
+    {
+      "name": "pakchunk10optional-Windows.utoc",
+      "size": 710306,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 38,
+      "directoryIndexSize": 2384,
+      "flags": 13,
+      "encrypted": false,
+      "signed": true
+    },
+    {
+      "name": "pakchunk20-Windows.pak",
+      "size": 21597405432,
+      "version": 11,
+      "encryptedIndex": true,
+      "indexOffset": 21596011419,
+      "indexSize": 1376176
+    },
+    {
+      "name": "pakchunk20-Windows.sig",
+      "size": 1318732
+    },
+    {
+      "name": "pakchunk20-Windows.ucas",
+      "size": 8200375712
+    },
+    {
+      "name": "pakchunk20-Windows.utoc",
+      "size": 22174808,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 33348,
+      "directoryIndexSize": 1606304,
+      "flags": 15,
+      "encrypted": true,
+      "signed": true
+    },
+    {
+      "name": "pakchunk20optional-Windows.pak",
+      "size": 365,
+      "version": 11,
+      "encryptedIndex": true,
+      "indexOffset": 0,
+      "indexSize": 112
+    },
+    {
+      "name": "pakchunk20optional-Windows.sig",
+      "size": 532
+    },
+    {
+      "name": "pakchunk20optional-Windows.ucas",
+      "size": 2795220928
+    },
+    {
+      "name": "pakchunk20optional-Windows.utoc",
+      "size": 4813868,
+      "version": 6,
+      "headerSize": 144,
+      "entryCount": 290,
+      "directoryIndexSize": 11974,
+      "flags": 13,
+      "encrypted": false,
+      "signed": true
+    }
+  ]
+}
