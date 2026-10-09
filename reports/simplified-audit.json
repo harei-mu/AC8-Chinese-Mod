@@ -1,0 +1,36 @@
+{
+  "method": "Windows LCMapStringEx LCMAP_SIMPLIFIED_CHINESE; candidates require context review",
+  "checkedEntries": 2698,
+  "candidateCount": 4,
+  "unresolvedCount": 0,
+  "candidates": [
+    {
+      "key": "ContainerGround_Name_Watchtower",
+      "action": "translate",
+      "before": "瞭望塔",
+      "candidate": "了望塔",
+      "verdict": "reviewed: standard Simplified Chinese word; NLS conversion is a false positive"
+    },
+    {
+      "key": "OptionMenu_Description_Agreements",
+      "action": "keep",
+      "before": "可确认各类同意文件、著作权。",
+      "candidate": "可确认各类同意文件、着作权。",
+      "verdict": "reviewed: standard Simplified Chinese word; NLS conversion is a false positive"
+    },
+    {
+      "key": "OptionmenuSystemTop_Description_Copyright",
+      "action": "keep",
+      "before": "显示本软件的著作权。",
+      "candidate": "显示本软件的着作权。",
+      "verdict": "reviewed: standard Simplified Chinese word; NLS conversion is a false positive"
+    },
+    {
+      "key": "OptionmenuTop_Copyright_Dialogue",
+      "action": "keep",
+      "before": "本製品には第三者から許諾を受けて使用している以下のソフトウェアが含まれています。ライセンス条件等は以下を参照して下さい。 \nThis product uses the following third party software with approval. Please see below for licensing",
+      "candidate": "本制品には第三者から许诺を受けて使用している以下のソフトウェアが含まれています。ライセンス条件等は以下を参照して下さい。 \nThis product uses the following third party software with approval. Please see below for licensing",
+      "verdict": "preserve original third-party license notices; not a Chinese UI translation"
+    }
+  ]
+}

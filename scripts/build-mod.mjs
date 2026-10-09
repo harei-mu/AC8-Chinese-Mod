@@ -8,6 +8,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const input = path.join(root, 'work/extracted/Live/Content/Localization/GameData');
 const glossary = JSON.parse(fs.readFileSync(path.join(root, 'translations/glossary.json'), 'utf8'));
 Object.assign(glossary.menu, JSON.parse(fs.readFileSync(path.join(root, 'translations/interface-extra.json'), 'utf8')));
+const overrides = JSON.parse(fs.readFileSync(path.join(root, 'translations/overrides.json'), 'utf8'));
 const table = keys(decode(path.join(input, 'CP_Cmn.dat')));
 const en = strings(decode(path.join(input, 'CP_B.dat'), 1));
 const original = strings(decode(path.join(input, 'CP_M.dat'), 12));
@@ -34,16 +35,17 @@ for (const row of table) {
     if (paired && /\p{Script=Han}/u.test(original[paired.index])) replacement = original[paired.index];
   }
   if (/^MissionNo_Name_/.test(row.key) && /^MISSION \d+$/.test(base)) replacement = base.replace('MISSION ', '任务 ');
+  if (overrides[row.key]) replacement = overrides[row.key];
   let action = 'keep', reason = '保留型号、专名、呼号或非文字标识';
   let value = source;
-  if (/\p{Script=Han}/u.test(source)) reason = '已有中文';
+  if (/\p{Script=Han}/u.test(source) && !overrides[row.key]) reason = '已有中文';
   else if (replacement) {
     value = source.replace(base, replacement);
     if (value.includes('\0') || tokens(value) !== tokens(source)) throw new Error(`Invalid translation: ${row.key}`);
     if (modified.has(row.index) && modified.get(row.index) !== value) throw new Error('Conflicting aliases');
     modified.set(row.index, value);
     translated[row.index] = value;
-    action = 'translate'; reason = officialSourceKey ? `沿用游戏内中文：${officialSourceKey}` : '界面文字或通用目标名称';
+    action = 'translate'; reason = overrides[row.key] ? '精确资源键简体用语审校' : officialSourceKey ? `沿用游戏内中文：${officialSourceKey}` : '界面文字或通用目标名称';
   } else if (/^\d+ x \d+（\d+:\d+）$/.test(base)) {
     reason = '分辨率与宽高比';
   } else if (/[A-Za-z]/.test(source) && category === 'options' && source.length < 200 && !glossary.keepOptionValues.includes(base)) {

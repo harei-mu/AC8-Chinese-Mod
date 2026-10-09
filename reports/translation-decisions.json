@@ -9093,10 +9093,10 @@
     "key": "HangarAircraftSet_Description_ExistingSlots",
     "index": 44711,
     "category": "menu",
-    "action": "keep",
-    "reason": "已有中文",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "请选择想变更设置的机体组合栏位。",
-    "after": "请选择想变更设置的机体组合栏位。"
+    "after": "请选择要编辑的机体配置。"
   },
   {
     "key": "HangarAircraftSet_Description_SelectAircraft",
@@ -18219,10 +18219,10 @@
     "key": "OptionDisplay_Tab_Feet",
     "index": 43766,
     "category": "options",
-    "action": "keep",
-    "reason": "已有中文",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "呎／节",
-    "after": "呎／节"
+    "after": "英尺／节"
   },
   {
     "key": "OptionDisplay_Tab_Meter",
@@ -23187,10 +23187,10 @@
     "key": "OptionScreen_Tab_Feet",
     "index": 43717,
     "category": "options",
-    "action": "keep",
-    "reason": "已有中文",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "呎／节",
-    "after": "呎／节"
+    "after": "英尺／节"
   },
   {
     "key": "OptionScreen_Tab_Kmh",
