@@ -7,6 +7,7 @@ import { decode, encode, strings, keys } from './gamedata.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const input = path.join(root, 'work/extracted/Live/Content/Localization/GameData');
 const glossary = JSON.parse(fs.readFileSync(path.join(root, 'translations/glossary.json'), 'utf8'));
+Object.assign(glossary.menu, JSON.parse(fs.readFileSync(path.join(root, 'translations/interface-extra.json'), 'utf8')));
 const table = keys(decode(path.join(input, 'CP_Cmn.dat')));
 const en = strings(decode(path.join(input, 'CP_B.dat'), 1));
 const original = strings(decode(path.join(input, 'CP_M.dat'), 12));
@@ -16,7 +17,7 @@ const tokens = s => (s.match(/\{[^}]*\}|<[^>]*>|%\d*\$?[sdif]|[\uE000-\uF8FF]/g)
 for (const row of table) {
   let category;
   if (/^Option/i.test(row.key)) category = 'options';
-  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty_)/.test(row.key)) category = 'menu';
+  else if (/^(MainmenuTopTitle_|MainmenuTop_Select_|MainmenuSystemTitle_|MainmenuSystemGeneral_|CampaignMenu_|CampaignDifficulty_|CampaignPreparation_|CampaignPause|CampaignBriefing|Training_Name_|Hangar|HudIndicator_|HudMissioninfo_|MissionWeather_|MissionClouddata_)/.test(row.key) || row.key === 'DataviewerGallery_Select_Music') category = 'menu';
   else if (/^(ContainerAircraft_Name_|ContainerGround_Name_|ContainerEscortTargetName_|ContainerWaypoint_|ContainerUnknown_|HudContainerinfo_)/.test(row.key)) category = 'targets';
   else if (/^Container.*Callsign/.test(row.key)) category = 'callsigns';
   else continue;
