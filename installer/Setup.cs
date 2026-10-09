@@ -26,12 +26,16 @@ public sealed class AC8Setup : Form {
         result.Append('\\', slashes * 2); result.Append('"'); return result.ToString();
     }
     static ProcessStartInfo PowerShell(string script, string extra) {
-        return new ProcessStartInfo {
+        var start = new ProcessStartInfo {
             FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "System32", "WindowsPowerShell", "v1.0", "powershell.exe"),
-            Arguments = "-NoProfile -ExecutionPolicy Bypass -File " + Quote(script) + extra,
+            Arguments = "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File " + Quote(script) + extra,
             WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory,
             UseShellExecute = false, CreateNoWindow = true
         };
+        // A caller running PowerShell 7 may export its incompatible module path.
+        // Let Windows PowerShell initialize its own built-in module search path.
+        start.EnvironmentVariables.Remove("PSModulePath");
+        return start;
     }
     static void SteamLaunch(string[] args) {
         string root = AppDomain.CurrentDomain.BaseDirectory;
@@ -86,8 +90,8 @@ public sealed class AC8Setup : Form {
         ui.Text = "界面汉化：菜单、设置、机库、资料和结算";
         hud.Text = "HUD 汉化：仪表、雷达、目标名称和战斗提示";
         int y = 127; foreach (var choice in new[] {both, ui, hud}) { choice.Location = new Point(24, y); choice.Size = new Size(595, 30); Controls.Add(choice); y += 36; }
-        Controls.Add(new Label { Text = "请先退出游戏。安装、更换、更新和卸载均不启动或关闭 Steam。\n首次使用需设置一次 Steam 启动选项；以后只需重启游戏。",
-            Location = new Point(24, 245), Size = new Size(600, 48) });
+        Controls.Add(new Label { Text = "仅限单机，禁止用于 ACE COMBAT ONLINE。请先退出游戏。\n安装和卸载不干预 Steam；首次设置启动选项后只需重启游戏。",
+            Location = new Point(24, 245), Size = new Size(600, 48), ForeColor = Color.DarkRed });
         Button[] actions = {install, uninstall, full, update, steamOption};
         string[] labels = {"安装 / 更换汉化", "卸载汉化", "完全卸载", "检查更新", "复制 Steam 启动选项"};
         for (int i = 0; i < actions.Length; i++) {

@@ -25,7 +25,9 @@ execFileSync(retoc, ['to-zen', '--version', 'UE5_4', staging, container], { stdi
 execFileSync(retoc, ['verify', container], { stdio: 'inherit' });
 // Native class imports resolve through the original game's small global type table.
 fs.mkdirSync(validationInput, { recursive: true });
-const gamePaks = 'E:/SteamLibrary/steamapps/common/ACE COMBAT 8/Game/Content/Paks';
+const gameDir = process.argv[2] ?? process.env.AC8_GAME_DIR;
+if (!gameDir) throw new Error('Pass the game directory as the first argument or AC8_GAME_DIR');
+const gamePaks = path.join(gameDir, 'Game/Content/Paks');
 for (const ext of ['utoc', 'ucas']) {
   fs.copyFileSync(path.join(gamePaks, `global.${ext}`), path.join(validationInput, `global.${ext}`));
   fs.copyFileSync(path.join(destination, `AC8ChineseHudFont_P.${ext}`), path.join(validationInput, `AC8ChineseHudFont_P.${ext}`));

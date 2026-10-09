@@ -63,6 +63,8 @@ try {
     $gameProcess.WaitForExit()
     Write-LaunchEvent ('Game exit=' + $gameProcess.ExitCode)
 } catch {
+    $global:LASTEXITCODE = 1
+    [Environment]::ExitCode = 1
     if ($launchLog) { [IO.File]::AppendAllText($launchLog, $_.ToString() + "`r`n" + $_.ScriptStackTrace + "`r`n") }
     Add-Type -AssemblyName System.Windows.Forms
     [Windows.Forms.MessageBox]::Show($_.Exception.Message, 'ACE COMBAT 8 单机汉化', 'OK', 'Error') | Out-Null

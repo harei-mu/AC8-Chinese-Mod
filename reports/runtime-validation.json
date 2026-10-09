@@ -1,15 +1,36 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "gameBuild": "25201480",
-  "mainMenu": "verified: seven exact TextID hits, user confirmation and Chinese screenshot; no visible missing glyphs or clipping",
-  "options": "user reports Chinese displays normally; all pages not independently checked",
-  "campaignSubmenu": "Chinese preparation, briefing and pause labels confirmed in screenshots; remaining omissions and subsequent additions require recheck",
-  "hangarParts": "user confirmed equipped Su-57 colored part icons display normally; screenshot corroborates. Empty outlined slots are not evidence of missing Chinese glyphs",
-  "minimapAndOverheadTargets": "FAILED: combat screenshots show missing Chinese glyphs in native target labels; user reports English or flicker. Experimental target polling disabled and reverse restoration added; complete fix not verified",
-  "firstFrame": "USER VERIFIED in native table mode: directly Chinese in tested main menu/system/training/configuration; no crash reported. 464 menu strings patched in both CP_ tables before UI generation. Combat HUD first frame remains pending",
-  "simplifiedChinese": "authored values and scoped build output audited with Windows NLS plus contextual exceptions; font rendering remains a separate validation requirement",
-  "resourcePak": "FAILED menu probe: IoStore custom mount code=0, but user screenshot still English while Lua disabled; companion DAT not demonstrably loaded",
-  "nativeDiagnostics": "Frida attach followed by repeated abnormal exits and explicit user crash report; discontinued. Current table patch uses Windows memory APIs without injected tracing libraries",
-  "hudFont": "BUILT: original 351 glyphs and BC3 blocks preserved, 637 Simplified Chinese/punctuation glyphs added. IoStore integrity and export payload roundtrip passed. Runtime glyph rendering not yet verified",
-  "nativeTable": "Menu mode user reports directly Chinese and no crash. Read-only recheck in battle found all 928 table entries still translated. Initial target/HUD dry run found 464 eligible writes across two tables, with zero capacity/source skips. Expanded 616 combat entries pending next launch"
+  "gameVersion": "1.1.2.0",
+  "mainMenu": "USER VERIFIED: directly Chinese, screenshot confirms normal Chinese display",
+  "options": "USER VERIFIED in tested pages: normal Chinese; every page not individually checked",
+  "hangarParts": "USER VERIFIED: equipped Su-57 colored icons normal; empty outlined slots are not missing Chinese glyphs",
+  "hudHistorical": "USER VERIFIED: prior 1082-row / 988-glyph version displayed Chinese HUD/targets without missing glyphs or flicker",
+  "currentNativeEntry": {
+    "version": "0.3.0",
+    "translationRows": 1589,
+    "tables": 2,
+    "modified": 3178,
+    "skipped": [],
+    "readback": "PASS",
+    "gameExitCode": 0,
+    "startedAt": "2026-10-10T02:08:05",
+    "patchedAt": "2026-10-10T02:08:16",
+    "exitAt": "2026-10-10T02:09:26",
+    "launch": "native --steam-launch entry, original Steam command argument; Steam Play UI not independently operated"
+  },
+  "currentVisualStatus": "New pilot dossier model names, data subpages, medals, results and expanded 1233-glyph font still require page-by-page visual confirmation",
+  "steamProcess": "PID and start time unchanged throughout real install and test; installer fixture tests also confirm no Steam configuration writes",
+  "resolvedRegressions": [
+    "F/A-18F new description exceeded original allocation: shortened and all 1589 rows passed; preflight now prevents partial translation on rejected rows",
+    "PowerShell 7 exported module path caused stock PowerShell hash command resolution failure: native entry removes inherited PSModulePath and package hash uses .NET SHA256"
+  ],
+  "discontinued": [
+    "Lua text polling caused English-first/flicker; not enabled in release",
+    "Frida injected diagnostics caused crashes; discontinued",
+    "DAT menu probe mounted but did not affect displayed menus; not part of release"
+  ],
+  "simplifiedChinese": "Authored and scoped output checked with Windows NLS plus reviewed contextual exceptions: 0 unresolved",
+  "font": "1233 glyphs, original 351 glyphs and BC3 blocks preserved; container integrity and payload roundtrip pass, all current authored characters covered",
+  "multiplayer": "Not tested or authorized; single-player use only. Official EULA referenced in docs/注意事项.txt"
 }

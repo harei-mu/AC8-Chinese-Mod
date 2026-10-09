@@ -88,6 +88,9 @@ public static class AC8TextTables {
                 if(after[i].Length+1>current.Capacity) {skipped.Add(keys[i]+": allocation too small");continue;}
                 pending.Add(new Pending {Address=address,Original=current,Bytes=Encoding.Unicode.GetBytes(after[i]+"\0"),After=after[i],Key=keys[i]});
             }
+            result.Skipped=skipped.ToArray();
+            // A rejected row must not leave the remaining rows partially translated.
+            if(skipped.Count>0) { result.Eligible=pending.Count; return result; }
             if(apply) {
                 Offline(pid);
                 if(!Tables(handle,moduleBase).SequenceEqual(tables)) throw new InvalidOperationException("Text tables changed during validation");
@@ -95,13 +98,15 @@ public static class AC8TextTables {
                     FString current=StringAt(handle,item.Address),old=item.Original;
                     if(current.Pointer!=old.Pointer || current.Count!=old.Count || current.Capacity!=old.Capacity || current.Text!=old.Text)
                         throw new InvalidOperationException("Text changed during validation");
-                    Write(handle,current.Pointer,item.Bytes);
+                }
+                foreach(var item in pending) {
+                    Write(handle,item.Original.Pointer,item.Bytes);
                     Write(handle,item.Address+8,BitConverter.GetBytes(item.After.Length+1));
                     if(StringAt(handle,item.Address).Text!=item.After) throw new InvalidOperationException("Text readback failed");
                     result.Modified++;
                 }
             } else {result.Eligible=pending.Count;}
-            result.Skipped=skipped.ToArray(); return result;
+            return result;
         } finally {CloseHandle(handle);}
     }
 }

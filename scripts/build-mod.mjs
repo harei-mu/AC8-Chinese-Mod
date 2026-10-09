@@ -35,7 +35,7 @@ for (const row of table) {
   let replacement = glossary[category]?.[base];
   if (/^AircraftNick_/.test(row.key)) replacement = equipmentGlossary.nick[base];
   if (/^(Aircraft_Name_|AircraftShort_Name_|Aircraft_GetAircraft_ShortName_)/.test(row.key)) {
-    const established = {'Typhoon':'台风', 'Rafale M':'阵风 M', 'Mirage 2000-5':'幻影 2000-5', 'Gripen E':'鹰狮 E'};
+    const established = {'Typhoon':'台风', 'Rafale M':'阵风 M', 'Mirage 2000-5':'幻影 2000-5', 'Gripen E':'鹰狮 E', 'Draken':'龙式'};
     replacement = established[base];
     if (row.key.startsWith('Aircraft_Name_') && !replacement) {
       const nickname = Object.keys(equipmentGlossary.nick).sort((a,b)=>b.length-a.length).find(n=>base.endsWith(' '+n));

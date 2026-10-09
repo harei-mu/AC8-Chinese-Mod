@@ -26,7 +26,10 @@ function Scoped-Path([string]$Root, [string]$Relative) {
     return $result
 }
 function File-Hash([string]$Path) {
-    return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash
+    $stream = [IO.File]::OpenRead($Path)
+    $sha = [Security.Cryptography.SHA256]::Create()
+    try { return [BitConverter]::ToString($sha.ComputeHash($stream)).Replace('-', '') }
+    finally { $sha.Dispose(); $stream.Dispose() }
 }
 function Owned-Path([string]$GameBin, [string]$Relative) {
     if ($Relative.StartsWith('AC8Chinese\', [StringComparison]::OrdinalIgnoreCase)) {
@@ -40,9 +43,15 @@ function Owned-Path([string]$GameBin, [string]$Relative) {
 function Verify-Package([string]$Root) {
     $manifest = Read-JsonFile (Join-Path $Root 'package-manifest.json')
     if ($manifest.owner -ne $ModOwner -or $manifest.exeSha256 -ne $SupportedExeHash) { throw '汉化包标识或游戏版本不匹配。' }
+    $seen = @{}
     foreach ($entry in $manifest.files) {
+        if ($seen.ContainsKey($entry.path) -or $entry.sha256 -notmatch '^[0-9a-fA-F]{64}$') { throw '汉化包校验清单无效。' }
+        $seen[$entry.path] = $true
         $file = Scoped-Path $Root $entry.path
-        if (-not (Test-Path -LiteralPath $file -PathType Leaf) -or (File-Hash $file) -ne $entry.sha256) { throw "汉化包文件损坏：$($entry.path)" }
+        if (-not (Test-Path -LiteralPath $file -PathType Leaf) -or (Get-Item -LiteralPath $file).Length -ne $entry.bytes -or (File-Hash $file) -ne $entry.sha256) { throw "汉化包文件损坏：$($entry.path)" }
+    }
+    foreach ($required in @('汉化安装器.exe','App/Entry.ps1','App/Start-Chinese.ps1','App/Install.ps1','App/Uninstall.ps1','App/Update.ps1','App/translations.json','App/AC8TextTables.dll')) {
+        if (-not $seen.ContainsKey($required)) { throw "汉化包缺少受校验的文件：$required" }
     }
     return $manifest
 }

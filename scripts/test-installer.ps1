@@ -1,3 +1,4 @@
+param([string]$GameDir)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $package = Join-Path $root 'dist\AC8简体汉化'
@@ -9,7 +10,8 @@ $config = Join-Path $steam 'userdata\123\config\localconfig.vdf'
 $ps5 = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
 New-Item -ItemType Directory -Path $bin, (Split-Path $config -Parent) -Force | Out-Null
 # Use a real supported executable as inert fixture data; never execute the copy.
-$originalExe = 'E:\SteamLibrary\steamapps\common\ACE COMBAT 8\Game\Binaries\Win64\AceCombat8.exe'
+. (Join-Path $package 'App\Common.ps1')
+$originalExe = Join-Path (Resolve-Game $GameDir) 'Game\Binaries\Win64\AceCombat8.exe'
 Copy-Item -LiteralPath $originalExe -Destination (Join-Path $bin 'AceCombat8.exe')
 [IO.File]::WriteAllText((Join-Path $steam 'steam.exe'), 'inert-test-fixture')
 $vdf = '"UserLocalConfigStore" { "Software" { "Valve" { "Steam" { "apps" {' + "`r`n" +

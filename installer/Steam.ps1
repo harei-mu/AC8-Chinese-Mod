@@ -1,4 +1,5 @@
-# Edit only this game's LaunchOptions value, preserving the rest of the VDF.
+# Read Steam launch options. The in-memory setter is used only by test fixtures;
+# installation and uninstallation never write the real Steam configuration.
 if (-not ('AC8SteamVdf' -as [type])) {
 Add-Type -TypeDefinition @'
 using System;

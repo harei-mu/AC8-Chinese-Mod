@@ -1296,6 +1296,96 @@
     "after": "ADF-01"
   },
   {
+    "key": "Aircraft_Description_a10c",
+    "index": 3885,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "具备重武装与高存活能力，近距空中支援用的攻击机。\n以低速下依然安定的运动性能，与30mm机炮为首的各种\n对地攻击武器证明了自身的性能。昵称为“Thunderbolt II（雷霆）”。",
+    "after": "具备强大武装与较高生存能力的近距空中支援攻击机。\n以低速下稳定的操控性能，以及 30 毫米机炮等多种对地武器见长。\n昵称为“雷电 II（Thunderbolt II）”。"
+  },
+  {
+    "key": "Aircraft_Description_f04e",
+    "index": 3879,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "为了在航空母舰上使用而开发，但在陆上基地也被广泛使用的大型战斗机。\n空军用款式的E型为增加固定武装的衍生型。在开发当时，\n其卓越的速度性能创下了多项飞行纪录。昵称为“Phantom II（幽灵）”。",
+    "after": "最初为舰载作战设计、也广泛用于陆上基地的大型战斗机。\n空军使用的 E 型增设了固定机炮。该机在研制时曾凭借出色的速度创下多项飞行纪录。\n昵称为“鬼怪 II（Phantom II）”。"
+  },
+  {
+    "key": "Aircraft_Description_f14a",
+    "index": 3918,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "后来其修改型成为「Super Tomcat」的舰载战斗机系列的初期型号。\n由始至终将运用长射程导弹从射程外攻击舰队威胁的职责贯彻到底。昵称为「Tomcat（雄猫）」。",
+    "after": "雄猫系列舰载战斗机的早期型号，后续改进型被称为“超级雄猫”。\n主要利用远程导弹，在敌机逼近舰队之前将其击落。\n昵称为“雄猫（Tomcat）”。"
+  },
+  {
+    "key": "Aircraft_Description_f14d",
+    "index": 3887,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "有着超长射程对空导弹的运用能力的大型舰载战斗机。\n能借由自动控制的可变翼，在高速与低速都能发挥优秀的缠斗性能来进行制空战斗，\n有从A型的昵称而来的“Super Tomcat（超级雄猫）”非官方昵称。",
+    "after": "具备超远程空空导弹运用能力的大型舰载战斗机。\n自动控制的可变后掠翼使其在高速与低速下均具备出色的空战机动性。\n由 A 型昵称衍生出“超级雄猫（Super Tomcat）”这一非正式称呼。"
+  },
+  {
+    "key": "Aircraft_Description_f16c",
+    "index": 3888,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "以辅助大型主力空优战斗机为主要目标，所进行开发的\n小型轻量战斗机。引进了线传飞控等当时的最先进技术，获得\n高水准的机动性与安定性。昵称为“Fighting Falcon（战隼）”。",
+    "after": "为配合大型主力制空战斗机而研制的小型轻量战斗机。\n采用当时先进的电传飞控等技术，兼具较高的机动性与稳定性。\n昵称为“战隼（Fighting Falcon）”。"
+  },
+  {
+    "key": "Aircraft_Description_f18c",
+    "index": 3910,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "将舰载战斗攻击机F/A-18的初期型进行改良的C型。\n增强引擎的推进力及提升雷达性能后，扩大了各种空对空导弹\n以及对地对舰武器的运用能力。昵称为“Hornet（大黄蜂）”。",
+    "after": "F/A-18 早期型号的改进型舰载战斗攻击机。\n通过增强发动机推力、提升雷达性能，扩大了空空导弹及对地、反舰武器的运用范围。\n昵称为“大黄蜂（Hornet）”。"
+  },
+  {
+    "key": "Aircraft_Description_f18e",
+    "index": 3916,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "从舰队防空到近距空中支援，各种任务都能执行的舰载战斗攻击机。\n将以前的型号重新设计的本机，是兼具了续行距离、装载量、以及低RCS的衍生型。\n昵称为「Super Hornet（超级大黄蜂）」，为单座型多用途战斗机。",
+    "after": "由 F/A-18 重新设计而来的单座舰载多用途战斗机。\n可执行舰队防空、近距空中支援等多种任务，兼顾航程、载弹量与较低的雷达反射截面积。\n昵称为“超级大黄蜂（Super Hornet）”。"
+  },
+  {
+    "key": "Aircraft_Description_f18f",
+    "index": 3882,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "将F/A-18重新设计开发的双座型舰载战斗机。\n为了提升续航距离以及武器的搭载能力，将机体大型化\n以及匿踪性能纳入考量后\n进行了设计变更。",
+    "after": "由 F/A-18 重新设计的双座舰载战斗机。\n机体增大，航程与载弹量提升，雷达反射截面积减小。\n昵称为“超级大黄蜂（Super Hornet）”。"
+  },
+  {
+    "key": "Aircraft_Description_f22a",
+    "index": 3889,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "先进战术战斗机计划所开发的匿踪战斗机。\n将武器装备在机体内部弹舱来维持匿踪性能外，\n以高机动性与情报统整在空战中取得压倒性的优势。",
+    "after": "先进战术战斗机计划研制的隐身战斗机。\n采用内置弹舱保持隐身性能，凭借高机动性与综合信息处理能力取得空战优势。\n昵称为“猛禽（Raptor）”。"
+  },
+  {
+    "key": "Aircraft_Description_f35c",
+    "index": 3884,
+    "category": "menu",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
+    "before": "有着匿踪性能的多功能战斗机。C型为海军所运用的舰载机型。\n由将多种现用机体以同一机种取代的JSF（联合攻击战斗机）计划\n所开发，不论对地或对空任务皆能对应。昵称为“Lightning II（闪电）”。",
+    "after": "联合攻击战斗机（JSF）计划研制的隐身多用途战斗机，C 型为海军舰载型。\n该计划旨在以同一机种取代多种现役飞机，可执行对空与对地任务。\n昵称为“闪电 II（Lightning II）”。"
+  },
+  {
     "key": "Aircraft_GetAircraft_ShortName_adfx02_L001",
     "index": 9355,
     "category": "menu",
@@ -1317,10 +1407,10 @@
     "key": "Aircraft_Name_a04f",
     "index": 9203,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "A-4F Skyhawk",
-    "after": "A-4F Skyhawk"
+    "after": "A-4F 天鹰"
   },
   {
     "key": "Aircraft_Name_a06e",
@@ -1344,28 +1434,28 @@
     "key": "Aircraft_Name_a130",
     "index": 9100,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "AC-130U Spooky",
-    "after": "AC-130U Spooky"
+    "after": "AC-130U 幽灵"
   },
   {
     "key": "Aircraft_Name_a50u",
     "index": 9135,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "A-50U Mainstay",
-    "after": "A-50U Mainstay"
+    "after": "A-50U 中坚"
   },
   {
     "key": "Aircraft_Name_adf11f",
     "index": 9175,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "ADF-11F Raven",
-    "after": "ADF-11F Raven"
+    "after": "ADF-11F 渡鸦"
   },
   {
     "key": "Aircraft_Name_adfx02_L001",
@@ -1380,64 +1470,64 @@
     "key": "Aircraft_Name_ah64",
     "index": 9117,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "AH-64D Apache Longbow",
-    "after": "AH-64D Apache Longbow"
+    "after": "AH-64D 长弓阿帕奇"
   },
   {
     "key": "Aircraft_Name_aias",
     "index": 9189,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Aerial Arsenal Ship",
-    "after": "Aerial Arsenal Ship"
+    "after": "空中武库舰"
   },
   {
     "key": "Aircraft_Name_aship",
     "index": 9127,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "AirShip",
-    "after": "AirShip"
+    "after": "飞艇"
   },
   {
     "key": "Aircraft_Name_av8b",
     "index": 9119,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "AV-8B Harrier II Plus",
-    "after": "AV-8B Harrier II Plus"
+    "after": "AV-8B 鹞 II Plus"
   },
   {
     "key": "Aircraft_Name_b01b",
     "index": 9105,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "B-1B Lancer",
-    "after": "B-1B Lancer"
+    "after": "B-1B 枪骑兵"
   },
   {
     "key": "Aircraft_Name_b02a",
     "index": 9106,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "B-2A Spirit",
-    "after": "B-2A Spirit"
+    "after": "B-2A 幽灵"
   },
   {
     "key": "Aircraft_Name_b52h",
     "index": 9107,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "B-52 Stratofortress",
-    "after": "B-52 Stratofortress"
+    "after": "B-52 同温层堡垒"
   },
   {
     "key": "Aircraft_Name_c01a",
@@ -1452,28 +1542,28 @@
     "key": "Aircraft_Name_c130",
     "index": 9133,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "C-130J Super Hercules",
-    "after": "C-130J Super Hercules"
+    "after": "C-130J 超级大力神"
   },
   {
     "key": "Aircraft_Name_c17g",
     "index": 9101,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "C-17 Globemaster III",
-    "after": "C-17 Globemaster III"
+    "after": "C-17 环球霸王 III"
   },
   {
     "key": "Aircraft_Name_ch47",
     "index": 9118,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "CH-47 Chinook",
-    "after": "CH-47 Chinook"
+    "after": "CH-47 支奴干"
   },
   {
     "key": "Aircraft_Name_cleo",
@@ -1488,19 +1578,19 @@
     "key": "Aircraft_Name_docm",
     "index": 9190,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Supply Unit",
-    "after": "Supply Unit"
+    "after": "补给单元"
   },
   {
     "key": "Aircraft_Name_e02d",
     "index": 9112,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "E-2D Advanced Hawkeye",
-    "after": "E-2D Advanced Hawkeye"
+    "after": "E-2D 先进鹰眼"
   },
   {
     "key": "Aircraft_Name_e06b",
@@ -1524,10 +1614,10 @@
     "key": "Aircraft_Name_e767",
     "index": 9102,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "E-767 AWACS",
-    "after": "E-767 AWACS"
+    "after": "E-767 预警机"
   },
   {
     "key": "Aircraft_Name_ea36",
@@ -1578,10 +1668,10 @@
     "key": "Aircraft_Name_f05e",
     "index": 9195,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "F-5E Tiger II",
-    "after": "F-5E Tiger II"
+    "after": "F-5E 虎 II"
   },
   {
     "key": "Aircraft_Name_f05e_wd",
@@ -1596,10 +1686,10 @@
     "key": "Aircraft_Name_f104",
     "index": 9185,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "F-104C Starfighter",
-    "after": "F-104C Starfighter"
+    "after": "F-104C 星式战斗机"
   },
   {
     "key": "Aircraft_Name_f104av",
@@ -1695,10 +1785,10 @@
     "key": "Aircraft_Name_f17a",
     "index": 9181,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "F-117A Nighthawk",
-    "after": "F-117A Nighthawk"
+    "after": "F-117A 夜鹰"
   },
   {
     "key": "Aircraft_Name_f18c",
@@ -1767,19 +1857,19 @@
     "key": "Aircraft_Name_il76",
     "index": 9103,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Il-76 Candid",
-    "after": "Il-76 Candid"
+    "after": "Il-76 耿直"
   },
   {
     "key": "Aircraft_Name_il78",
     "index": 9134,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Il-78M Midas",
-    "after": "Il-78M Midas"
+    "after": "Il-78M 迈达斯"
   },
   {
     "key": "Aircraft_Name_irbm",
@@ -1794,19 +1884,19 @@
     "key": "Aircraft_Name_j35j",
     "index": 9172,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Draken",
-    "after": "Draken"
+    "after": "龙式"
   },
   {
     "key": "Aircraft_Name_j37d",
     "index": 9194,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "SAAB 37 Viggen",
-    "after": "SAAB 37 Viggen"
+    "after": "SAAB 37 雷式"
   },
   {
     "key": "Aircraft_Name_j39e",
@@ -1821,19 +1911,19 @@
     "key": "Aircraft_Name_ka27",
     "index": 9111,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Ka-27 Helix",
-    "after": "Ka-27 Helix"
+    "after": "Ka-27 蜗牛"
   },
   {
     "key": "Aircraft_Name_kc10",
     "index": 9104,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "KC-10 Extender",
-    "after": "KC-10 Extender"
+    "after": "KC-10 补充者"
   },
   {
     "key": "Aircraft_Name_lacm",
@@ -1884,10 +1974,10 @@
     "key": "Aircraft_Name_m25pd",
     "index": 9206,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "MiG-25PD Foxbat",
-    "after": "MiG-25PD Foxbat"
+    "after": "MiG-25PD 狐蝠"
   },
   {
     "key": "Aircraft_Name_m29a",
@@ -1911,19 +2001,19 @@
     "key": "Aircraft_Name_mi24",
     "index": 9110,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Mi-24 Hind",
-    "after": "Mi-24 Hind"
+    "after": "Mi-24 雌鹿"
   },
   {
     "key": "Aircraft_Name_mq9b",
     "index": 9113,
     "category": "menu",
-    "action": "keep",
-    "reason": "已有中文",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "MQ-9B改 Sky Guardian",
-    "after": "MQ-9B改 Sky Guardian"
+    "after": "MQ-9B改 天空卫士"
   },
   {
     "key": "Aircraft_Name_mr2k",
@@ -1938,10 +2028,10 @@
     "key": "Aircraft_Name_mrgn",
     "index": 9193,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "ADFX-01 Morgan",
-    "after": "ADFX-01 Morgan"
+    "after": "ADFX-01 摩根"
   },
   {
     "key": "Aircraft_Name_mrgnb2",
@@ -1956,37 +2046,37 @@
     "key": "Aircraft_Name_mudr",
     "index": 9124,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Multiple-Drone DM-2",
-    "after": "Multiple-Drone DM-2"
+    "after": "复合无人机 DM-2"
   },
   {
     "key": "Aircraft_Name_mudrr",
     "index": 9126,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Multiple-Drone DM-2R",
-    "after": "Multiple-Drone DM-2R"
+    "after": "复合无人机 DM-2R"
   },
   {
     "key": "Aircraft_Name_mudrw",
     "index": 9125,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Multiple-Drone DM-2W",
-    "after": "Multiple-Drone DM-2W"
+    "after": "复合无人机 DM-2W"
   },
   {
     "key": "Aircraft_Name_mv22",
     "index": 9120,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "V-22 Osprey",
-    "after": "V-22 Osprey"
+    "after": "V-22 鱼鹰"
   },
   {
     "key": "Aircraft_Name_norn",
@@ -2037,37 +2127,37 @@
     "key": "Aircraft_Name_rpdnb",
     "index": 9137,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Parachute",
-    "after": "Parachute"
+    "after": "降落伞"
   },
   {
     "key": "Aircraft_Name_rpdnc",
     "index": 9138,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Parachute",
-    "after": "Parachute"
+    "after": "降落伞"
   },
   {
     "key": "Aircraft_Name_su24",
     "index": 9204,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Su-24M Fencer-D",
-    "after": "Su-24M Fencer-D"
+    "after": "Su-24M 击剑手-D"
   },
   {
     "key": "Aircraft_Name_su24mp",
     "index": 9205,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Su-24MP Fencer-F",
-    "after": "Su-24MP Fencer-F"
+    "after": "Su-24MP 击剑手-F"
   },
   {
     "key": "Aircraft_Name_su25",
@@ -2082,19 +2172,19 @@
     "key": "Aircraft_Name_su27",
     "index": 9196,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Su-27P Flanker",
-    "after": "Su-27P Flanker"
+    "after": "Su-27P 侧卫"
   },
   {
     "key": "Aircraft_Name_su30",
     "index": 9184,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Su-30SM Flanker-H",
-    "after": "Su-30SM Flanker-H"
+    "after": "Su-30SM 侧卫-H"
   },
   {
     "key": "Aircraft_Name_su33",
@@ -2145,10 +2235,10 @@
     "key": "Aircraft_Name_sups",
     "index": 9177,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Supply Ship",
-    "after": "Supply Ship"
+    "after": "补给舰"
   },
   {
     "key": "Aircraft_Name_sv11",
@@ -2172,28 +2262,28 @@
     "key": "Aircraft_Name_swdr",
     "index": 9123,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "SwarmDrone G3000",
-    "after": "SwarmDrone G3000"
+    "after": "蜂群无人机 G3000"
   },
   {
     "key": "Aircraft_Name_t160",
     "index": 9109,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Tu-160 Blackjack",
-    "after": "Tu-160 Blackjack"
+    "after": "Tu-160 海盗旗"
   },
   {
     "key": "Aircraft_Name_tu95",
     "index": 9108,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "Tu-95 Bear",
-    "after": "Tu-95 Bear"
+    "after": "Tu-95 熊"
   },
   {
     "key": "Aircraft_Name_typn",
@@ -2208,28 +2298,28 @@
     "key": "Aircraft_Name_uavc",
     "index": 9115,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "MQ-99 Wasp",
-    "after": "MQ-99 Wasp"
+    "after": "MQ-99 黄蜂"
   },
   {
     "key": "Aircraft_Name_uavcb",
     "index": 9130,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "MQ-99 Wasp",
-    "after": "MQ-99 Wasp"
+    "after": "MQ-99 黄蜂"
   },
   {
     "key": "Aircraft_Name_uavcs",
     "index": 9116,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "MQ-99 Wasp",
-    "after": "MQ-99 Wasp"
+    "after": "MQ-99 黄蜂"
   },
   {
     "key": "Aircraft_Name_uavm",
@@ -2244,10 +2334,10 @@
     "key": "Aircraft_Name_uavn",
     "index": 9121,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "X-40 Nightmare UAV",
-    "after": "X-40 Nightmare UAV"
+    "after": "X-40 梦魇无人机"
   },
   {
     "key": "Aircraft_Name_uavp",
@@ -2262,10 +2352,10 @@
     "key": "Aircraft_Name_uavr",
     "index": 9178,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "精确资源键简体用语审校",
     "before": "Jamming Drone",
-    "after": "Jamming Drone"
+    "after": "干扰无人机"
   },
   {
     "key": "Aircraft_Name_wyvns",
@@ -2298,10 +2388,10 @@
     "key": "Aircraft_Name_yf23",
     "index": 9174,
     "category": "menu",
-    "action": "keep",
-    "reason": "保留型号、专名、呼号或非文字标识",
+    "action": "translate",
+    "reason": "界面文字或通用目标名称",
     "before": "YF-23 Black Widow II",
-    "after": "YF-23 Black Widow II"
+    "after": "YF-23 黑寡妇 II"
   },
   {
     "key": "Aircraft_Name_zoef",

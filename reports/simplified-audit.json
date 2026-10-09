@@ -1,8 +1,8 @@
 {
   "method": "Windows LCMapStringEx LCMAP_SIMPLIFIED_CHINESE; candidates require context review",
-  "checkedEntries": 3736,
+  "checkedEntries": 3746,
   "candidateCount": 5,
-  "checkedAuthoredValues": 987,
+  "checkedAuthoredValues": 1044,
   "unresolvedCount": 0,
   "candidates": [
     {

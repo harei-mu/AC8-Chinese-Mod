@@ -1,9 +1,7 @@
 {
-  "date": "2026-10-10T01:36:04",
-  "actualNewPages": "pending",
-  "gameBuild": "25201480",
-  "actualSteamLaunch": "pending",
   "fixtureOnly": true,
+  "gameBuild": "25201480",
+  "actualNewPages": "pending",
   "passed": [
     "UI mode excludes HUD strings and shared HUD abbreviations",
     "HUD mode excludes menu and aircraft detail strings",
@@ -36,5 +34,7 @@
     "running Steam processes were neither stopped nor started",
     "automatic search reads all Steam libraries and the actual install folder from appmanifest",
     "all scripts parse and precompiled text helper loads on Windows PowerShell 5.1"
-  ]
+  ],
+  "date": "2026-10-10T02:20:38",
+  "actualSteamLaunch": "pending"
 }

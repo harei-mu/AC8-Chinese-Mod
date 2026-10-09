@@ -5,7 +5,8 @@ import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const out = path.join(root, 'dist/AC8简体汉化');
+const out = path.resolve(root, process.argv[2] ?? 'dist/AC8简体汉化');
+if (!out.startsWith(path.join(root, 'dist') + path.sep)) throw new Error('Package output must stay inside dist');
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const audit = JSON.parse(fs.readFileSync(path.join(root, 'reports/simplified-audit.json')));
 const font = JSON.parse(fs.readFileSync(path.join(root, 'reports/hud-font.json')));
@@ -55,13 +56,17 @@ for (const ext of ['utoc','ucas','pak']) {
 }
 copy('Licenses/UE4SS.txt', 'tools/ue4ss-package/ue4ss/LICENSE');
 copy('Licenses/AC8OverrideLoader.txt', 'tools/ac8-override-loader/LICENSE');
+copy('Licenses/NotoSansSC.txt', 'docs/LICENSE-Noto.txt');
+copy('LICENSE', 'LICENSE');
+copy('注意事项.txt', 'docs/注意事项.txt');
+copy('Licenses/THIRD-PARTY-NOTICES.md', 'docs/THIRD-PARTY-NOTICES.md');
 const setupExe = path.join(root, 'work/AC8Setup-' + Date.now() + '.exe');
 execFileSync(path.join(process.env.SystemRoot, 'System32/WindowsPowerShell/v1.0/powershell.exe'),
   ['-NoProfile','-ExecutionPolicy','Bypass','-File',path.join(root,'scripts/compile-installer.ps1'),
    '-Source',path.join(root,'installer/Setup.cs'),'-Output',setupExe,'-Setup'], {stdio:'inherit'});
 put('汉化安装器.exe', fs.readFileSync(setupExe));
 fs.unlinkSync(setupExe);
-put('使用说明.txt', '\ufeff'+`ACE COMBAT 8 简体汉化 0.3.0\r\n\r\n支持游戏 1.1.2.0 / Steam build 25201480，仅用于单机。\r\n\r\n1. 解压整个文件夹，正常退出游戏。\r\n2. 双击“汉化安装器.exe”，选择界面汉化、HUD 汉化或全部汉化，点击安装。\r\n3. 安装会正常退出并重新打开 Steam。以后直接在 Steam 点击“开始游戏”。\r\n4. 更换汉化内容：再次打开安装器，选择新的内容并点击安装。\r\n5. 解除汉化：正常退出游戏后，打开“汉化安装器.exe”，点击“卸载汉化”。卸载会恢复原 Steam 启动选项。\r\n\r\n界面：菜单、设置、训练、机库、资料、战绩、任务结算等。\r\nHUD：仪表、雷达、普通目标类别、目标名称和战斗提示。\r\n机炮、导弹、诱饵弹等与仪表共用的名称随 HUD 组件翻译。型号、武器代号、罗盘字母及玩家自定义名称保留。\r\n全程使用简体中文。游戏自带的剧情字幕保留。\r\n\r\n无需 Python 或开发环境。原始游戏程序、原始资源和存档不会被覆盖。\r\n发现其他 MOD 加载器或自定义启动器时，安装会停止并保留现有文件。\r\n卸载只移除归属于本汉化且校验一致的文件；自行修改的文件会保留。\r\n游戏更新后如版本校验不通过，请更新汉化包。\r\n`);
+copy('使用说明.txt', 'docs/使用说明.txt');
 // Remove stale outputs by exact file path, restricted to this package's directory.
 function walk(dir) {return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 for (const file of walk(out)) {
@@ -73,6 +78,6 @@ const files = [...outputs].sort().map(relative => {
 });
 const manifest = {owner:'AC8ChineseMod:offline-v1',version:'0.3.0',gameBuild:'25201480',gameVersion:'1.1.2.0',
   exeSha256:'51510E2A520565DBE81FB0D569E95CD4393077ACAAA859371489B80B8128829F',
-  legacyOwner:root,files};
+  license:'GPL-3.0-only',repository:'harei-mu/AC8-Chinese-Mod',files};
 fs.writeFileSync(path.join(out,'package-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
 console.log({package:out,files:files.length,translations:rows.size,components:Object.fromEntries(['UI','HUD','Shared'].map(c=>[c,[...rows.values()].filter(r=>r.component===c).length]))});

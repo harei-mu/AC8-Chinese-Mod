@@ -1,0 +1,27 @@
+{
+  "passed": [
+    "newer stable release is selected",
+    "equal version is not reinstalled",
+    "older version is not installed",
+    "malformed release tag rejected",
+    "draft release rejected",
+    "prerelease rejected",
+    "foreign download URL rejected",
+    "missing GitHub digest rejected",
+    "oversized download rejected",
+    "duplicate release assets rejected",
+    "complete package extracts and passes file hash and size checks",
+    "mismatched package version rejected",
+    "existing extraction directory rejected",
+    "changed script rejected before execution",
+    "ZIP directory traversal rejected",
+    "no file written outside extraction directory",
+    "absolute ZIP path rejected",
+    "case-insensitive duplicate ZIP paths rejected",
+    "symbolic-link ZIP entry rejected",
+    ".NET SHA-256 works without Get-FileHash"
+  ],
+  "liveGitHub": "pending release publication",
+  "date": "2026-10-10T02:20:39",
+  "fixtureOnly": true
+}
