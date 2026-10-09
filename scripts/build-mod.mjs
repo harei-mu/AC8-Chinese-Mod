@@ -26,13 +26,15 @@ for (const row of table) {
   let action = 'keep', reason = '保留型号、专名、呼号或非文字标识';
   let value = source;
   if (/\p{Script=Han}/u.test(source)) reason = '已有中文';
-  else if (replacement && source === en[row.index]) {
+  else if (replacement) {
     value = source.replace(base, replacement);
     if (value.includes('\0') || tokens(value) !== tokens(source)) throw new Error(`Invalid translation: ${row.key}`);
     if (modified.has(row.index) && modified.get(row.index) !== value) throw new Error('Conflicting aliases');
     modified.set(row.index, value);
     translated[row.index] = value;
     action = 'translate'; reason = '界面文字或通用目标名称';
+  } else if (/^\d+ x \d+（\d+:\d+）$/.test(base)) {
+    reason = '分辨率与宽高比';
   } else if (/[A-Za-z]/.test(source) && category === 'options' && source.length < 200 && !glossary.keepOptionValues.includes(base)) {
     action = 'review'; reason = '待核对，不自动覆盖';
   }
